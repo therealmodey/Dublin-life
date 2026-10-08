@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import {MapControls} from 'three/addons/controls/MapControls.js';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {buildAbuja} from './abuja.js';
-import {buildDublin} from './dublin.js';
+import {buildDublin,DUBLIN_BACKGROUND} from './dublin.js';
 
 const $=id=>document.getElementById(id), host=$('map');
 const renderer=new THREE.WebGLRenderer({antialias:true,alpha:false});
@@ -96,7 +96,7 @@ function switchCity(city){
  walking=false;marker.visible=false;walkTarget=null;keys.clear();controls.enableRotate=true;transition=null;clearSelection();
  $('walk').setAttribute('aria-pressed','false');$('walk-controls').hidden=true;$('hint').hidden=false;
  activeCity=city;world.visible=city==='lagos';estate.visible=city==='lagos'&&showHomes;boards.visible=city==='lagos'&&showBoards;abuja.world.visible=city==='abuja';abuja.homes.visible=showHomes;abuja.boards.visible=showBoards;dublin.world.visible=city==='dublin';dublin.homes.visible=showHomes;dublin.boards.visible=showBoards;
- renderer.setClearColor(city==='abuja'?'#93b56c':city==='dublin'?'#9bb38b':'#67afd5');host.dataset.city=city;$('city-name').textContent=cityNames[city];
+ renderer.setClearColor(city==='abuja'?'#93b56c':city==='dublin'?DUBLIN_BACKGROUND:'#67afd5');host.dataset.city=city;$('city-name').textContent=cityNames[city];
  host.setAttribute('aria-label',`Interactive 3D ${city[0].toUpperCase()+city.slice(1)} city map`);
  document.querySelectorAll('button[data-city]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.city===city)));
  const tabs=city==='dublin'?[['all','🗺️','All Dublin'],['centre','🏛️','City centre'],['northside','🏘️','Northside'],['docklands','⚓','Docklands']]:city==='abuja'?[['all','🗺️','All Abuja'],['central','🏛️','Central'],['maitama','🌳','Maitama'],['jabi','🌊','Jabi']]:[['all','🗺️','All Lagos'],['mainland','🏘️','Mainland'],['island','🏙️','Island'],['lekki','🌴','Lekki']];
@@ -121,7 +121,7 @@ $('boards').onclick=()=>{showBoards=!showBoards;boards.visible=activeCity==='lag
 $('walk').onclick=()=>toggleWalk();$('leave-walk').onclick=()=>toggleWalk(false);
 $('plus').onclick=()=>zoom(.8);$('minus').onclick=()=>zoom(1.25);$('reset').onclick=resetView;
 $('close-detail').onclick=clearSelection;$('focus').onclick=()=>selected&&flyTo(selected.x,selected.z,10);
-$('walk-here').onclick=()=>{if(!selected)return;const p=selected;toggleWalk(true);marker.position.set(p.x,.22,p.z+p.d/2+.65);flyTo(marker.position.x,marker.position.z,12);clearSelection();};
+$('walk-here').onclick=()=>{if(!selected)return;const p=selected;toggleWalk(true);marker.position.set(p.arrivalX??p.x,.22,p.arrivalZ??(p.z+p.d/2+.65));flyTo(marker.position.x,marker.position.z,12);clearSelection();};
 document.querySelectorAll('[data-district]').forEach(button=>button.onclick=()=>{clearSelection();if(walking)toggleWalk(false);document.querySelectorAll('[data-district]').forEach(b=>b.classList.toggle('active',b===button));const targets=activeCity==='dublin'?{centre:[-5,12,39],northside:[-7,-20,55],docklands:[28,5,42]}:activeCity==='abuja'?{central:[16,0,45],maitama:[22,-32,43],jabi:[-35,-10,45]}:{mainland:[0,-12,28],island:[-4,7.5,25],lekki:[15,8,24]};if(button.dataset.district==='all')resetView();else flyTo(...targets[button.dataset.district]);});
 $('help').onclick=()=>$('help-dialog').showModal();$('close-help').onclick=()=>$('help-dialog').close();
 controls.addEventListener('start',()=>transition=null);

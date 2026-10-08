@@ -1,42 +1,11 @@
 import * as THREE from 'three';
+import {DUBLIN_PALETTE} from './dublin-palette.js';
+export {DUBLIN_PALETTE, DUBLIN_BACKGROUND} from './dublin-palette.js';
 
 // An authored, compressed game layout. North is -Z, east is +X.
 // Irish landmarks retain their neighbourhood relationships, not survey scale.
-export const dublinLots = [
-  ['dubAirport','Dublin Airport','Northside','✈️',-11,-39,24,10,2.8,'airport','An international airport north of the city, with a terminal, tower and runway.'],
-  ['dubPhoenix','Phoenix Park','Northside','🦌',-32,-19,15,15,1.3,'park','A wide green park on the western side of the city.'],
-  ['dubCroke','Croke Park','Northside','🏟️',15,-25,12,9,2.5,'stadium','The home of Gaelic games, with a pitch and tiered stands.'],
-  ['dubSpire','The Spire','City centre','📍',0,-15,3,3,8,'spire','A slender silver landmark on O’Connell Street.'],
-  ['dubGPO','General Post Office','City centre','🏛️',-3,-10,7,4,2.2,'classical','A columned landmark facing O’Connell Street.'],
-  ['dubPenneys','Penneys','City centre','🛍️',-12,-10,5,4,1.8,'shop','A city-centre clothes shop, with brick frontage and broad display windows.'],
-  ['dubConnolly','Connolly Station','Northside','🚉',15,-15,8,5,2.2,'station','Rail platforms and a station entrance on the north side.'],
-  ['dubCustom','The Custom House','Docklands','🏛️',17,-5.5,10,4,3.6,'custom','A long neoclassical riverside building with a central dome.'],
-  ['dubEPIC','EPIC & CHQ','Docklands','🧳',26,-11,8,5,1.8,'warehouse','A restored warehouse and museum precinct in the Docklands.'],
-  ['dubConvention','Convention Centre','Docklands','🏢',31,-5.5,6,4,3.8,'convention','A modern riverside building with a tilted glass atrium.'],
-  ['dubHapenny','Ha’penny Bridge','City centre','🌉',-5,0,1.2,4.7,1.1,'archBridge','The white pedestrian bridge connecting the two banks of the Liffey.'],
-  ['dubBeckett','Samuel Beckett Bridge','Docklands','🌉',30,0,2,4.7,4,'harpBridge','A harp-shaped bridge across the river in the Docklands.'],
-  ['dubTemple','Temple Bar','City centre','🎻',-5,7,7,5,1.9,'pub','Colourful pub fronts, cobbled lanes and a small music courtyard.'],
-  ['dubCastle','Dublin Castle','City centre','🏰',-13,10,7,6,3,'castle','A stone tower and courtyard among the city-centre streets.'],
-  ['dubChrist','Christ Church Cathedral','City centre','⛪',-21,7,7,5,3.5,'cathedral','A stone cathedral with a central tower and pitched roofs.'],
-  ['dubGuinness','Guinness Storehouse','City centre','🍺',-32,8,9,7,3.7,'guinness','A brick brewery complex topped by a circular glass lookout.'],
-  ['dubTrinity','Trinity College','City centre','🎓',7,9,11,9,3.5,'college','A historic campus with a central green, library and campanile.'],
-  ['dubGrafton','Grafton Street','City centre','🎶',3,17,4,6,2.1,'shoppingStreet','A pedestrian shopping street with colourful façades and busking space.'],
-  ['dubBrown','Brown Thomas','City centre','🛍️',9,18,5,4,2.4,'shop','A department store beside the Grafton Street shopping area.'],
-  ['dubGreen','St Stephen’s Green','City centre','🌳',6,26,12,9,1.3,'green','A landscaped city park with paths, trees and a pond.'],
-  ['dubPatrick','St Patrick’s Cathedral','City centre','⛪',-16,21,7,7,4.5,'cathedral','A tall stone cathedral beside a garden on the south side.'],
-  ['dubWhelans','Whelan’s','City centre','🎸',-5,25,5,4,1.6,'pub','A live-music venue with a warm street frontage.'],
-  ['dubMerrion','Merrion Square','City centre','🌷',18,21,8,8,1.2,'park','A garden square framed by Georgian terraces.'],
-  ['dubCanal','Grand Canal Dock','Docklands','⚓',28,12,12,9,3,'dock','A waterfront basin, modern offices and a theatre beside the water.'],
-  ['dubAviva','Aviva Stadium','Docklands','🏉',34,25,10,8,3.2,'stadium','An oval stadium on the southeastern side of this compact map.'],
-  ['dubGarda','Garda Station','Northside','🚓',-21,-10,5,4,1.6,'civic','A local station in the northside neighbourhood.'],
-  ['dubIntreo','Intreo Office','Northside','📄',-12,-20,5,4,1.8,'civic','A fictional service-office location for the future game.'],
-  ['dubCitizens','Citizens Information','Northside','ℹ️',-4,-23,5,4,1.6,'civic','A fictional information-office location for the future game.'],
-  ['dubNaija','Nigerian Shop','Northside','🇳🇬',5,-25,5,4,1.5,'shop','An illustrative community shop with Nigerian groceries.'],
-  ['dubTesco','Tesco','Northside','🛒',24,-22,6,4,1.4,'shop','An illustrative neighbourhood supermarket.'],
-  ['dubLidl','Lidl','Northside','🛒',33,-21,6,4,1.4,'shop','An illustrative neighbourhood supermarket.'],
-  ['dubDunnes','Dunnes Stores','City centre','🛒',-24,19,5,4,1.8,'shop','An illustrative city-centre grocery and clothing shop.'],
-  ['dubChipper','The Chipper','City centre','🍟',-33,20,5,4,1.4,'shop','A small local takeaway with a striped shopfront.'],
-].map(([id,name,area,emoji,x,z,w,d,h,kind,description])=>({id,name,area,emoji,x,z,w,d,h,kind,description,city:'dublin'}));
+import {dublinLots} from './dublin-locations.js';
+export {dublinLots};
 
 export const dublinBridges = [-28,-18,-5,2,18,30];
 export function isDublinLand(x,z){
@@ -47,109 +16,149 @@ export function isDublinLand(x,z){
 }
 
 export function buildDublin({textSurface}) {
-  const world=new THREE.Group(), homes=new THREE.Group(), boards=new THREE.Group();
-  world.name='Dublin';homes.name='Dublin neighbourhoods';world.add(homes,boards);
+  const world=new THREE.Group(), homes=new THREE.Group(), landmarks=new THREE.Group(), boards=new THREE.Group();
+  world.name='Dublin';homes.name='Dublin neighbourhoods';landmarks.name='Dublin landmarks';world.add(homes,landmarks,boards);
   const geometry={box:new THREE.BoxGeometry(1,1,1),cyl:new THREE.CylinderGeometry(1,1,1,16),cone:new THREE.ConeGeometry(1,1,12),sphere:new THREE.IcosahedronGeometry(1,1),roof:new THREE.ConeGeometry(1,1,4,1,false,Math.PI/4)};
   const batches=new Map();
-  let origin=[0,0,0];
-  function shape(type,x,y,z,w,h,d,color,parent=world,rotation=[0,0,0]){
+  let origin=[0,0,0], activeParent=world, activeLotId=null;
+  function shape(type,x,y,z,w,h,d,color,parent=activeParent,rotation=[0,0,0]){
     const cast=h>.15;
     const key=`${parent.uuid}:${type}:${cast}`;if(!batches.has(key))batches.set(key,{parent,type,cast,items:[]});
-    batches.get(key).items.push({p:[x+origin[0],y+origin[1],z+origin[2]],s:[w,h,d],color,rotation});
+    batches.get(key).items.push({p:[x+origin[0],y+origin[1],z+origin[2]],s:[w,h,d],color,rotation,lotId:activeLotId});
   }
-  const b=(x,y,z,w,h,d,c,parent=world,rotation)=>shape('box',x,y,z,w,h,d,c,parent,rotation);
-  const c=(x,y,z,r,h,color,parent=world)=>shape('cyl',x,y,z,r,h,r,color,parent);
-  function tree(x,z,size=1,parent=world){c(x,.45*size,z,.07*size,.9*size,'#70523c',parent);shape('sphere',x,1.1*size,z,.55*size,.7*size,.55*size,'#43815b',parent);}
-  function roof(x,y,z,w,d,color='#4f575d'){shape('roof',x,y+.35,z,w*.74,.7,d*.74,color);}
-  function building(x,z,w,d,h,color='#a96d55',parent=world){b(x,h/2,z,w,h,d,color,parent);b(x,h+.07,z,w+.15,.14,d+.15,'#4f575d',parent);for(let row=.45;row<h-.15;row+=.6)for(let col=-w/2+.35;col<w/2;col+=.65)b(x+col,row,z+d/2+.018,.3,.35,.035,'#b8d2d5',parent);}
-  function columns(x,z,count,width,h=1.5){for(let i=0;i<count;i++)c(x-width/2+i*width/(count-1),h/2,z,.11,h,'#e8e1cd');b(x,h+.08,z,width+.45,.16,.65,'#e8e1cd');}
+  const b=(x,y,z,w,h,d,c,parent=activeParent,rotation)=>shape('box',x,y,z,w,h,d,c,parent,rotation);
+  const c=(x,y,z,r,h,color,parent=activeParent)=>shape('cyl',x,y,z,r,h,r,color,parent);
+  function tree(x,z,size=1,parent=activeParent){c(x,.45*size,z,.07*size,.9*size,DUBLIN_PALETTE.trunk,parent);shape('sphere',x,1.1*size,z,.55*size,.7*size,.55*size,DUBLIN_PALETTE.leaf,parent);}
+  function roof(x,y,z,w,d,color=DUBLIN_PALETTE.dark){shape('roof',x,y+.35,z,w*.74,.7,d*.74,color);}
+  function building(x,z,w,d,h,color=DUBLIN_PALETTE.brick,parent=activeParent){b(x,h/2,z,w,h,d,color,parent);b(x,h+.07,z,w+.15,.14,d+.15,DUBLIN_PALETTE.dark,parent);for(let row=.45;row<h-.15;row+=.6)for(let col=-w/2+.35;col<w/2;col+=.65)b(x+col,row,z+d/2+.018,.3,.35,.035,DUBLIN_PALETTE.glass,parent);}
+  function columns(x,z,count,width,h=1.5){for(let i=0;i<count;i++)c(x-width/2+i*width/(count-1),h/2,z,.11,h,DUBLIN_PALETTE.cream);b(x,h+.08,z,width+.45,.16,.65,DUBLIN_PALETTE.cream);}
   function line(points,color,radius=.035){const curve=new THREE.CatmullRomCurve3(points.map(p=>new THREE.Vector3(p[0]+origin[0],p[1]+origin[1],p[2]+origin[2])));const mesh=new THREE.Mesh(new THREE.TubeGeometry(curve,32,radius,5,false),new THREE.MeshStandardMaterial({color,roughness:.65}));world.add(mesh);}
-  function water(x,z,w,d){b(x,.205,z,w,.035,d,'#6aa9bf');for(let i=0;i<4;i++)b(x-w*.3+i*w*.2,.228,z+Math.sin(i*3)*d*.25,w*.1,.005,.025,'#a3cad5');}
-  function park(w,d,pond=false){b(0,.23,0,w,.06,d,'#78a963');b(0,.27,0,w-.6,.025,.45,'#ded4b9');b(0,.27,0,.45,.025,d-.6,'#ded4b9');for(const x of [-w*.36,w*.36])for(const z of [-d*.32,0,d*.32])tree(x,z,1.15);if(pond)water(w*.2,-d*.22,w*.36,d*.3);for(const x of [-w*.22,w*.22]){b(x,.5,d*.2,1.1,.13,.35,'#735744');b(x,.7,d*.34,1.1,.4,.08,'#735744');}}
+  function water(x,z,w,d){b(x,.205,z,w,.035,d,DUBLIN_PALETTE.waterDark);for(let i=0;i<4;i++)b(x-w*.3+i*w*.2,.228,z+Math.sin(i*3)*d*.25,w*.1,.005,.025,DUBLIN_PALETTE.glass);}
+  function park(w,d,pond=false){b(0,.23,0,w,.06,d,DUBLIN_PALETTE.lawn);b(0,.27,0,w-.6,.025,.45,DUBLIN_PALETTE.pavement);b(0,.27,0,.45,.025,d-.6,DUBLIN_PALETTE.pavement);for(const x of [-w*.36,w*.36])for(const z of [-d*.32,0,d*.32])tree(x,z,1.15);if(pond)water(w*.2,-d*.22,w*.36,d*.3);for(const x of [-w*.22,w*.22]){b(x,.5,d*.2,1.1,.13,.35,DUBLIN_PALETTE.trunk);b(x,.7,d*.34,1.1,.4,.08,DUBLIN_PALETTE.trunk);}}
   function bridge(x,type){
     origin=[x,.24,0];
-    b(0,.2,0,type==='harpBridge'?1.8:1.05,.16,4.8,'#e8e6d9');
+    b(0,.2,0,type==='harpBridge'?1.8:1.05,.16,4.8,DUBLIN_PALETTE.white);
     if(type==='archBridge')for(const side of [-.53,.53]){
-      line([[side,.3,-2.4],[side,.9,-1.2],[side,1.05,0],[side,.9,1.2],[side,.3,2.4]],'#f5f3e8',.055);
-      for(let z=-2.2;z<=2.2;z+=.35)b(side,.5+(.3*(1-Math.abs(z)/2.4)),z,.035,.55,.035,'#ecebe1');
+      line([[side,.3,-2.4],[side,.9,-1.2],[side,1.05,0],[side,.9,1.2],[side,.3,2.4]],DUBLIN_PALETTE.white,.055);
+      for(let z=-2.2;z<=2.2;z+=.35)b(side,.5+(.3*(1-Math.abs(z)/2.4)),z,.035,.55,.035,DUBLIN_PALETTE.white);
     }
     else if(type==='harpBridge'){
-      line([[.8,.3,1.5],[.8,2.1,.6],[.8,4,-.7],[.8,4.6,-2.1]],'#e8e9e2',.14);
-      for(let i=0;i<9;i++){const z=-2.1+i*.5;line([[.8,4.2,-1.8],[.8,.34,z]],'#f4f4ef',.018);}
-    }else for(const side of [-.5,.5])b(side,.55,0,.07,.55,4.7,'#adaca0');
+      line([[.8,.3,1.5],[.8,2.1,.6],[.8,4,-.7],[.8,4.6,-2.1]],DUBLIN_PALETTE.white,.14);
+      for(let i=0;i<9;i++){const z=-2.1+i*.5;line([[.8,4.2,-1.8],[.8,.34,z]],DUBLIN_PALETTE.white,.018);}
+    }else for(const side of [-.5,.5])b(side,.55,0,.07,.55,4.7,DUBLIN_PALETTE.road);
     origin=[0,0,0];
   }
 
-  b(0,-.15,0,450,.12,450,'#9bb38b');
-  b(-1,.06,-7,84,.25,80,'#b8c7a2');
-  b(-1,.2,-22,83,.018,47,'#c4c7ad');b(-1,.2,18,83,.018,30,'#cccfb8');
+  b(0,-.15,0,450,.12,450,DUBLIN_PALETTE.backdrop);
+  b(-1,.06,-7,84,.25,80,DUBLIN_PALETTE.ground);
+  b(-1,.2,-22,83,.018,47,DUBLIN_PALETTE.groundLight);b(-1,.2,18,83,.018,30,DUBLIN_PALETTE.groundLight);
   water(-1,0,84,4.5);water(64,4,48,68);
-  for(const z of [-2.9,2.9]){b(-1,.26,z,83,.06,.55,'#d9d4c3');b(-1,.235,z+(z<0?-.75:.75),83,.03,.95,'#737d82');}
-  for(const z of [-31,-18,-6,5,15,32])b(-1,.24,z,82,.035,.75,'#89918b');
-  for(const x of [-40,-25,-9,2,14,22,39])for(const [z,d] of [[-19,29],[19,28]])b(x,.24,z,.65,.035,d,'#89918b');
+  for(const z of [-2.9,2.9]){b(-1,.26,z,83,.06,.55,DUBLIN_PALETTE.pavement);b(-1,.235,z+(z<0?-.75:.75),83,.03,.95,DUBLIN_PALETTE.roadDark);}
+  for(const z of [-31,-18,-6,5,15,32])b(-1,.24,z,82,.035,.75,DUBLIN_PALETTE.road);
+  for(const x of [-40,-25,-9,2,14,22,39])for(const [z,d] of [[-19,29],[19,28]])b(x,.24,z,.65,.035,d,DUBLIN_PALETTE.road);
   // O'Connell Street and the river quays make the city readable at a glance.
-  b(2,.245,-11,1.7,.035,18,'#80888a');b(2,.266,-11,.16,.025,18,'#adbca0');
-  for(const z of [-3.65,3.65])for(let x=-38;x<40;x+=2)b(x,.26,z,.8,.015,.035,'#e0dfcf');
+  b(2,.245,-11,1.7,.035,18,DUBLIN_PALETTE.roadDark);b(2,.266,-11,.16,.025,18,DUBLIN_PALETTE.lawnLight);
+  for(const z of [-3.65,3.65])for(let x=-38;x<40;x+=2)b(x,.26,z,.8,.015,.035,DUBLIN_PALETTE.white);
   for(const x of dublinBridges)bridge(x,x===-5?'archBridge':x===30?'harpBridge':'plain');
   // An illustrative Luas line along the north quays.
-  for(const z of [-5,-4.75])b(-3,.278,z,69,.025,.03,'#5a6266');
-  b(-7,.58,-4.86,3.5,.6,.5,'#73549b');b(-7,.84,-4.86,3.6,.06,.55,'#d8dedb');b(-7,.64,-4.59,3.1,.28,.025,'#bdcfd3');
+  for(const z of [-5,-4.75])b(-3,.278,z,69,.025,.03,DUBLIN_PALETTE.roadDark);
+  b(-7,.58,-4.86,3.5,.6,.5,'#73549b');b(-7,.84,-4.86,3.6,.06,.55,DUBLIN_PALETTE.white);b(-7,.64,-4.59,3.1,.28,.025,DUBLIN_PALETTE.glassMid);
 
   const places=[];
   for(const lot of dublinLots){
     places.push({...lot});if(lot.kind.endsWith('Bridge'))continue;
-    const {w,d,kind}=lot;origin=[lot.x,.26,lot.z];
-    b(0,0,0,w,.035,d,['park','green'].includes(kind)?'#85ad6b':'#dedbcb');
+    const {w,d,kind}=lot;origin=[lot.x,.26,lot.z];activeParent=landmarks;activeLotId=lot.id;
+    b(0,0,0,w,.035,d,['park','green'].includes(kind)?DUBLIN_PALETTE.lawn:DUBLIN_PALETTE.pavement);
     if(kind==='airport'){
-      b(0,.05,-2.7,23,.04,1.4,'#535c60');for(let x=-10;x<11;x+=1.5)b(x,.078,-2.7,.7,.012,.055,'#f1efe6');
-      building(0,1.3,10,2.5,1.3,'#dadfd9');b(0,.7,2.57,8,.5,.025,'#8bb5c8');c(-7,1.1,1.3,.28,2.2,'#dbdcd1');b(-7,2.4,1.3,1,.6,.9,'#9fc6d0');
-      for(const x of [-7,-2,3,8]){b(x,.48,-.3,.22,.22,1.8,'#f2f2e7');b(x,.48,-.6,1.8,.04,.42,'#f2f2e7');b(x,.65,.4,.06,.4,.4,'#299479');}
+      b(0,.05,-2.7,23,.04,1.4,DUBLIN_PALETTE.roadDark);for(let x=-10;x<11;x+=1.5)b(x,.078,-2.7,.7,.012,.055,DUBLIN_PALETTE.white);
+      building(0,1.3,10,2.5,1.3,DUBLIN_PALETTE.cream);b(0,.7,2.57,8,.5,.025,DUBLIN_PALETTE.glass);c(-7,1.1,1.3,.28,2.2,DUBLIN_PALETTE.cream);b(-7,2.4,1.3,1,.6,.9,DUBLIN_PALETTE.glass);
+      for(const x of [-7,-2,3,8]){b(x,.48,-.3,.22,.22,1.8,DUBLIN_PALETTE.white);b(x,.48,-.6,1.8,.04,.42,DUBLIN_PALETTE.white);b(x,.65,.4,.06,.4,.4,DUBLIN_PALETTE.leaf);}
     }else if(kind==='park'||kind==='green')park(w-.2,d-.2,kind==='green');
     else if(kind==='spire'){c(0,2.1,0,.11,4.2,'#b1bcc1');shape('cone',0,6.15,0,.11,4.1,.11,'#cbd1d3');c(0,.035,0,1.2,.08,'#e0dcca');}
     else if(kind==='stadium'){
-      shape('cyl',0,1.1,0,w*.47,2.2,d*.46,'#ccd5cf');shape('cyl',0,1.2,0,w*.4,2.25,d*.37,'#486657');b(0,2.35,0,w*.58,.035,d*.47,'#6caa68');b(0,2.38,0,.045,.02,d*.47,'#f4f3e5');
+      shape('cyl',0,1.1,0,w*.47,2.2,d*.46,DUBLIN_PALETTE.cream);shape('cyl',0,1.2,0,w*.4,2.25,d*.37,DUBLIN_PALETTE.leafDark);b(0,2.35,0,w*.58,.035,d*.47,DUBLIN_PALETTE.lawn);b(0,2.38,0,.045,.02,d*.47,DUBLIN_PALETTE.white);
       for(const x of [-w*.26,w*.26]){b(x,2.6,0,.06,.48,1.2,'#eae9da');b(x,2.85,0,.12,.05,1.2,'#eae9da');}for(const x of [-w*.38,w*.38])for(const z of [-d*.38,d*.38]){c(x,1.6,z,.045,3.2,'#8e9b9e');b(x,3.25,z,.65,.15,.25,'#fff4c9');}
     }else if(kind==='classical'||kind==='custom'){
       building(0,-.5,w*.85,d*.62,1.7,'#d8d1bb');columns(0,d*.3,kind==='custom'?10:6,w*.78,1.6);roof(0,1.8,-.5,w*.9,d*.65);
       if(kind==='custom'){b(0,2.1,-.5,1.35,1.3,1.35,'#dfd7bc');shape('sphere',0,2.95,-.5,.8,.8,.8,'#748e86');c(0,3.65,-.5,.08,.7,'#d4d9ce');}
     }else if(kind==='convention'){
-      building(-.5,-.3,4,2.9,3,'#d9d6c9');shape('cyl',.7,1.9,.7,1.1,3.5,1.1,'#83b0c1',world,[0,0,-.2]);for(const y of [.5,1,1.5,2,2.5,3])b(.5,y,1.73,1.8,.04,.035,'#dfebe6');
+      building(-.5,-.3,4,2.9,3,DUBLIN_PALETTE.cream);shape('cyl',.7,1.9,.7,1.1,3.5,1.1,DUBLIN_PALETTE.glassMid,world,[0,0,-.2]);for(const y of [.5,1,1.5,2,2.5,3])b(.5,y,1.73,1.8,.04,.035,DUBLIN_PALETTE.white);
     }else if(kind==='castle'){
-      building(0,-1,5,2,2,'#b59788');c(-2,1.4,1,1,2.8,'#929b95');for(let i=0;i<8;i++){const a=i/8*Math.PI*2;b(-2+Math.cos(a)*.8,2.9,1+Math.sin(a)*.8,.27,.38,.27,'#a7afa5');}b(.7,.04,1,3,.035,2,'#a6bb8c');
+      building(0,-1,5,2,2,DUBLIN_PALETTE.brickLight);c(-2,1.4,1,1,2.8,DUBLIN_PALETTE.leafDark);for(let i=0;i<8;i++){const a=i/8*Math.PI*2;b(-2+Math.cos(a)*.8,2.9,1+Math.sin(a)*.8,.27,.38,.27,DUBLIN_PALETTE.leaf);}b(.7,.04,1,3,.035,2,DUBLIN_PALETTE.lawn);
     }else if(kind==='cathedral'){
-      building(0,-.3,w*.3,d*.85,1.5,'#b0b0a0');roof(0,1.6,-.3,w*.4,d*.9,'#697171');building(0,0,w*.75,d*.3,1.3,'#b0b0a0');roof(0,1.5,0,w*.8,d*.4,'#697171');building(-w*.25,-d*.25,1.3,1.4,lot.h-.5,'#b5b4a3');shape('cone',-w*.25,lot.h-.15,-d*.25,.9,.7,.9,'#6c7477');
+      building(0,-.3,w*.3,d*.85,1.5,DUBLIN_PALETTE.cream);roof(0,1.6,-.3,w*.4,d*.9,DUBLIN_PALETTE.dark);building(0,0,w*.75,d*.3,1.3,DUBLIN_PALETTE.cream);roof(0,1.5,0,w*.8,d*.4,DUBLIN_PALETTE.dark);building(-w*.25,-d*.25,1.3,1.4,lot.h-.5,DUBLIN_PALETTE.cream);shape('cone',-w*.25,lot.h-.15,-d*.25,.9,.7,.9,DUBLIN_PALETTE.darkBlue);
     }else if(kind==='guinness'){
       building(0,0,6,4,2.8,'#9a6451');building(-3,-1,1.7,3.6,2.1,'#b58166');c(0,3.05,0,1.45,.7,'#8daeb4');c(0,3.45,0,1.6,.12,'#394849');for(const x of [-2,2])c(x,2.6,-2.2,.15,2.6,'#a67359');
     }else if(kind==='college'){
-      b(0,.02,0,8,.04,5.4,'#8dab75');building(0,-3,8.8,1.3,1.6,'#c4baa2');building(-4.2,.2,1.3,5,1.6,'#c4baa2');building(4.2,.2,1.3,5,1.6,'#c4baa2');columns(0,3,8,7,1.5);b(0,.03,0,.5,.035,6,'#ded7c4');
-      c(0,1.2,-.4,.32,2.4,'#d3ccbb');b(0,2.4,-.4,.8,.2,.8,'#d3ccbb');shape('cone',0,2.85,-.4,.6,.7,.6,'#647d70');for(const x of [-2.5,2.5])tree(x,1,1);
+      const s=Math.min(w/11,d/9);
+      b(0,.02*s,0,8*s,.04*s,5.4*s,DUBLIN_PALETTE.lawn);building(0,-3*s,8.8*s,1.3*s,1.6*s,DUBLIN_PALETTE.cream);building(-4.2*s,.2*s,1.3*s,5*s,1.6*s,DUBLIN_PALETTE.cream);building(4.2*s,.2*s,1.3*s,5*s,1.6*s,DUBLIN_PALETTE.cream);columns(0,3*s,8,7*s,1.5*s);b(0,.03*s,0,.5*s,.035*s,6*s,DUBLIN_PALETTE.pavement);
+      c(0,1.2*s,-.4*s,.32*s,2.4*s,DUBLIN_PALETTE.cream);b(0,2.4*s,-.4*s,.8*s,.2*s,.8*s,DUBLIN_PALETTE.cream);shape('cone',0,2.85*s,-.4*s,.6*s,.7*s,.6*s,DUBLIN_PALETTE.leafDark);for(const x of [-2.5,2.5])tree(x*s,s,s);
     }else if(kind==='dock'){
-      water(-1,0,6.6,5.6);b(-1,.29,-3,7.1,.06,.4,'#bdb29a');building(4,-.3,2,6,2.7,'#8ea6ad');b(4,1.5,2.73,1.7,1.8,.025,'#bbd5d5');building(-4.3,0,1.9,6,2,'#b5a793');b(-1.5,.5,0,2,.3,.7,'#f1eada');b(-1.3,.72,0,.8,.3,.58,'#8fa8b0');
-    }else if(kind==='station'){building(0,.8,6,2,1.9,'#c9bda7');roof(0,2,.8,6.3,2.3);for(const x of [-2,-1,0,1,2]){b(x,.06,-1, .15,.025,3,'#67746f');b(x+.25,.06,-1,.15,.025,3,'#67746f');}b(-.2,.55,-1.2,2.5,.7,.6,'#4d8e75');}
+      water(-1,0,6.6,5.6);b(-1,.29,-3,7.1,.06,.4,DUBLIN_PALETTE.cream);building(4,-.3,2,6,2.7,DUBLIN_PALETTE.glassMid);b(4,1.5,2.73,1.7,1.8,.025,DUBLIN_PALETTE.glass);building(-4.3,0,1.9,6,2,DUBLIN_PALETTE.cream);b(-1.5,.5,0,2,.3,.7,DUBLIN_PALETTE.white);b(-1.3,.72,0,.8,.3,.58,DUBLIN_PALETTE.glassMid);
+    }else if(kind==='station'){building(0,.8,6,2,1.9,DUBLIN_PALETTE.cream);roof(0,2,.8,6.3,2.3);for(const x of [-2,-1,0,1,2]){b(x,.06,-1, .15,.025,3,DUBLIN_PALETTE.roadDark);b(x+.25,.06,-1,.15,.025,3,DUBLIN_PALETTE.roadDark);}b(-.2,.55,-1.2,2.5,.7,.6,DUBLIN_PALETTE.pubGreen);}
     else if(kind==='warehouse'){building(0,0,7,3,1.25,'#9c775c');roof(0,1.3,0,7.3,3.4);}
     else if(kind==='pub'||kind==='shoppingStreet'){
       const colors=kind==='pub'?['#963e3a','#3b7057','#b78244']:['#ae7053','#d5b495','#788478'];
-      for(let i=0;i<3;i++){const x=(i-1)*w*.28;building(x,-.5,w*.27,d*.55,1.5+(i%2)*.4,colors[i]);b(x,.3,d*.21,w*.23,.55,.06,i===0&&kind==='pub'?'#c85446':'#304943');b(x,.65,d*.27,w*.27,.15,.3,'#e9d6ae');roof(x,1.7,-.5,w*.28,d*.6);}
+      for(let i=0;i<3;i++){const x=(i-1)*w*.28;building(x,-.5,w*.27,d*.55,1.5+(i%2)*.4,colors[i]);b(x,.3,d*.21,w*.23,.55,.06,i===0&&kind==='pub'?DUBLIN_PALETTE.pubRed:DUBLIN_PALETTE.darkBlue);b(x,.65,d*.27,w*.27,.15,.3,DUBLIN_PALETTE.cream);roof(x,1.7,-.5,w*.28,d*.6);}
       if(kind==='pub'){b(0,.2,d*.38,1.2,.08,.7,'#735240');for(const x of [-1,1])c(x,.3,d*.37,.25,.55,'#765b43');}
+    }else if(kind==='hospital'){
+      building(-w*.2,-.35,w*.42,d*.56,2.25,DUBLIN_PALETTE.white);building(w*.22,-.25,w*.42,d*.66,1.75,DUBLIN_PALETTE.cream);
+      b(-w*.2,2.28,-.35,w*.44,.12,d*.59,DUBLIN_PALETTE.glassMid);b(0,1.25,d*.34,1.05,.16,.05,DUBLIN_PALETTE.pubRed);b(0,1.25,d*.34,.18,.72,.05,DUBLIN_PALETTE.pubRed);
+    }else if(kind==='library'){
+      building(0,-.25,w*.82,d*.72,1.75,DUBLIN_PALETTE.cream);b(0,1.1,d*.37,w*.74,.46,.11,DUBLIN_PALETTE.brickLight);
+      for(let x=-w*.3;x<=w*.3;x+=.65)b(x,.86,d*.39,.1,.9,.08,DUBLIN_PALETTE.darkBlue);
+      roof(0,1.85,-.25,w*.86,d*.75,DUBLIN_PALETTE.brick);
+    }else if(kind==='office'||kind==='hotel'){
+      const towerH=Math.min(lot.h||3.2,kind==='hotel'?4.4:5.2), towerW=w*.58;
+      building(0,-.2,towerW,d*.65,towerH,kind==='hotel'?DUBLIN_PALETTE.cream:DUBLIN_PALETTE.glassMid);
+      for(let y=.5;y<towerH-.2;y+=.48)b(0,y,d*.33,towerW*.84,.07,.05,DUBLIN_PALETTE.glass);
+      b(0,towerH+.15,-.2,towerW*.82,.18,d*.8,kind==='hotel'?DUBLIN_PALETTE.brick:DUBLIN_PALETTE.dark);
+      if(kind==='hotel')b(0,.06,d*.46,w*.5,.05,.48,DUBLIN_PALETTE.water);
+    }else if(kind==='cafe'){
+      building(0,-.25,w*.76,d*.64,1.55,DUBLIN_PALETTE.brickLight);roof(0,1.6,-.25,w*.8,d*.68,DUBLIN_PALETTE.dark);
+      b(0,.95,d*.33,w*.62,.55,.06,DUBLIN_PALETTE.glassMid);b(0,.53,d*.39,w*.68,.17,.38,DUBLIN_PALETTE.pubRed);
+      for(const x of [-w*.25,0,w*.25]){b(x,.12,d*.4,.55,.05,.42,DUBLIN_PALETTE.trunk);c(x,.31,d*.4,.035,.38,DUBLIN_PALETTE.trunk);}
+    }else if(kind==='market'){
+      building(0,-.35,w*.8,d*.43,.8,DUBLIN_PALETTE.cream);roof(0,.85,-.35,w*.84,d*.47,DUBLIN_PALETTE.brick);
+      for(let x=-w*.32;x<=w*.32;x+=w*.32){b(x,.52,d*.05,w*.23,.7,.08,[DUBLIN_PALETTE.pubRed,DUBLIN_PALETTE.pubGreen,DUBLIN_PALETTE.gold][Math.round((x/w+.32)*3)%3]);b(x,.18,d*.4,.8,.3,.48,DUBLIN_PALETTE.trunk);}
+    }else if(kind==='theatre'||kind==='cinema'){
+      building(0,-.3,w*.84,d*.7,2.1,kind==='theatre'?DUBLIN_PALETTE.brick:DUBLIN_PALETTE.darkBlue);
+      b(0,1.65,d*.37,w*.72,.35,.08,DUBLIN_PALETTE.pubRed);b(0,1.66,d*.42,w*.56,.12,.025,DUBLIN_PALETTE.gold);
+      for(const x of [-w*.28,w*.28])b(x,.85,d*.37,.3,.8,.05,DUBLIN_PALETTE.glassMid);
+      if(kind==='theatre')for(const x of [-w*.3,-w*.15,0,w*.15,w*.3])c(x,2.35,-.3,.12,.3,DUBLIN_PALETTE.gold);
+    }else if(kind==='gym'){
+      building(0,-.2,w*.84,d*.7,1.4,DUBLIN_PALETTE.glassMid);b(0,.95,d*.36,w*.78,.23,.06,DUBLIN_PALETTE.white);
+      b(0,.06,-d*.12,w*.72,.035,d*.3,DUBLIN_PALETTE.lawn);b(0,.085,-d*.12,.035,.015,d*.28,DUBLIN_PALETTE.white);
+    }else if(kind==='museum'){
+      building(0,-.35,w*.86,d*.58,1.65,DUBLIN_PALETTE.white);columns(0,d*.23,5,w*.72,1.45);roof(0,1.78,-.35,w*.9,d*.62,DUBLIN_PALETTE.darkBlue);
+      b(0,.55,d*.31,w*.38,.72,.045,DUBLIN_PALETTE.glassMid);
     }else{
-      const color=lot.id==='dubNaija'?'#519075':kind==='civic'?'#bfbcab':'#a3765b';building(0,-.2,w*.8,d*.65,lot.h-.2,color);b(0,.45,d*.28,w*.68,.55,.04,'#44676f');b(0,.84,d*.31,w*.78,.16,.25,lot.id==='dubLidl'?'#eed455':lot.id==='dubTesco'?'#d4524a':'#eee5ca');
+      const color=lot.id==='dubNaija'?DUBLIN_PALETTE.pubGreen:kind==='civic'?DUBLIN_PALETTE.cream:DUBLIN_PALETTE.brick;building(0,-.2,w*.8,d*.65,lot.h-.2,color);b(0,.45,d*.28,w*.68,.55,.04,DUBLIN_PALETTE.glassDark);b(0,.84,d*.31,w*.78,.16,.25,lot.id==='dubLidl'?DUBLIN_PALETTE.gold:lot.id==='dubTesco'?DUBLIN_PALETTE.pubRed:DUBLIN_PALETTE.cream);
     }
-    if(!['park','green','spire','stadium'].includes(kind))textSurface(lot.name.toUpperCase(),'#fff',Math.min(w*.65,4.8),world,lot.x,1+origin[1],lot.z+d*.45,false,kind==='pub'?'#87382e':'#28564b');
+    if(!['park','green','spire','stadium'].includes(kind))textSurface(lot.name.toUpperCase(),DUBLIN_PALETTE.white,Math.min(w*.65,4.8),landmarks,lot.x,1+origin[1],lot.z+d*.45,false,kind==='pub'?DUBLIN_PALETTE.pubRed:DUBLIN_PALETTE.hedge);
     origin=[0,0,0];
+    activeParent=world;activeLotId=null;
   }
   // Georgian terraces: coloured doors, slate roofs, chimneys and tiny gardens.
   let houses=0;
+  function lotClear(x,z,w,d,pad=0){
+    return !dublinLots.some(lot=>Math.abs(x-lot.x)<(w+lot.w)/2+pad&&Math.abs(z-lot.z)<(d+lot.d)/2+pad);
+  }
   function terrace(x,z,color){
-    b(x,.27,z,1.7,.06,2.7,'#ded9c7',homes);building(x,z,1.5,1.8,1.65,color,homes);shape('roof',x,2,z,1.15,.7,1.4,'#626a6c',homes);b(x+.45,2.25,z-.35,.2,.6,.2,'#a9765d',homes);b(x,.54,z+.92,.3,.68,.04,['#295f74','#a44132','#436748','#ceab58'][houses%4],homes);b(x,.33,z+1.2,1.4,.08,.48,'#8dae76',homes);houses++;
+    if(!lotClear(x,z,1.7,2.7,.12))return;
+    b(x,.27,z,1.7,.06,2.7,DUBLIN_PALETTE.pavement,homes);building(x,z,1.5,1.8,1.65,color,homes);shape('roof',x,2,z,1.15,.7,1.4,DUBLIN_PALETTE.dark,homes);b(x+.45,2.25,z-.35,.2,.6,.2,DUBLIN_PALETTE.brick,homes);b(x,.54,z+.92,.3,.68,.04,[DUBLIN_PALETTE.glassDark,DUBLIN_PALETTE.pubRed,DUBLIN_PALETTE.pubGreen,DUBLIN_PALETTE.gold][houses%4],homes);b(x,.33,z+1.2,1.4,.08,.48,DUBLIN_PALETTE.lawn,homes);houses++;
   }
   for(let row=0;row<3;row++)for(let col=0;col<10;col++)terrace(18+col*2,-33+row*2.9,['#b08a69','#b07761','#c0a186'][col%3]);
   for(let row=0;row<2;row++)for(let col=0;col<10;col++)terrace(-38+col*1.95,26+row*3,['#b28462','#bc9678','#a8755b'][col%3]);
   for(let row=0;row<3;row++)for(let col=0;col<8;col++)terrace(-39+col*2,-31+row*3,['#a97d65','#c2a487','#af8a70'][col%3]);
-  for(let i=0;i<24;i++)tree(-38+i*3.2,i%2?-3:3,.65);
-  for(const [x,z] of [[-39,-14],[-24,-26],[-9,-30],[10,-18],[20,-29],[38,19],[-9,21],[15,29],[24,29]])tree(x,z,1.2);
+  // A short north-edge terrace row fills an open residential strip while the
+  // lotClear guard keeps every house off selectable landmark footprints.
+  for(let col=0;col<8;col++)terrace(5+col*2,-38.5,['#b77a59','#c58a63','#a96d55'][col%3]);
+  for(let i=0;i<24;i++){const x=-38+i*3.2,z=i%2?-3:3;if(lotClear(x,z,.8,.8,.35))tree(x,z,.65);}
+  for(const [x,z] of [[-39,-14],[-24,-26],[-9,-30],[10,-18],[20,-29],[38,19],[-9,21],[15,29],[24,29]])if(lotClear(x,z,1.5,1.5,.35))tree(x,z,1.2);
   // Yellow Dublin buses and small cars parked along the quays.
-  for(const [x,z] of [[-19,3.6],[9,-3.6],[24,3.6]]){b(x,.57,z,1.7,.65,.6,'#e5c751');b(x,.87,z,1.7,.08,.65,'#d6d9c3');b(x,.62,z+.32,1.4,.32,.025,'#516f7b');}
-  for(let i=0;i<16;i++){const x=-36+i*4.6,z=i%2?-6:5;b(x,.45,z,.8,.4,.44,['#afbeac','#e6e3d6','#58716f'][i%3]);b(x,.6,z,.4,.16,.4,'#78949a');}
+  for(const [x,z] of [[-19,3.6],[9,-3.6],[24,3.6]]){b(x,.57,z,1.7,.65,.6,DUBLIN_PALETTE.gold);b(x,.87,z,1.7,.08,.65,DUBLIN_PALETTE.cream);b(x,.62,z+.32,1.4,.32,.025,DUBLIN_PALETTE.glassDark);}
+  for(let i=0;i<16;i++){const x=-36+i*4.6,z=i%2?-6:5;b(x,.45,z,.8,.4,.44,[DUBLIN_PALETTE.cream,DUBLIN_PALETTE.white,DUBLIN_PALETTE.leafDark][i%3]);b(x,.6,z,.4,.16,.4,DUBLIN_PALETTE.glassMid);}
   for(const [text,x,z,w] of [['RIVER LIFFEY',-15,0,9],['DUBLIN BAY',53,15,11],['NORTHSIDE',-14,-33,8],['CITY CENTRE',-3,31,8],['DOCKLANDS',28,19,8]])textSurface(text,text==='RIVER LIFFEY'||text==='DUBLIN BAY'?'#d8edf0':'#7f8e70',w,world,x,.3,z);
   for(const [x,z] of [[-22,-4],[22,5],[-22,31]]){
     b(x,1.5,z,3.4,1.4,.1,'#253930',boards);for(const dx of [-1.2,1.2])b(x+dx,.75,z,.07,1.5,.07,'#253930',boards);
@@ -159,8 +168,10 @@ export function buildDublin({textSurface}) {
   for(const {parent,type,cast,items} of batches.values()){
     const mesh=new THREE.InstancedMesh(geometry[type],material,items.length),temp=new THREE.Object3D();
     items.forEach((item,i)=>{temp.position.set(...item.p);temp.scale.set(...item.s);temp.rotation.set(...item.rotation);temp.updateMatrix();mesh.setMatrixAt(i,temp.matrix);mesh.setColorAt(i,new THREE.Color(item.color));});
+    mesh.userData.category=parent===homes?'homes':parent===landmarks?'landmarks':'environment';
+    mesh.userData.lotIds=[...new Set(items.map(item=>item.lotId).filter(Boolean))];
     mesh.castShadow=cast;mesh.receiveShadow=true;mesh.computeBoundingSphere();parent.add(mesh);
   }
-  world.visible=false;world.userData.houses=houses;
-  return {world,homes,boards,places,isLand:isDublinLand};
+  world.visible=false;world.userData.houses=houses;world.userData.palette=DUBLIN_PALETTE;world.userData.lotCount=places.length;world.userData.batchCount=batches.size;world.userData.landmarks=landmarks;
+  return {world,homes,landmarks,boards,places,isLand:isDublinLand};
 }
