@@ -11,3 +11,9 @@ Map layout and visual reference: Lagos Life. Generic models by Kenney as distrib
 Run `npm install` and `npm run build` to rebuild `dist/map.js`. Serve `dist/` through an HTTP server; for example `python3 -m http.server 5173 --directory dist`. Open http://127.0.0.1:5173/ .
 
 The browser tools `list_map_places` and `focus_map_place` register where WebMCP is supported. All interaction state is local to the page.
+
+## Abuja extension
+
+Abuja is connected to Lagos through the city selector, matching the reference’s separate city views. The Abuja map includes 69 selectable landmarks, 355 scenery houses, the exact road and roundabout coordinates, Jabi Lake, Aso Rock, Zuma Rock, government buildings, parks, and an airport. The landmark geometry and neighbourhood placement are adapted from numeric public reference descriptors; the airport planes and billboards are simplified. Display options work across both cities, and landmark focus switches to the appropriate city. Camera positions are preserved when switching. Open `?city=abuja` to start in Abuja.
+
+This remains a standalone map explorer, without the original game’s accounts, travel simulation, or progress.

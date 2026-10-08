@@ -1,0 +1,347 @@
+{
+  "abjIdu": {
+    "name": "Idu Railway Station",
+    "area": "Idu",
+    "emoji": "🚆"
+  },
+  "abjJabiPark": {
+    "name": "Jabi Motor Park",
+    "area": "Jabi",
+    "emoji": "🚌"
+  },
+  "abj345": {
+    "name": "345 Nightlife",
+    "area": "Wuse 2",
+    "emoji": "🌅"
+  },
+  "abjPlay": {
+    "name": "Play Imperial Lounge",
+    "area": "Wuse 2",
+    "emoji": "🎶"
+  },
+  "abjMoscow": {
+    "name": "Moscow Underground",
+    "area": "Wuse 2",
+    "emoji": "🧊"
+  },
+  "abjTokyo": {
+    "name": "Tokyo Nightlife",
+    "area": "Wuse 2",
+    "emoji": "🏮"
+  },
+  "abjMagicCity": {
+    "name": "Magic City",
+    "area": "Wuse 2",
+    "emoji": "🔞"
+  },
+  "abjAbujaCar": {
+    "name": "AbujaCar",
+    "area": "Kado",
+    "emoji": "🏎️"
+  },
+  "abjKefiano": {
+    "name": "Kefiano Autos",
+    "area": "Central Business District",
+    "emoji": "🚙"
+  },
+  "abjSarkinmota": {
+    "name": "Sarkinmota Autos",
+    "area": "Olusegun Obasanjo Way",
+    "emoji": "🚘"
+  },
+  "abjCentralPark": {
+    "name": "Central Park Abuja",
+    "area": "Garki",
+    "emoji": "🎯"
+  },
+  "abjCityPark": {
+    "name": "City Park",
+    "area": "Wuse 2",
+    "emoji": "🌴"
+  },
+  "abjMonoliza": {
+    "name": "Monoliza Park",
+    "area": "Area 11, Garki",
+    "emoji": "🎡"
+  },
+  "abjWTC": {
+    "name": "World Trade Center Abuja",
+    "area": "Central Business District",
+    "emoji": "🏙️"
+  },
+  "abjICC": {
+    "name": "International Conference Centre",
+    "area": "Central Business District",
+    "emoji": "🎙️"
+  },
+  "abjBarYucca": {
+    "name": "Bar Yucca",
+    "area": "Central Area",
+    "emoji": "🍹"
+  },
+  "abjBoto": {
+    "name": "BOTO",
+    "area": "Wuse 2",
+    "emoji": "🍽️"
+  },
+  "abjHavana": {
+    "name": "Havana",
+    "area": "Wuse 2",
+    "emoji": "💃🏾"
+  },
+  "abjBarracuda": {
+    "name": "Barracuda Rooftop Lounge",
+    "area": "Wuse 2",
+    "emoji": "🍣"
+  },
+  "abjPappies": {
+    "name": "Papiee's Meatro",
+    "area": "Wuse 2",
+    "emoji": "🥩"
+  },
+  "abjTulip": {
+    "name": "Tulip Bistro",
+    "area": "Wuse 2",
+    "emoji": "🌷"
+  },
+  "abjMarks": {
+    "name": "Marks at the Park",
+    "area": "Wuse 2",
+    "emoji": "🥢"
+  },
+  "abjMars": {
+    "name": "Mar's Café",
+    "area": "Wuse 2",
+    "emoji": "☕"
+  },
+  "abjPalmAve": {
+    "name": "Palm Ave",
+    "area": "Wuse 2",
+    "emoji": "🍝"
+  },
+  "abjEscape": {
+    "name": "Escape House",
+    "area": "Maitama",
+    "emoji": "🧖🏾"
+  },
+  "abjLuxeSpa": {
+    "name": "Abuja Luxe Spa",
+    "area": "Wuse 2",
+    "emoji": "💆🏾"
+  },
+  "abjEfcc": {
+    "name": "EFCC Headquarters",
+    "area": "Jabi",
+    "emoji": "🕵🏾"
+  },
+  "abjGarkiPolice": {
+    "name": "Garki Police Division",
+    "area": "Garki II",
+    "emoji": "🚓"
+  },
+  "abjGarkiMarket": {
+    "name": "Garki Market",
+    "area": "Garki",
+    "emoji": "🧺"
+  },
+  "abjFraser": {
+    "name": "Fraser Suites Abuja",
+    "area": "Central Business District",
+    "emoji": "🏨"
+  },
+  "abjEcoFitness": {
+    "name": "Ecofitness Hub",
+    "area": "Gwarinpa",
+    "emoji": "🏋🏾"
+  },
+  "abjIFitness": {
+    "name": "i-Fitness Guzape",
+    "area": "Guzape",
+    "emoji": "💪🏾"
+  },
+  "abjTrukadero": {
+    "name": "Trukadero by CityBowl",
+    "area": "Wuse 2",
+    "emoji": "🎳"
+  },
+  "abjPolo": {
+    "name": "Guards Polo Club",
+    "area": "Maitama–Asokoro",
+    "emoji": "🐎"
+  },
+  "abjNile": {
+    "name": "Nile University of Nigeria",
+    "area": "Jabi Airport Bypass",
+    "emoji": "🎓"
+  },
+  "abjBaze": {
+    "name": "Baze University",
+    "area": "Kuchigoro, Airport Road",
+    "emoji": "🏫"
+  },
+  "abjFmc": {
+    "name": "Federal Medical Centre Jabi",
+    "area": "Jabi",
+    "emoji": "🏥"
+  },
+  "abjAirport": {
+    "name": "Nnamdi Azikiwe International Airport",
+    "area": "Airport Road",
+    "emoji": "🛫"
+  },
+  "abjAsoRock": {
+    "name": "Aso Rock",
+    "area": "Three Arms Zone",
+    "emoji": "🪨"
+  },
+  "abjAssembly": {
+    "name": "National Assembly",
+    "area": "Three Arms Zone",
+    "emoji": "🏛️"
+  },
+  "abjEagleSquare": {
+    "name": "Eagle Square",
+    "area": "Central Business District",
+    "emoji": "🦅"
+  },
+  "abjMosque": {
+    "name": "Abuja National Mosque",
+    "area": "Central Business District",
+    "emoji": "🕌"
+  },
+  "abjChristianCentre": {
+    "name": "National Christian Centre",
+    "area": "Central Business District",
+    "emoji": "⛪"
+  },
+  "abjMillenniumPark": {
+    "name": "Millennium Park",
+    "area": "Maitama",
+    "emoji": "🌳"
+  },
+  "abjJabiLake": {
+    "name": "Jabi Lake Mall",
+    "area": "Jabi",
+    "emoji": "🛍️"
+  },
+  "abjWuseMarket": {
+    "name": "Wuse Market",
+    "area": "Wuse Zone 5",
+    "emoji": "🧺"
+  },
+  "abjTranscorp": {
+    "name": "Transcorp Hilton Abuja",
+    "area": "Maitama",
+    "emoji": "🏨"
+  },
+  "abjSilverbird": {
+    "name": "Silverbird Entertainment Centre",
+    "area": "Central Business District",
+    "emoji": "🎬"
+  },
+  "abjMagicLand": {
+    "name": "Magic Land",
+    "area": "Kukwaba",
+    "emoji": "🎢"
+  },
+  "abjZumaRock": {
+    "name": "Zuma Rock",
+    "area": "Madalla",
+    "emoji": "⛰️"
+  },
+  "abjUnityFountain": {
+    "name": "Unity Fountain",
+    "area": "Maitama",
+    "emoji": "⛲"
+  },
+  "abjBanex": {
+    "name": "Banex Plaza",
+    "area": "Wuse 2",
+    "emoji": "📱"
+  },
+  "abjLounge": {
+    "name": "Kryxtal Lounge",
+    "area": "Wuse 2",
+    "emoji": "🪩"
+  },
+  "abjSecretariat": {
+    "name": "Federal Secretariat",
+    "area": "Shehu Shagari Way",
+    "emoji": "🗂️"
+  },
+  "abjArtsVillage": {
+    "name": "Arts & Crafts Village",
+    "area": "Central Business District",
+    "emoji": "🎭"
+  },
+  "abjStadium": {
+    "name": "Moshood Abiola National Stadium",
+    "area": "Kukwaba",
+    "emoji": "🏟️"
+  },
+  "abjGwagwalada": {
+    "name": "Gwagwalada Market & Motor Park",
+    "area": "Gwagwalada",
+    "emoji": "🚌"
+  },
+  "abjUniAbuja": {
+    "name": "University of Abuja",
+    "area": "Gwagwalada",
+    "emoji": "🎓"
+  },
+  "abjMotors": {
+    "name": "Capital Motors",
+    "area": "Airport Road",
+    "emoji": "🚘"
+  },
+  "abjCeddi": {
+    "name": "Ceddi Plaza",
+    "area": "Central Business District",
+    "emoji": "🏬"
+  },
+  "abjNovare": {
+    "name": "Novare Central",
+    "area": "Wuse Zone 5",
+    "emoji": "🛍️"
+  },
+  "abjHospital": {
+    "name": "National Hospital Abuja",
+    "area": "Central Area",
+    "emoji": "🏥"
+  },
+  "abjGolf": {
+    "name": "IBB International Golf & Country Club",
+    "area": "Maitama",
+    "emoji": "⛳"
+  },
+  "abjCityGate": {
+    "name": "Abuja City Gate",
+    "area": "Airport Road",
+    "emoji": "🛣️"
+  },
+  "abjZoo": {
+    "name": "National Children's Park & Zoo",
+    "area": "Asokoro",
+    "emoji": "🦒"
+  },
+  "abjSupremeCourt": {
+    "name": "Supreme Court of Nigeria",
+    "area": "Three Arms Zone",
+    "emoji": "⚖️"
+  },
+  "abjTechHub": {
+    "name": "Ventures Park",
+    "area": "Maitama",
+    "emoji": "💡"
+  },
+  "abjClub": {
+    "name": "Hustle & Bustle",
+    "area": "Wuse 2",
+    "emoji": "🪩"
+  },
+  "abjRooftop": {
+    "name": "Lupita Rooftop",
+    "area": "Maitama",
+    "emoji": "🌇"
+  }
+}
