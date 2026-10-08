@@ -6,7 +6,7 @@
   "scripts": {
     "build": "esbuild src/main.js --bundle --format=esm --minify --outfile=dist/map.js",
     "check": "node --check src/main.js",
-    "test": "node tests/abuja-geometry.test.mjs"
+    "test": "node tests/abuja-geometry.test.mjs && node tests/dublin-map.test.mjs"
   },
   "dependencies": {
     "three": "^0.180.0"
