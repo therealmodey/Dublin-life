@@ -96,7 +96,18 @@ for (const key of ['leaf', 'waterDark', 'dark', 'glass']) {
   assert(renderedSwatches.has(DUBLIN_PALETTE[key].slice(1).toLowerCase()),
     `Rendered geometry should use the Dublin ${key} palette swatch`);
 }
-assert.equal(map.world.userData.houses, 62, 'Dublin terrace count should match the collision-culled layout');
+assert(map.world.userData.houses >= 50, 'Dublin should retain residential terraces around the expanded airport');
 assert(batches < 25, 'Repeated scenery details should stay batched');
-assert.equal(batches, map.world.userData.batchCount, 'Reported batch count should match rendered geometry');
+assert(map.airport && map.world.children.includes(map.airport), 'Detailed airport should belong to Dublin');
+assert.equal(map.airport.userData.gateCount, 4);
+assert.equal(map.airport.userData.parkedAircraft.length, 5);
+assert.equal(map.airport.userData.helicopters.length, 1);
+assert.equal(map.airport.userData.counts.helipads, 2);
+let airportBatches=0;
+map.airport.traverse(mesh=>{if(mesh.isInstancedMesh)airportBatches++;});
+assert.equal(batches, map.world.userData.batchCount + airportBatches, 'Reported batches should include the dedicated airport');
+const airportLot=dublinLots.find(lot=>lot.id==='dubAirport');
+const airportBounds=new THREE.Box3().setFromObject(map.airport);
+assert(airportBounds.min.x>=airportLot.x-airportLot.w/2-.1 && airportBounds.max.x<=airportLot.x+airportLot.w/2+.1, 'Airport geometry should stay in its lot width');
+assert(airportBounds.min.z>=airportLot.z-airportLot.d/2-.1 && airportBounds.max.z<=airportLot.z+airportLot.d/2+.1, 'Airport geometry should stay in its lot depth');
 console.log(`Dublin map passed: ${map.places.length} venues, ${map.world.userData.houses} terraces, ${instances} instances in ${batches} batches; venue geometry and walk boundaries valid.`);

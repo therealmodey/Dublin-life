@@ -5,6 +5,7 @@ export {DUBLIN_PALETTE, DUBLIN_BACKGROUND} from './dublin-palette.js';
 // An authored, compressed game layout. North is -Z, east is +X.
 // Irish landmarks retain their neighbourhood relationships, not survey scale.
 import {dublinLots} from './dublin-locations.js';
+import {buildDublinAirport} from './dublin-airport.js';
 export {dublinLots};
 
 export const dublinBridges = [-28,-18,-5,2,18,30];
@@ -30,7 +31,30 @@ export function buildDublin({textSurface}) {
   const c=(x,y,z,r,h,color,parent=activeParent)=>shape('cyl',x,y,z,r,h,r,color,parent);
   function tree(x,z,size=1,parent=activeParent){c(x,.45*size,z,.07*size,.9*size,DUBLIN_PALETTE.trunk,parent);shape('sphere',x,1.1*size,z,.55*size,.7*size,.55*size,DUBLIN_PALETTE.leaf,parent);}
   function roof(x,y,z,w,d,color=DUBLIN_PALETTE.dark){shape('roof',x,y+.35,z,w*.74,.7,d*.74,color);}
-  function building(x,z,w,d,h,color=DUBLIN_PALETTE.brick,parent=activeParent){b(x,h/2,z,w,h,d,color,parent);b(x,h+.07,z,w+.15,.14,d+.15,DUBLIN_PALETTE.dark,parent);for(let row=.45;row<h-.15;row+=.6)for(let col=-w/2+.35;col<w/2;col+=.65)b(x+col,row,z+d/2+.018,.3,.35,.035,DUBLIN_PALETTE.glass,parent);}
+  function building(x,z,w,d,h,color=DUBLIN_PALETTE.brick,parent=activeParent){
+    b(x,h/2,z,w,h,d,color,parent);b(x,h+.07,z,w+.15,.14,d+.15,DUBLIN_PALETTE.dark,parent);
+    const frame=color===DUBLIN_PALETTE.white||color===DUBLIN_PALETTE.cream?DUBLIN_PALETTE.cream:DUBLIN_PALETTE.dark;
+    const window=(wx,wy,wz,ww,sideways=false)=>{
+      if(sideways){
+        b(wx,wy,wz,.035,.35,ww,DUBLIN_PALETTE.glass,parent);
+        for(const side of [-1,1])b(wx,wy,wz+side*(ww/2+.018),.045,.4,.035,frame,parent);
+        b(wx,wy-.2,wz,.06,.045,ww+.08,frame,parent);b(wx,wy+.2,wz,.055,.035,ww+.04,frame,parent);
+        b(wx+.025,wy,wz,.018,.34,.025,frame,parent);
+      }else{
+        b(wx,wy,wz,ww,.35,.035,DUBLIN_PALETTE.glass,parent);
+        for(const side of [-1,1])b(wx+side*(ww/2+.018),wy,wz,.035,.4,.045,frame,parent);
+        b(wx,wy-.2,wz,ww+.08,.045,.06,frame,parent);b(wx,wy+.2,wz,ww+.04,.035,.055,frame,parent);
+        b(wx,wy,wz+.025,.025,.34,.018,frame,parent);
+      }
+    };
+    for(let row=.45;row<h-.15;row+=.6){
+      for(let col=-w/2+.35;col<w/2;col+=.65)window(x+col,row,z+d/2+.018,.3,.035,true);
+      if(w>1.35&&d>1.25){
+        for(const side of [-1,1])window(x+side*(w/2+.018),row,z,.3,true);
+        for(let col=-w/2+.4;col<w/2-.1;col+=.85)window(x+col,row,z-d/2-.018,.3,.035,true);
+      }
+    }
+  }
   function columns(x,z,count,width,h=1.5){for(let i=0;i<count;i++)c(x-width/2+i*width/(count-1),h/2,z,.11,h,DUBLIN_PALETTE.cream);b(x,h+.08,z,width+.45,.16,.65,DUBLIN_PALETTE.cream);}
   function line(points,color,radius=.035){const curve=new THREE.CatmullRomCurve3(points.map(p=>new THREE.Vector3(p[0]+origin[0],p[1]+origin[1],p[2]+origin[2])));const mesh=new THREE.Mesh(new THREE.TubeGeometry(curve,32,radius,5,false),new THREE.MeshStandardMaterial({color,roughness:.65}));world.add(mesh);}
   function water(x,z,w,d){b(x,.205,z,w,.035,d,DUBLIN_PALETTE.waterDark);for(let i=0;i<4;i++)b(x-w*.3+i*w*.2,.228,z+Math.sin(i*3)*d*.25,w*.1,.005,.025,DUBLIN_PALETTE.glass);}
@@ -64,15 +88,13 @@ export function buildDublin({textSurface}) {
   for(const z of [-5,-4.75])b(-3,.278,z,69,.025,.03,DUBLIN_PALETTE.roadDark);
   b(-7,.58,-4.86,3.5,.6,.5,'#73549b');b(-7,.84,-4.86,3.6,.06,.55,DUBLIN_PALETTE.white);b(-7,.64,-4.59,3.1,.28,.025,DUBLIN_PALETTE.glassMid);
 
-  const places=[];
+  const places=[];let airportGroup=null;
   for(const lot of dublinLots){
     places.push({...lot});if(lot.kind.endsWith('Bridge'))continue;
     const {w,d,kind}=lot;origin=[lot.x,.26,lot.z];activeParent=landmarks;activeLotId=lot.id;
-    b(0,0,0,w,.035,d,['park','green'].includes(kind)?DUBLIN_PALETTE.lawn:DUBLIN_PALETTE.pavement);
+    if(kind!=='airport')b(0,0,0,w,.035,d,['park','green'].includes(kind)?DUBLIN_PALETTE.lawn:DUBLIN_PALETTE.pavement);
     if(kind==='airport'){
-      b(0,.05,-2.7,23,.04,1.4,DUBLIN_PALETTE.roadDark);for(let x=-10;x<11;x+=1.5)b(x,.078,-2.7,.7,.012,.055,DUBLIN_PALETTE.white);
-      building(0,1.3,10,2.5,1.3,DUBLIN_PALETTE.cream);b(0,.7,2.57,8,.5,.025,DUBLIN_PALETTE.glass);c(-7,1.1,1.3,.28,2.2,DUBLIN_PALETTE.cream);b(-7,2.4,1.3,1,.6,.9,DUBLIN_PALETTE.glass);
-      for(const x of [-7,-2,3,8]){b(x,.48,-.3,.22,.22,1.8,DUBLIN_PALETTE.white);b(x,.48,-.6,1.8,.04,.42,DUBLIN_PALETTE.white);b(x,.65,.4,.06,.4,.4,DUBLIN_PALETTE.leaf);}
+      airportGroup=buildDublinAirport({lot,textSurface});world.add(airportGroup);
     }else if(kind==='park'||kind==='green')park(w-.2,d-.2,kind==='green');
     else if(kind==='spire'){c(0,2.1,0,.11,4.2,'#b1bcc1');shape('cone',0,6.15,0,.11,4.1,.11,'#cbd1d3');c(0,.035,0,1.2,.08,'#e0dcca');}
     else if(kind==='stadium'){
@@ -135,7 +157,46 @@ export function buildDublin({textSurface}) {
     }else{
       const color=lot.id==='dubNaija'?DUBLIN_PALETTE.pubGreen:kind==='civic'?DUBLIN_PALETTE.cream:DUBLIN_PALETTE.brick;building(0,-.2,w*.8,d*.65,lot.h-.2,color);b(0,.45,d*.28,w*.68,.55,.04,DUBLIN_PALETTE.glassDark);b(0,.84,d*.31,w*.78,.16,.25,lot.id==='dubLidl'?DUBLIN_PALETTE.gold:lot.id==='dubTesco'?DUBLIN_PALETTE.pubRed:DUBLIN_PALETTE.cream);
     }
-    if(!['park','green','spire','stadium'].includes(kind))textSurface(lot.name.toUpperCase(),DUBLIN_PALETTE.white,Math.min(w*.65,4.8),landmarks,lot.x,1+origin[1],lot.z+d*.45,false,kind==='pub'?DUBLIN_PALETTE.pubRed:DUBLIN_PALETTE.hedge);
+    // Small architectural cues stay inside each selectable footprint.
+    if(kind!=='airport'){
+      const front=d*.32;
+      if(['shop','pub','shoppingStreet','cafe','market'].includes(kind)){
+        const awning=kind==='pub'?DUBLIN_PALETTE.pubRed:kind==='market'?DUBLIN_PALETTE.gold:DUBLIN_PALETTE.pubGreen;
+        b(0,1.03,front+.12,Math.min(w*.72,3.5),.12,.42,awning);
+        for(let x=-Math.min(w*.34,1.5);x<=Math.min(w*.34,1.5);x+=.35)b(x,.96,front+.34,.12,.12,.045,x%0.7===0?DUBLIN_PALETTE.cream:awning);
+      }
+      if(['hospital','office','hotel','convention','station','library','museum','theatre','cinema','civic'].includes(kind)){
+        const doorW=Math.min(.42,w*.16);b(0,.42,front+.09,doorW,.78,.07,DUBLIN_PALETTE.darkBlue);
+        b(0,.84,front+.1,doorW+.12,.07,.12,DUBLIN_PALETTE.cream);
+        b(0,1.12,front+.28,Math.min(.85,w*.22),.09,.4,DUBLIN_PALETTE.cream);
+        b(0,.08,front+.28,Math.min(1.25,w*.34),.12,.46,DUBLIN_PALETTE.pavement);
+      }
+      if(['office','hotel','hospital','convention','station'].includes(kind)){
+        const roofY=(lot.h||3)+.08;
+        for(const x of [-Math.min(w*.22,1.5),Math.min(w*.22,1.5)]){
+          b(x,roofY,-.2,.48,.26,.42,DUBLIN_PALETTE.roadDark);
+          b(x,roofY+.17,-.2,.56,.06,.5,DUBLIN_PALETTE.glassMid);
+        }
+        b(0,roofY+.1,-.2,w*.55,.12,.09,DUBLIN_PALETTE.white);
+      }
+      if(kind==='pub'){
+        b(0,1.35,front+.16,Math.min(1.7,w*.42),.28,.09,DUBLIN_PALETTE.dark);
+        b(0,1.36,front+.22,Math.min(1.45,w*.35),.11,.025,DUBLIN_PALETTE.gold);
+      }
+      if(kind==='hospital'){
+        b(w*.27,.08,0,w*.38,.035,d*.42,DUBLIN_PALETTE.roadDark);
+        for(let x=w*.15;x<w*.4;x+=.42)b(x,.1,0,.18,.025,.08,DUBLIN_PALETTE.white);
+        b(0,2.48,front+.05,.5,.3,.08,DUBLIN_PALETTE.pubRed);
+      }
+      if(['park','green'].includes(kind)){
+        for(const x of [-w*.25,w*.25]){
+          b(x,.42,d*.18,1.05,.1,.32,DUBLIN_PALETTE.trunk);b(x,.67,d*.3,1.05,.38,.08,DUBLIN_PALETTE.trunk);
+          c(x-w*.09,.8,d*.3,.035,1.5,DUBLIN_PALETTE.dark);
+          b(x-w*.09,1.58,d*.3,.2,.08,.2,DUBLIN_PALETTE.gold);
+        }
+      }
+      if(!['park','green','spire','stadium'].includes(kind))textSurface(lot.name.toUpperCase(),DUBLIN_PALETTE.white,Math.min(w*.65,4.8),landmarks,lot.x,1+origin[1],lot.z+d*.45,false,kind==='pub'?DUBLIN_PALETTE.pubRed:DUBLIN_PALETTE.hedge);
+    }
     origin=[0,0,0];
     activeParent=world;activeLotId=null;
   }
@@ -143,6 +204,10 @@ export function buildDublin({textSurface}) {
   let houses=0;
   function lotClear(x,z,w,d,pad=0){
     return !dublinLots.some(lot=>Math.abs(x-lot.x)<(w+lot.w)/2+pad&&Math.abs(z-lot.z)<(d+lot.d)/2+pad);
+  }
+  // Street lamps follow the pavements and stay clear of every landmark lot.
+  for(const x of [-36,-30,-24,-18,-12,-6,0,6,12,18,24,30,36])for(const z of [-3.65,3.65])if(lotClear(x,z,.35,.35,.25)){
+    c(x,.95,z,.035,1.8,DUBLIN_PALETTE.dark);b(x,1.9,z,.22,.08,.22,DUBLIN_PALETTE.gold);
   }
   function terrace(x,z,color){
     if(!lotClear(x,z,1.7,2.7,.12))return;
@@ -156,9 +221,6 @@ export function buildDublin({textSurface}) {
   for(let col=0;col<8;col++)terrace(5+col*2,-38.5,['#b77a59','#c58a63','#a96d55'][col%3]);
   for(let i=0;i<24;i++){const x=-38+i*3.2,z=i%2?-3:3;if(lotClear(x,z,.8,.8,.35))tree(x,z,.65);}
   for(const [x,z] of [[-39,-14],[-24,-26],[-9,-30],[10,-18],[20,-29],[38,19],[-9,21],[15,29],[24,29]])if(lotClear(x,z,1.5,1.5,.35))tree(x,z,1.2);
-  // Yellow Dublin buses and small cars parked along the quays.
-  for(const [x,z] of [[-19,3.6],[9,-3.6],[24,3.6]]){b(x,.57,z,1.7,.65,.6,DUBLIN_PALETTE.gold);b(x,.87,z,1.7,.08,.65,DUBLIN_PALETTE.cream);b(x,.62,z+.32,1.4,.32,.025,DUBLIN_PALETTE.glassDark);}
-  for(let i=0;i<16;i++){const x=-36+i*4.6,z=i%2?-6:5;b(x,.45,z,.8,.4,.44,[DUBLIN_PALETTE.cream,DUBLIN_PALETTE.white,DUBLIN_PALETTE.leafDark][i%3]);b(x,.6,z,.4,.16,.4,DUBLIN_PALETTE.glassMid);}
   for(const [text,x,z,w] of [['RIVER LIFFEY',-15,0,9],['DUBLIN BAY',53,15,11],['NORTHSIDE',-14,-33,8],['CITY CENTRE',-3,31,8],['DOCKLANDS',28,19,8]])textSurface(text,text==='RIVER LIFFEY'||text==='DUBLIN BAY'?'#d8edf0':'#7f8e70',w,world,x,.3,z);
   for(const [x,z] of [[-22,-4],[22,5],[-22,31]]){
     b(x,1.5,z,3.4,1.4,.1,'#253930',boards);for(const dx of [-1.2,1.2])b(x+dx,.75,z,.07,1.5,.07,'#253930',boards);
@@ -173,5 +235,5 @@ export function buildDublin({textSurface}) {
     mesh.castShadow=cast;mesh.receiveShadow=true;mesh.computeBoundingSphere();parent.add(mesh);
   }
   world.visible=false;world.userData.houses=houses;world.userData.palette=DUBLIN_PALETTE;world.userData.lotCount=places.length;world.userData.batchCount=batches.size;world.userData.landmarks=landmarks;
-  return {world,homes,landmarks,boards,places,isLand:isDublinLand};
+  return {world,homes,landmarks,boards,places,isLand:isDublinLand,airport:airportGroup};
 }

@@ -1,6 +1,6 @@
 // Selectable locations for the compressed Dublin game map.
 export const dublinLots = [
-  ['dubAirport','Dublin Airport','Northside','✈️',-11,-39,24,10,2.8,'airport','An international airport north of the city, with a terminal, tower and runway.'],
+  ['dubAirport','Dublin Airport','Northside','✈️',-11,-40,36,12,3.4,'airport','A miniature international airport with a marked runway, taxiway, glazed terminal, boarding gates, aircraft stands and helipads.'],
   ['dubPhoenix','Phoenix Park','Northside','🦌',-32,-19,15,15,1.3,'park','A wide green park on the western side of the city.'],
   ['dubCroke','Croke Park','Northside','🏟️',15,-25,12,9,2.5,'stadium','The home of Gaelic games, with a pitch and tiered stands.'],
   ['dubSpire','The Spire','City centre','📍',0,-15,3,3,8,'spire','A slender silver landmark on O’Connell Street.'],
