@@ -1,0 +1,41 @@
+{
+  "base": "https://ireland-life.ikosam12345.workers.dev",
+  "at": "2026-10-09T09:35:27.888Z",
+  "results": [
+    {
+      "path": "/health",
+      "status": 200,
+      "type": "application/json",
+      "nosniff": null,
+      "bytes": 44
+    },
+    {
+      "path": "/_next/static/css/0f5a5c326cb590ec.css",
+      "status": 200,
+      "type": "text/css",
+      "nosniff": "nosniff",
+      "bytes": 133989
+    },
+    {
+      "path": "/_next/static/chunks/app/page-64960533a3142643.js",
+      "status": 200,
+      "type": "text/javascript",
+      "nosniff": "nosniff",
+      "bytes": 14596
+    },
+    {
+      "path": "/assets/suburban/tree-large.glb",
+      "status": 200,
+      "type": "model/gltf-binary",
+      "nosniff": "nosniff",
+      "bytes": 5812
+    },
+    {
+      "path": "/does-not-exist-verification",
+      "status": 404,
+      "type": "text/html",
+      "nosniff": "nosniff",
+      "bytes": 6211
+    }
+  ]
+}

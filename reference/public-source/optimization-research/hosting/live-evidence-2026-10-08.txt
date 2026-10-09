@@ -1,0 +1,57 @@
+Captured: 2026-10-08 15:23:24 UTC
+
+== DNS records ==
+
+-- A --
+lagoslife.eliysites.com. 195	IN	A	172.67.153.235
+lagoslife.eliysites.com. 195	IN	A	104.21.12.236
+
+-- AAAA --
+lagoslife.eliysites.com. 265	IN	AAAA	2606:4700:3036::ac43:99eb
+lagoslife.eliysites.com. 265	IN	AAAA	2606:4700:3034::6815:cec
+
+-- CNAME --
+
+-- NS --
+
+-- zone NS --
+eliysites.com.		21600	IN	NS	meilani.ns.cloudflare.com.
+eliysites.com.		21600	IN	NS	hasslo.ns.cloudflare.com.
+
+== Page response headers ==
+HTTP/2 200 
+date: Thu, 08 Oct 2026 15:23:26 GMT
+content-type: text/html; charset=utf-8
+cache-control: private, no-cache, max-age=0, must-revalidate
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+strict-transport-security: max-age=31536000
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+cf-placement: local-CDG
+content-security-policy: frame-ancestors 'self'
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-nextjs-cache: MISS
+x-nextjs-prerender: 1
+x-nextjs-stale-time: 300
+x-opennext: 1
+x-powered-by: Next.js
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=iUOeZOR3YR5xd38K3TzzB5NUOkjVYDEcyUyZpkl9Jk53ZNXED0FuVSH9j4ywPPYKyjLWK%2BGsQhDcvFWYGL9wmXFAmLKJKStiphxPUEPdl65Vgs9hnRR0oAfoLEVtE6600IgD2171PNCtvg%3D%3D"}]}
+server: cloudflare
+cf-ray: a476258c4f9e0826-CDG
+alt-svc: h3=":443"; ma=86400
+
+
+== Static asset response headers ==
+HTTP/2 200 
+date: Thu, 08 Oct 2026 15:23:27 GMT
+content-type: text/css
+cf-cache-status: HIT
+cache-control: public, max-age=31536000, immutable
+etag: "5ceede08f5f11edf33eabc347fc2615f"
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=wrcSna5DAMgISqV2gbGdgCpS8tRH4P0dhI02Cz%2Bias%2FMs88%2FomwGQCSE%2BSE2fGuj3109g1%2Fk%2F8sw5PXc91Prci4x7HP2Px0tjUly%2Fa%2Bsj%2BfZ%2BX7k25pf3rKYSey1BGCT2vuGmVUKAbT65Q%3D%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: cloudflare
+cf-ray: a47625956f616984-CDG
+alt-svc: h3=":443"; ma=86400
+

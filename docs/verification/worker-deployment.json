@@ -1,0 +1,66 @@
+{
+  "deployedAt": "2026-10-09T09:31:10.773981Z",
+  "worker": "ireland-life",
+  "accountId": "df8024971421bd4772cd3b59210ced98",
+  "url": "https://ireland-life.ikosam12345.workers.dev",
+  "versionId": "f8c3bee9-e467-47fd-9a45-cb1bdf46b553",
+  "deploymentId": "3b08110a-e855-4311-9f7d-0c63eb2a22fa",
+  "trafficPercent": 100,
+  "build": "npm run build:worker",
+  "hosting": "Cloudflare Workers Static Assets",
+  "nextMode": "static export",
+  "assetCount": 105,
+  "previewBuild": "passed",
+  "wranglerDryRun": "passed",
+  "liveChecks": {
+    "httpSmoke": {
+      "health": 200,
+      "css": 200,
+      "appJavaScript": 200,
+      "treeAsset": 200,
+      "unknownPath": 404,
+      "report": "round2-live-http.json"
+    },
+    "controls": {
+      "pages": 6,
+      "interactions": 22,
+      "errors": 0,
+      "report": "round2-live-controls/browser-report.json"
+    },
+    "camera": {
+      "cityViewportViews": 6,
+      "responsiveResizeChecks": 2,
+      "errors": 0,
+      "report": "round2-live-camera/browser-report.json"
+    },
+    "realTimePortCycle": {
+      "simulatedSeconds": 313.7209,
+      "phases": [
+        "approach",
+        "offshore",
+        "berth",
+        "transfer",
+        "depart"
+      ],
+      "allSevenBridgePassages": true,
+      "completedCargoCalls": 1,
+      "completedFerryCalls": 1,
+      "containersMoved": 1,
+      "arrivals": 2,
+      "departures": 2,
+      "errors": 0,
+      "report": "round2-live-port/browser-report.json",
+      "screenshots": [
+        "round2-live-port/cargo-transfer.png",
+        "round2-live-port/cycle-complete.png"
+      ]
+    }
+  },
+  "localPreviewServers": "stopped; ports 3100 and 3101 have no listeners",
+  "previousVersion": {
+    "versionId": "b45d4c65-fcab-48ba-a976-a783b08c0edc",
+    "deployedAt": "2026-10-09T00:15:25.315Z",
+    "historicalVerification": "docs/verification/expansion-notes.md"
+  },
+  "liveVerification": "passed"
+}

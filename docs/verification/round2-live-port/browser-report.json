@@ -1,0 +1,2596 @@
+{
+  "base": "https://ireland-life.ikosam12345.workers.dev",
+  "at": "2026-10-09T09:38:27.049Z",
+  "phases": [
+    "approach",
+    "offshore",
+    "berth",
+    "transfer",
+    "depart"
+  ],
+  "frames": [
+    {
+      "file": "cargo-transfer.png",
+      "time": 147.07779999993718,
+      "port": {
+        "paused": false,
+        "status": "Operating",
+        "time": 147.07779999993718,
+        "vessels": [
+          {
+            "id": "cargo-1",
+            "name": "Container ship",
+            "type": "cargo",
+            "phase": "depart",
+            "berth": false,
+            "progress": 0.0020812499970190856,
+            "slot": -6,
+            "x": 66.55307187492399,
+            "z": -6,
+            "length": 5.4,
+            "width": 1.35,
+            "heading": -1.5707963267948966,
+            "headingAxis": "x",
+            "riverTransit": false,
+            "routeDistance": 315.98577674212265,
+            "routeLength": 315.99642215471283,
+            "bridgePassCount": 14,
+            "nextBridgeX": null,
+            "nextBridgeStopDistance": null,
+            "requestedBridges": [],
+            "sternClearOfBridge": false
+          },
+          {
+            "id": "ferry-1",
+            "name": "Ro-Ro ferry",
+            "type": "ferry",
+            "phase": "offshore",
+            "berth": false,
+            "progress": 1,
+            "slot": -12,
+            "x": 92,
+            "z": -12,
+            "length": 4.6,
+            "width": 1.35,
+            "heading": -2.6001635550818802,
+            "headingAxis": "x",
+            "riverTransit": false,
+            "routeDistance": 0,
+            "routeLength": 324.6942558518803,
+            "bridgePassCount": 14,
+            "nextBridgeX": null,
+            "nextBridgeStopDistance": null,
+            "requestedBridges": [],
+            "sternClearOfBridge": false
+          }
+        ],
+        "activeVessels": [
+          {
+            "id": "cargo-1",
+            "name": "Container ship",
+            "type": "cargo",
+            "phase": "depart",
+            "berth": false,
+            "progress": 0.0020812499970190856,
+            "slot": -6,
+            "x": 66.55307187492399,
+            "z": -6,
+            "length": 5.4,
+            "width": 1.35,
+            "heading": -1.5707963267948966,
+            "headingAxis": "x",
+            "riverTransit": false,
+            "routeDistance": 315.98577674212265,
+            "routeLength": 315.99642215471283,
+            "bridgePassCount": 14,
+            "nextBridgeX": null,
+            "nextBridgeStopDistance": null,
+            "requestedBridges": [],
+            "sternClearOfBridge": false
+          },
+          {
+            "id": "ferry-1",
+            "name": "Ro-Ro ferry",
+            "type": "ferry",
+            "phase": "offshore",
+            "berth": false,
+            "progress": 1,
+            "slot": -12,
+            "x": 92,
+            "z": -12,
+            "length": 4.6,
+            "width": 1.35,
+            "heading": -2.6001635550818802,
+            "headingAxis": "x",
+            "riverTransit": false,
+            "routeDistance": 0,
+            "routeLength": 324.6942558518803,
+            "bridgePassCount": 14,
+            "nextBridgeX": null,
+            "nextBridgeStopDistance": null,
+            "requestedBridges": [],
+            "sternClearOfBridge": false
+          }
+        ],
+        "berthCount": 0,
+        "containersMoved": 1,
+        "completedCargo": 1,
+        "completedFerries": 0,
+        "arrivals": 1,
+        "departures": 1,
+        "cargo": {
+          "arrivals": 1,
+          "departures": 1
+        },
+        "ferry": {
+          "arrivals": 0,
+          "departures": 0
+        },
+        "cranes": 4,
+        "terminal": "Illustrative local port simulation"
+      }
+    }
+  ],
+  "spanEvents": {
+    "2": {
+      "opened": true,
+      "shipPassed": true
+    },
+    "18": {
+      "opened": true,
+      "shipPassed": true
+    },
+    "30": {
+      "opened": true,
+      "shipPassed": true
+    },
+    "-28": {
+      "opened": true,
+      "shipPassed": true
+    },
+    "-18": {
+      "opened": true,
+      "shipPassed": true
+    },
+    "-5": {
+      "opened": true,
+      "shipPassed": true
+    },
+    "42.4": {
+      "opened": true,
+      "shipPassed": true
+    }
+  },
+  "state": {
+    "city": "dublin",
+    "ready": true,
+    "meshes": 4144,
+    "triangles": 441166,
+    "selectedId": null,
+    "camera": {
+      "position": [
+        64,
+        69.88401835401987,
+        56.15427696792405
+      ],
+      "target": [
+        64,
+        2,
+        4.999999999999968
+      ],
+      "limits": {
+        "min": 12,
+        "max": 446.75393716308554
+      },
+      "bounds": {
+        "minX": -96,
+        "maxX": 96,
+        "minZ": -76,
+        "maxZ": 56
+      },
+      "near": 2.5499999999999994,
+      "far": 295.6792738528689
+    },
+    "state": {
+      "names": false,
+      "homes": true,
+      "boards": true,
+      "walking": false
+    },
+    "walker": null,
+    "referenceTrees": 662,
+    "dublinClock": {
+      "timeSeconds": 313.7208999999337,
+      "paused": false
+    },
+    "dublinMotion": {
+      "timeSeconds": 313.7208999999337,
+      "timeMs": 313720.89999993367,
+      "roadVehicles": 32,
+      "roadVehiclePositions": [
+        {
+          "id": "Dublin sedan 1.1",
+          "x": 30.22,
+          "z": -6.254057449270775,
+          "length": 0.509999995139929,
+          "width": 0.30000000275098365,
+          "laneId": "quayside-loop:clockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 807.7249567968106
+        },
+        {
+          "id": "Dublin taxi 1.2",
+          "x": -28.22,
+          "z": 7.028808816075468,
+          "length": 0.47666665185822304,
+          "width": 0.2600000144640613,
+          "laneId": "quayside-loop:clockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 926.4332842242645
+        },
+        {
+          "id": "Dublin suv 2.1",
+          "x": -27.78,
+          "z": -20.785939054870145,
+          "length": 0.539999976020498,
+          "width": 0.29999999174704944,
+          "laneId": "quayside-loop:counterclockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 962.077094999915
+        },
+        {
+          "id": "Dublin van 2.2",
+          "x": 29.78,
+          "z": 5.542980266374155,
+          "length": 0.5296296802240803,
+          "width": 0.2888888914398696,
+          "laneId": "quayside-loop:counterclockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 1095.421448670632
+        },
+        {
+          "id": "Dublin sedan 3.1",
+          "x": -18.22,
+          "z": 25.367601680284597,
+          "length": 0.509999995139929,
+          "width": 0.30000000275098365,
+          "laneId": "inner-city-loop:clockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 854.0606399999295
+        },
+        {
+          "id": "Dublin taxi 3.2",
+          "x": 18.22,
+          "z": 10.468776322984652,
+          "length": 0.47666665185822304,
+          "width": 0.2600000144640613,
+          "laneId": "inner-city-loop:clockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 979.380096801275
+        },
+        {
+          "id": "Dublin suv 4.1",
+          "x": 5.878119919330063,
+          "z": -26.78,
+          "length": 0.539999976020498,
+          "width": 0.29999999174704944,
+          "laneId": "inner-city-loop:counterclockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 1044.341709062086
+        },
+        {
+          "id": "Dublin sedan 4.2",
+          "x": -14.032178259119862,
+          "z": 27.78,
+          "length": 0.509999995139929,
+          "width": 0.30000000275098365,
+          "laneId": "inner-city-loop:counterclockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 1125.2890456008015
+        },
+        {
+          "id": "Dublin sedan 5.1",
+          "x": -53.58916844036008,
+          "z": -7.78,
+          "length": 0.509999995139929,
+          "width": 0.30000000275098365,
+          "laneId": "ballyfermot-estate-loop:clockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 815.6743399998782
+        },
+        {
+          "id": "Dublin taxi 5.2",
+          "x": -72.91083155962394,
+          "z": -34.22,
+          "length": 0.47666665185822304,
+          "width": 0.2600000144640613,
+          "laneId": "ballyfermot-estate-loop:clockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 869.657418802554
+        },
+        {
+          "id": "Dublin suv 6.1",
+          "x": -59.209515639293826,
+          "z": -8.22,
+          "length": 0.539999976020498,
+          "width": 0.29999999174704944,
+          "laneId": "ballyfermot-estate-loop:counterclockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 988.2208349997842
+        },
+        {
+          "id": "Dublin van 6.2",
+          "x": -67.29048436069931,
+          "z": -33.78,
+          "length": 0.5296296802240803,
+          "width": 0.2888888914398696,
+          "laneId": "ballyfermot-estate-loop:counterclockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 1040.8222298746168
+        },
+        {
+          "id": "Dublin sedan 7.1",
+          "x": -75.0532268666652,
+          "z": 31.22,
+          "length": 0.509999995139929,
+          "width": 0.30000000275098365,
+          "laneId": "kilmainham-inchicore-loop:clockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 894.1045649997583
+        },
+        {
+          "id": "Dublin taxi 7.2",
+          "x": -51.44677313333747,
+          "z": 7.78,
+          "length": 0.47666665185822304,
+          "width": 0.2600000144640613,
+          "laneId": "kilmainham-inchicore-loop:clockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 945.0876437996047
+        },
+        {
+          "id": "Dublin suv 8.1",
+          "x": -49.22,
+          "z": 19.716909002700078,
+          "length": 0.539999976020498,
+          "width": 0.29999999174704944,
+          "laneId": "kilmainham-inchicore-loop:counterclockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 1050.965014999712
+        },
+        {
+          "id": "Dublin sedan 8.2",
+          "x": -77.28,
+          "z": 19.283090997283868,
+          "length": 0.509999995139929,
+          "width": 0.30000000275098365,
+          "laneId": "kilmainham-inchicore-loop:counterclockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 1100.5664098770037
+        },
+        {
+          "id": "Dublin sedan 9.1",
+          "x": -37.22,
+          "z": 38.41545384528817,
+          "length": 0.509999995139929,
+          "width": 0.30000000275098365,
+          "laneId": "dolphins-barn-grid-loop:clockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 815.6743399998782
+        },
+        {
+          "id": "Dublin taxi 9.2",
+          "x": -23.78,
+          "z": 44.384546154719686,
+          "length": 0.47666665185822304,
+          "width": 0.2600000144640613,
+          "laneId": "dolphins-barn-grid-loop:clockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 842.9574188037793
+        },
+        {
+          "id": "Dublin suv 10.1",
+          "x": -36.78,
+          "z": 39.90900626691633,
+          "length": 0.539999976020498,
+          "width": 0.29999999174704944,
+          "laneId": "dolphins-barn-grid-loop:counterclockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 988.2208349997842
+        },
+        {
+          "id": "Dublin van 10.2",
+          "x": -24.22,
+          "z": 42.890993733087065,
+          "length": 0.5296296802240803,
+          "width": 0.2888888914398696,
+          "laneId": "dolphins-barn-grid-loop:counterclockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 1014.122229873556
+        },
+        {
+          "id": "Dublin sedan 11.1",
+          "x": 8.22,
+          "z": 37.796322647641176,
+          "length": 0.509999995139929,
+          "width": 0.30000000275098365,
+          "laneId": "rathmines-grid-loop:clockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 894.1045649997583
+        },
+        {
+          "id": "Dublin taxi 11.2",
+          "x": -17.22,
+          "z": 45.003677352360036,
+          "length": 0.47666665185822304,
+          "width": 0.2600000144640613,
+          "laneId": "rathmines-grid-loop:clockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 933.3876438094852
+        },
+        {
+          "id": "Dublin suv 12.1",
+          "x": -7.717832582522124,
+          "z": 34.22,
+          "length": 0.539999976020498,
+          "width": 0.29999999174704944,
+          "laneId": "rathmines-grid-loop:counterclockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 1050.965014999712
+        },
+        {
+          "id": "Dublin sedan 12.2",
+          "x": -1.282167417490669,
+          "z": 48.58,
+          "length": 0.509999995139929,
+          "width": 0.30000000275098365,
+          "laneId": "rathmines-grid-loop:counterclockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 1088.8664098683455
+        },
+        {
+          "id": "Dublin sedan 13.1",
+          "x": 12.22,
+          "z": 45.23378240545014,
+          "length": 0.509999995139929,
+          "width": 0.30000000275098365,
+          "laneId": "ballsbridge-grid-loop:clockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 815.6743399998782
+        },
+        {
+          "id": "Dublin taxi 13.2",
+          "x": -4.22,
+          "z": 37.56621759454101,
+          "length": 0.47666665185822304,
+          "width": 0.2600000144640613,
+          "laneId": "ballsbridge-grid-loop:clockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 845.9574188097411
+        },
+        {
+          "id": "Dublin suv 14.1",
+          "x": -3.78,
+          "z": 41.51458594015331,
+          "length": 0.539999976020498,
+          "width": 0.29999999174704944,
+          "laneId": "ballsbridge-grid-loop:counterclockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 988.2208349997842
+        },
+        {
+          "id": "Dublin van 14.2",
+          "x": 11.78,
+          "z": 41.285414059850424,
+          "length": 0.5296296802240803,
+          "width": 0.2888888914398696,
+          "laneId": "ballsbridge-grid-loop:counterclockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 1017.1222298683164
+        },
+        {
+          "id": "Dublin sedan 15.1",
+          "x": 30.67201066310998,
+          "z": 49.019999999999996,
+          "length": 0.509999995139929,
+          "width": 0.30000000275098365,
+          "laneId": "sandymount-grid-loop:clockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 894.1045649997583
+        },
+        {
+          "id": "Dublin taxi 15.2",
+          "x": 27.32798933689031,
+          "z": 43.78,
+          "length": 0.47666665185822304,
+          "width": 0.2600000144640613,
+          "laneId": "sandymount-grid-loop:clockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 908.6895843176202
+        },
+        {
+          "id": "Dublin suv 16.1",
+          "x": 28.557342572414576,
+          "z": 44.22,
+          "length": 0.539999976020498,
+          "width": 0.29999999174704944,
+          "laneId": "sandymount-grid-loop:counterclockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 1050.965014999712
+        },
+        {
+          "id": "Dublin sedan 16.2",
+          "x": 29.4426574275817,
+          "z": 48.58,
+          "length": 0.509999995139929,
+          "width": 0.30000000275098365,
+          "laneId": "sandymount-grid-loop:counterclockwise",
+          "onBridge": false,
+          "stopped": false,
+          "distance": 1064.168351033859
+        }
+      ],
+      "runwayOccupiedBy": [],
+      "runwayExclusive": true,
+      "flights": [
+        {
+          "id": "flight-1",
+          "phase": "opposite-side-approach",
+          "phaseProgress": 0.6143408333327809,
+          "visible": true,
+          "runwayOccupied": false,
+          "cycleDurationSeconds": 120,
+          "gateId": "T1-1",
+          "position": {
+            "x": -58.14218203763865,
+            "y": 7.278502140913785,
+            "z": -63.16314462901343
+          }
+        },
+        {
+          "id": "flight-2",
+          "phase": "parked-at-gate",
+          "phaseProgress": 0.8643408333327809,
+          "visible": true,
+          "runwayOccupied": false,
+          "cycleDurationSeconds": 120,
+          "gateId": "T2-1",
+          "position": {
+            "x": 1,
+            "y": 0.8125,
+            "z": -56.8
+          }
+        }
+      ],
+      "helicopter": {
+        "id": "dublin-helicopter-patrol",
+        "phase": "city-patrol",
+        "visible": true,
+        "runwayOccupied": false,
+        "cycleDurationSeconds": 72,
+        "position": {
+          "x": 21.951173783839135,
+          "y": 11.115425640302181,
+          "z": -2.211735328604109
+        }
+      },
+      "actors": [
+        {
+          "kind": "car",
+          "id": "Dublin sedan 1.1",
+          "visible": true,
+          "position": {
+            "x": 30.22,
+            "y": 0.27,
+            "z": -6.254057449270775
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin taxi 1.2",
+          "visible": true,
+          "position": {
+            "x": -28.22,
+            "y": 0.27,
+            "z": 7.028808816075468
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin suv 2.1",
+          "visible": true,
+          "position": {
+            "x": -27.78,
+            "y": 0.27,
+            "z": -20.785939054870145
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin van 2.2",
+          "visible": true,
+          "position": {
+            "x": 29.78,
+            "y": 0.27,
+            "z": 5.542980266374155
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin sedan 3.1",
+          "visible": true,
+          "position": {
+            "x": -18.22,
+            "y": 0.27,
+            "z": 25.367601680284597
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin taxi 3.2",
+          "visible": true,
+          "position": {
+            "x": 18.22,
+            "y": 0.27,
+            "z": 10.468776322984652
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin suv 4.1",
+          "visible": true,
+          "position": {
+            "x": 5.878119919330063,
+            "y": 0.27,
+            "z": -26.78
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin sedan 4.2",
+          "visible": true,
+          "position": {
+            "x": -14.032178259119862,
+            "y": 0.27,
+            "z": 27.78
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin sedan 5.1",
+          "visible": true,
+          "position": {
+            "x": -53.58916844036008,
+            "y": 0.27,
+            "z": -7.78
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin taxi 5.2",
+          "visible": true,
+          "position": {
+            "x": -72.91083155962394,
+            "y": 0.27,
+            "z": -34.22
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin suv 6.1",
+          "visible": true,
+          "position": {
+            "x": -59.209515639293826,
+            "y": 0.27,
+            "z": -8.22
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin van 6.2",
+          "visible": true,
+          "position": {
+            "x": -67.29048436069931,
+            "y": 0.27,
+            "z": -33.78
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin sedan 7.1",
+          "visible": true,
+          "position": {
+            "x": -75.0532268666652,
+            "y": 0.27,
+            "z": 31.22
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin taxi 7.2",
+          "visible": true,
+          "position": {
+            "x": -51.44677313333747,
+            "y": 0.27,
+            "z": 7.78
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin suv 8.1",
+          "visible": true,
+          "position": {
+            "x": -49.22,
+            "y": 0.27,
+            "z": 19.716909002700078
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin sedan 8.2",
+          "visible": true,
+          "position": {
+            "x": -77.28,
+            "y": 0.27,
+            "z": 19.283090997283868
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin sedan 9.1",
+          "visible": true,
+          "position": {
+            "x": -37.22,
+            "y": 0.27,
+            "z": 38.41545384528817
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin taxi 9.2",
+          "visible": true,
+          "position": {
+            "x": -23.78,
+            "y": 0.27,
+            "z": 44.384546154719686
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin suv 10.1",
+          "visible": true,
+          "position": {
+            "x": -36.78,
+            "y": 0.27,
+            "z": 39.90900626691633
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin van 10.2",
+          "visible": true,
+          "position": {
+            "x": -24.22,
+            "y": 0.27,
+            "z": 42.890993733087065
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin sedan 11.1",
+          "visible": true,
+          "position": {
+            "x": 8.22,
+            "y": 0.27,
+            "z": 37.796322647641176
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin taxi 11.2",
+          "visible": true,
+          "position": {
+            "x": -17.22,
+            "y": 0.27,
+            "z": 45.003677352360036
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin suv 12.1",
+          "visible": true,
+          "position": {
+            "x": -7.717832582522124,
+            "y": 0.27,
+            "z": 34.22
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin sedan 12.2",
+          "visible": true,
+          "position": {
+            "x": -1.282167417490669,
+            "y": 0.27,
+            "z": 48.58
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin sedan 13.1",
+          "visible": true,
+          "position": {
+            "x": 12.22,
+            "y": 0.27,
+            "z": 45.23378240545014
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin taxi 13.2",
+          "visible": true,
+          "position": {
+            "x": -4.22,
+            "y": 0.27,
+            "z": 37.56621759454101
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin suv 14.1",
+          "visible": true,
+          "position": {
+            "x": -3.78,
+            "y": 0.27,
+            "z": 41.51458594015331
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin van 14.2",
+          "visible": true,
+          "position": {
+            "x": 11.78,
+            "y": 0.27,
+            "z": 41.285414059850424
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin sedan 15.1",
+          "visible": true,
+          "position": {
+            "x": 30.67201066310998,
+            "y": 0.27,
+            "z": 49.019999999999996
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin taxi 15.2",
+          "visible": true,
+          "position": {
+            "x": 27.32798933689031,
+            "y": 0.27,
+            "z": 43.78
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin suv 16.1",
+          "visible": true,
+          "position": {
+            "x": 28.557342572414576,
+            "y": 0.27,
+            "z": 44.22
+          }
+        },
+        {
+          "kind": "car",
+          "id": "Dublin sedan 16.2",
+          "visible": true,
+          "position": {
+            "x": 29.4426574275817,
+            "y": 0.27,
+            "z": 48.58
+          }
+        },
+        {
+          "kind": "airliner",
+          "id": "flight-1",
+          "visible": true,
+          "position": {
+            "x": -58.14218203763865,
+            "y": 7.278502140913785,
+            "z": -63.16314462901343
+          }
+        },
+        {
+          "kind": "airliner",
+          "id": "flight-2",
+          "visible": true,
+          "position": {
+            "x": 1,
+            "y": 0.8125,
+            "z": -56.8
+          }
+        },
+        {
+          "kind": "helicopter",
+          "id": "dublin-helicopter-patrol",
+          "visible": true,
+          "position": {
+            "x": 21.951173783839135,
+            "y": 11.115425640302181,
+            "z": -2.211735328604109
+          }
+        }
+      ]
+    },
+    "metro": {
+      "timeSeconds": 313.7208999999337,
+      "system": "Illustrative Dublin elevated metro",
+      "trackTop": 7.58,
+      "deckTop": 7.34,
+      "minimumBridgeClearance": 7.58,
+      "trainCount": 2,
+      "cycleSeconds": 63.03997185411754,
+      "routeLength": 244.60785364141122,
+      "trackSpacing": 2.6,
+      "stations": [
+        {
+          "id": "heuston",
+          "name": "Heuston Metro",
+          "area": "Heuston",
+          "x": -44.953618264252285,
+          "z": -10,
+          "entryX": -52.453618264252285,
+          "entryZ": -7.5,
+          "distance": 36.69117804621168,
+          "bank": -1,
+          "yaw": 0,
+          "platformTop": 7.5
+        },
+        {
+          "id": "smithfield",
+          "name": "Smithfield Metro",
+          "area": "Smithfield",
+          "x": -17.02750918704302,
+          "z": -10,
+          "entryX": -9.52750918704302,
+          "entryZ": -7.5,
+          "distance": 64.61724133693946,
+          "bank": -1,
+          "yaw": 0,
+          "platformTop": 7.5
+        },
+        {
+          "id": "jervis",
+          "name": "Jervis Metro",
+          "area": "City Centre",
+          "x": -2.9625637214309233,
+          "z": -10,
+          "entryX": 4.537436278569077,
+          "entryZ": -10,
+          "distance": 78.6821929213206,
+          "bank": -1,
+          "yaw": 0,
+          "platformTop": 7.5
+        },
+        {
+          "id": "tara-street",
+          "name": "Tara Street Metro",
+          "area": "City Centre",
+          "x": 8.04473686347512,
+          "z": 10,
+          "entryX": 17.04473686347512,
+          "entryZ": 7.5,
+          "distance": 154.9183073062271,
+          "bank": 1,
+          "yaw": -3.141592653589793,
+          "platformTop": 7.5
+        },
+        {
+          "id": "docklands",
+          "name": "Docklands Metro",
+          "area": "Docklands",
+          "x": 27.845819285964186,
+          "z": 9.417907608213174,
+          "entryX": 38.396551898938434,
+          "entryZ": 6.306309734206691,
+          "distance": 135.04391919786246,
+          "bank": 1,
+          "yaw": -2.854805010145643,
+          "platformTop": 7.5
+        }
+      ],
+      "trains": [
+        {
+          "id": "metro-1",
+          "direction": "eastbound",
+          "track": "north-east/south-west",
+          "station": null,
+          "position": {
+            "x": -72.25387219085933,
+            "y": 7.58,
+            "z": 6.012370984689403
+          },
+          "heading": 2.3618834093981373,
+          "routeDistance": 236.9172654340104,
+          "carriages": [
+            {
+              "index": 0,
+              "x": -72.25387219085931,
+              "y": 7.58,
+              "z": 6.01237098468942,
+              "heading": 2.3618834093981373,
+              "routeDistance": 236.9172654340104
+            },
+            {
+              "index": 1,
+              "x": -68.07063300883918,
+              "y": 7.58,
+              "z": 8.27896470270681,
+              "heading": 2.886690675993904,
+              "routeDistance": 231.4172654340104
+            },
+            {
+              "index": 2,
+              "x": -62.946045528617866,
+              "y": 7.58,
+              "z": 8.88089922666775,
+              "heading": 3.137173755081118,
+              "routeDistance": 225.9172654340104
+            }
+          ],
+          "frontCarriage": 0
+        },
+        {
+          "id": "metro-2",
+          "direction": "westbound",
+          "track": "south-west/north-east",
+          "station": null,
+          "position": {
+            "x": 36.274192157132354,
+            "y": 7.58,
+            "z": -0.7200449866441688
+          },
+          "heading": 1.6409908091329555,
+          "routeDistance": 122.9333386133048,
+          "carriages": [
+            {
+              "index": 0,
+              "x": 36.27419215713236,
+              "y": 7.58,
+              "z": -0.720044986644156,
+              "heading": 1.6409908091329555,
+              "routeDistance": 122.93333861330478
+            },
+            {
+              "index": 1,
+              "x": 35.019638588708396,
+              "y": 7.58,
+              "z": 5.279819385450281,
+              "heading": 1.1018502075091188,
+              "routeDistance": 117.43333861330478
+            },
+            {
+              "index": 2,
+              "x": 30.65038471676194,
+              "y": 7.58,
+              "z": 9.674389866206473,
+              "heading": 0.49111643315812825,
+              "routeDistance": 111.93333861330478
+            }
+          ],
+          "frontCarriage": 0
+        }
+      ],
+      "supportCount": 23,
+      "riverPierCount": 0,
+      "portApronPierCount": 0,
+      "audit": {
+        "trackCenterlineCount": 2,
+        "railRibbonCount": 4,
+        "trackMeshes": [
+          "Metro rail westbound A",
+          "Metro rail westbound B",
+          "Metro track bed westbound",
+          "Metro outer safety parapet westbound",
+          "Metro rail eastbound A",
+          "Metro rail eastbound B",
+          "Metro track bed eastbound",
+          "Metro outer safety parapet eastbound",
+          "Continuous elevated metro viaduct slab"
+        ],
+        "supportPoints": [
+          {
+            "x": -77.18869729921194,
+            "z": -9.968256226869931,
+            "routeDistance": 7.199999999999989,
+            "groundClearance": 0,
+            "waterClearance": 5.468256226869931,
+            "stationClearance": 29.491178046211676,
+            "cantilever": 5
+          },
+          {
+            "x": -73.72852658229058,
+            "z": -20.965239433403987,
+            "routeDistance": 12,
+            "groundClearance": 0,
+            "waterClearance": 16.465239433403987,
+            "stationClearance": 24.691178046211668,
+            "cantilever": 12.5
+          },
+          {
+            "x": -62.288263277147735,
+            "z": -34.17978584068437,
+            "routeDistance": 19.19999999999999,
+            "groundClearance": 0,
+            "waterClearance": 29.679785840684367,
+            "stationClearance": 17.491178046211683,
+            "cantilever": 24
+          },
+          {
+            "x": -56.92512457649414,
+            "z": -34.03480385023095,
+            "routeDistance": 24,
+            "groundClearance": 0,
+            "waterClearance": 29.53480385023095,
+            "stationClearance": 12.691178046211673,
+            "cantilever": 24
+          },
+          {
+            "x": -26.444755735090745,
+            "z": -28,
+            "routeDistance": 55.19999999999999,
+            "groundClearance": 0,
+            "waterClearance": 23.5,
+            "stationClearance": 9.4172413369395,
+            "cantilever": 18
+          },
+          {
+            "x": -21.644771485984155,
+            "z": -34,
+            "routeDistance": 60,
+            "groundClearance": 0,
+            "waterClearance": 29.5,
+            "stationClearance": 4.617241336939436,
+            "cantilever": 24
+          },
+          {
+            "x": 9.555172701842096,
+            "z": -28,
+            "routeDistance": 91.19999999999999,
+            "groundClearance": 0,
+            "waterClearance": 23.5,
+            "stationClearance": 12.517807078679368,
+            "cantilever": 18
+          },
+          {
+            "x": 13.81223543702276,
+            "z": -28.076187018974736,
+            "routeDistance": 96,
+            "groundClearance": 0,
+            "waterClearance": 23.576187018974736,
+            "stationClearance": 17.317807078679376,
+            "cantilever": 18
+          },
+          {
+            "x": 28.694612689618992,
+            "z": -22.05561097942332,
+            "routeDistance": 108,
+            "groundClearance": 0,
+            "waterClearance": 17.55561097942332,
+            "stationClearance": 27.043919197862476,
+            "cantilever": 12.5
+          },
+          {
+            "x": 4.755216078798146,
+            "z": -10,
+            "routeDistance": 86.39999999999998,
+            "groundClearance": 0,
+            "waterClearance": 5.5,
+            "stationClearance": 7.717807078679359,
+            "cantilever": 0
+          },
+          {
+            "x": 38.433457957202236,
+            "z": -6.723480399853802,
+            "routeDistance": 117.59999999999997,
+            "groundClearance": 0,
+            "waterClearance": 2.223480399853802,
+            "stationClearance": 17.44391919786246,
+            "cantilever": 5
+          },
+          {
+            "x": 27.62916870671802,
+            "z": 6.861869024256057,
+            "routeDistance": 134.39999999999998,
+            "groundClearance": 0,
+            "waterClearance": 2.361869024256057,
+            "stationClearance": 0.643919197862456,
+            "cantilever": 2.5
+          },
+          {
+            "x": -2.636865254415251,
+            "z": -14,
+            "routeDistance": 165.60000000000002,
+            "groundClearance": 0,
+            "waterClearance": 9.5,
+            "stationClearance": 10.6816926937729,
+            "cantilever": 24
+          },
+          {
+            "x": -17.036895802086274,
+            "z": -8,
+            "routeDistance": 180.00000000000006,
+            "groundClearance": 0,
+            "waterClearance": 3.5,
+            "stationClearance": 25.081692693772982,
+            "cantilever": 18
+          },
+          {
+            "x": 4.5630717350418255,
+            "z": -8,
+            "routeDistance": 158.4000000000001,
+            "groundClearance": 0,
+            "waterClearance": 3.5,
+            "stationClearance": 3.4816926937730233,
+            "cantilever": 18
+          },
+          {
+            "x": -26.636911364094672,
+            "z": 7.5,
+            "routeDistance": 189.60000000000008,
+            "groundClearance": 0,
+            "waterClearance": 3,
+            "stationClearance": 34.681692693773,
+            "cantilever": 2.5
+          },
+          {
+            "x": -43.436927601670426,
+            "z": -11,
+            "routeDistance": 206.4000000000001,
+            "groundClearance": 0,
+            "waterClearance": 6.5,
+            "stationClearance": 51.481692693773,
+            "cantilever": 21
+          },
+          {
+            "x": -48.23694816907687,
+            "z": 10,
+            "routeDistance": 211.2000000000001,
+            "groundClearance": 0,
+            "waterClearance": 5.5,
+            "stationClearance": 56.28169269377301,
+            "cantilever": 0
+          },
+          {
+            "x": -53.03709194402582,
+            "z": 7.5,
+            "routeDistance": 216.0000000000001,
+            "groundClearance": 0,
+            "waterClearance": 3,
+            "stationClearance": 61.08169269377302,
+            "cantilever": 2.5
+          },
+          {
+            "x": -57.91410676529567,
+            "z": 7.552659031721793,
+            "routeDistance": 220.80000000000013,
+            "groundClearance": 0,
+            "waterClearance": 3.0526590317217934,
+            "stationClearance": 60.49903168762281,
+            "cantilever": 2.5
+          },
+          {
+            "x": -62.64099587974909,
+            "z": 7.681160346366909,
+            "routeDistance": 225.60000000000014,
+            "groundClearance": 0,
+            "waterClearance": 3.1811603463669087,
+            "stationClearance": 55.69903168762275,
+            "cantilever": 2.5
+          },
+          {
+            "x": -61.65790793049506,
+            "z": -6.806553414083535,
+            "routeDistance": 235.20000000000016,
+            "groundClearance": 0,
+            "waterClearance": 2.3065534140835346,
+            "stationClearance": 46.099031687622734,
+            "cantilever": 18
+          },
+          {
+            "x": -53.40155182650382,
+            "z": -6.082503659582563,
+            "routeDistance": 240.00000000000017,
+            "groundClearance": 0,
+            "waterClearance": 1.5825036595825628,
+            "stationClearance": 41.29903168762278,
+            "cantilever": 24
+          }
+        ],
+        "accessPoints": [
+          {
+            "stationId": "heuston",
+            "kind": "lift",
+            "x": -52.453618264252285,
+            "z": -7.5,
+            "groundY": 0.185,
+            "topY": 7.5
+          },
+          {
+            "stationId": "heuston",
+            "kind": "stairs",
+            "x": -52.453618264252285,
+            "z": -7.5,
+            "groundY": 0.185,
+            "topY": 7.5,
+            "steps": 21
+          },
+          {
+            "stationId": "smithfield",
+            "kind": "lift",
+            "x": -9.52750918704302,
+            "z": -7.5,
+            "groundY": 0.185,
+            "topY": 7.5
+          },
+          {
+            "stationId": "jervis",
+            "kind": "lift",
+            "x": 4.537436278569077,
+            "z": -10,
+            "groundY": 0.185,
+            "topY": 7.5
+          },
+          {
+            "stationId": "tara-street",
+            "kind": "lift",
+            "x": 17.04473686347512,
+            "z": 7.5,
+            "groundY": 0.185,
+            "topY": 7.5
+          },
+          {
+            "stationId": "docklands",
+            "kind": "lift",
+            "x": 38.396551898938434,
+            "z": 6.306309734206691,
+            "groundY": 0.185,
+            "topY": 7.5
+          }
+        ],
+        "maximumPierSpan": 31.19999999999999,
+        "clearanceLots": [
+          {
+            "id": "dubChipper",
+            "name": "National Museum of Ireland – Decorative Arts & History",
+            "maxY": 2.7399999999999998,
+            "trackClearance": 4.84
+          },
+          {
+            "id": "dubIFSC",
+            "name": "Four Courts",
+            "maxY": 2.7600000000000002,
+            "trackClearance": 4.82
+          },
+          {
+            "id": "dubMater",
+            "name": "Mater Hospital",
+            "maxY": 3.2399999999999998,
+            "trackClearance": 4.34
+          },
+          {
+            "id": "dubCityCinema",
+            "name": "Light House Cinema",
+            "maxY": 2.95,
+            "trackClearance": 4.63
+          },
+          {
+            "id": "dubNorthGym",
+            "name": "Dalymount Park",
+            "maxY": 2.5174999999999996,
+            "trackClearance": 5.0625
+          },
+          {
+            "id": "dubPenneys",
+            "name": "Penneys, Mary Street",
+            "maxY": 2.1919999999999997,
+            "trackClearance": 5.388
+          },
+          {
+            "id": "dubMoore",
+            "name": "Moore Street Market",
+            "maxY": 1.81,
+            "trackClearance": 5.77
+          },
+          {
+            "id": "dubGPO",
+            "name": "General Post Office",
+            "maxY": 2.7600000000000002,
+            "trackClearance": 4.82
+          },
+          {
+            "id": "dubAbbey",
+            "name": "Abbey Theatre",
+            "maxY": 2.7600000000000002,
+            "trackClearance": 4.82
+          },
+          {
+            "id": "dubSouthCafe",
+            "name": "14 Henrietta Street",
+            "maxY": 2.7399999999999998,
+            "trackClearance": 4.84
+          },
+          {
+            "id": "dubNorthHotel",
+            "name": "Rotunda Hospital",
+            "maxY": 3.0399999999999996,
+            "trackClearance": 4.540000000000001
+          },
+          {
+            "id": "dubCitizens",
+            "name": "Dublin City Centre Citizens Information Centre",
+            "maxY": 2.36,
+            "trackClearance": 5.220000000000001
+          },
+          {
+            "id": "dubCustom",
+            "name": "The Custom House",
+            "maxY": 3.8350000000000004,
+            "trackClearance": 3.7449999999999997
+          },
+          {
+            "id": "dubDockCafe",
+            "name": "Jeanie Johnston Famine Ship",
+            "maxY": 2.7399999999999998,
+            "trackClearance": 4.84
+          },
+          {
+            "id": "dubEPIC",
+            "name": "EPIC & CHQ",
+            "maxY": 2.26,
+            "trackClearance": 5.32
+          },
+          {
+            "id": "dubCentralBank",
+            "name": "Central Bank of Ireland",
+            "maxY": 4.74,
+            "trackClearance": 2.84
+          },
+          {
+            "id": "dubConvention",
+            "name": "Convention Centre Dublin",
+            "maxY": 4.34,
+            "trackClearance": 3.24
+          },
+          {
+            "id": "dubArena",
+            "name": "3Arena",
+            "maxY": 2.7600000000000002,
+            "trackClearance": 4.82
+          },
+          {
+            "id": "dubCanal",
+            "name": "Grand Canal Dock",
+            "maxY": 3.4450000000000003,
+            "trackClearance": 4.135
+          },
+          {
+            "id": "dubGallery",
+            "name": "National Gallery of Ireland",
+            "maxY": 2.9839999999999995,
+            "trackClearance": 4.596
+          },
+          {
+            "id": "dubLidl",
+            "name": "National Museum of Ireland – Archaeology",
+            "maxY": 2.7399999999999998,
+            "trackClearance": 4.84
+          },
+          {
+            "id": "dubHotelDock",
+            "name": "The Marker Hotel",
+            "maxY": 3.3399999999999994,
+            "trackClearance": 4.24
+          },
+          {
+            "id": "dubTrinity",
+            "name": "Trinity College Dublin",
+            "maxY": 3.9450000000000003,
+            "trackClearance": 3.635
+          },
+          {
+            "id": "dubNationalLibrary",
+            "name": "National Library of Ireland",
+            "maxY": 2.605,
+            "trackClearance": 4.975
+          },
+          {
+            "id": "dubGrafton",
+            "name": "Grafton Street",
+            "maxY": 2.6599999999999997,
+            "trackClearance": 4.92
+          },
+          {
+            "id": "dubPearseLibrary",
+            "name": "Pearse Street Library",
+            "maxY": 2.81,
+            "trackClearance": 4.77
+          },
+          {
+            "id": "dubTemple",
+            "name": "Temple Bar",
+            "maxY": 3.2100000000000004,
+            "trackClearance": 4.369999999999999
+          },
+          {
+            "id": "dubCastle",
+            "name": "Dublin Castle",
+            "maxY": 4.93,
+            "trackClearance": 2.6500000000000004
+          },
+          {
+            "id": "dubWoodQuay",
+            "name": "Dublin City Council Civic Offices",
+            "maxY": 3.0700000000000003,
+            "trackClearance": 4.51
+          },
+          {
+            "id": "dubChrist",
+            "name": "Christ Church Cathedral",
+            "maxY": 4.535,
+            "trackClearance": 3.045
+          },
+          {
+            "id": "dubAudoen",
+            "name": "St Audoen’s Church",
+            "maxY": 2.7600000000000002,
+            "trackClearance": 4.82
+          },
+          {
+            "id": "dubGuinness",
+            "name": "Guinness Storehouse",
+            "maxY": 4.16,
+            "trackClearance": 3.42
+          },
+          {
+            "id": "dubDublinia",
+            "name": "Dublinia",
+            "maxY": 2.22,
+            "trackClearance": 5.359999999999999
+          }
+        ],
+        "stationStructureCount": 5,
+        "pierClearanceValidated": true,
+        "drawbridgeCrossingY": 7.58
+      }
+    },
+    "bridges": {
+      "timeSeconds": 313.7208999999337,
+      "spans": [
+        {
+          "x": -28,
+          "state": "closed",
+          "progress": 68.21430000002468,
+          "open": false,
+          "roadClosed": false,
+          "requests": [],
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": [],
+          "deckAngle": 0
+        },
+        {
+          "x": -18,
+          "state": "closed",
+          "progress": 64.08100000001494,
+          "open": false,
+          "roadClosed": false,
+          "requests": [],
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": [],
+          "deckAngle": 0
+        },
+        {
+          "x": -5,
+          "state": "closed",
+          "progress": 59.4310000000157,
+          "open": false,
+          "roadClosed": false,
+          "requests": [],
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": [],
+          "deckAngle": 0
+        },
+        {
+          "x": 2,
+          "state": "closed",
+          "progress": 55.34770000000282,
+          "open": false,
+          "roadClosed": false,
+          "requests": [],
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": [],
+          "deckAngle": 0
+        },
+        {
+          "x": 18,
+          "state": "closed",
+          "progress": 49.614500000012185,
+          "open": false,
+          "roadClosed": false,
+          "requests": [],
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": [],
+          "deckAngle": 0
+        },
+        {
+          "x": 30,
+          "state": "closed",
+          "progress": 45.34780000002223,
+          "open": false,
+          "roadClosed": false,
+          "requests": [],
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": [],
+          "deckAngle": 0
+        },
+        {
+          "x": 42.4,
+          "state": "closed",
+          "progress": 40.581199999997125,
+          "open": false,
+          "roadClosed": false,
+          "requests": [],
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": [],
+          "deckAngle": 0
+        }
+      ]
+    },
+    "port": {
+      "paused": false,
+      "status": "Operating",
+      "time": 313.7208999999337,
+      "vessels": [
+        {
+          "id": "cargo-1",
+          "name": "Container ship",
+          "type": "cargo",
+          "phase": "offshore",
+          "berth": false,
+          "progress": 1,
+          "slot": -6,
+          "x": 92,
+          "z": -6,
+          "length": 5.4,
+          "width": 1.35,
+          "heading": -2.8495556053670117,
+          "headingAxis": "x",
+          "riverTransit": false,
+          "routeDistance": 315.98577674212265,
+          "routeLength": 315.99642215471283,
+          "bridgePassCount": 14,
+          "nextBridgeX": null,
+          "nextBridgeStopDistance": null,
+          "requestedBridges": [],
+          "sternClearOfBridge": false
+        },
+        {
+          "id": "ferry-1",
+          "name": "Ro-Ro ferry",
+          "type": "ferry",
+          "phase": "depart",
+          "berth": false,
+          "progress": 0.0801750000007857,
+          "slot": -12,
+          "x": 68.54446250002003,
+          "z": -12,
+          "length": 4.6,
+          "width": 1.35,
+          "heading": -1.5707963267948966,
+          "headingAxis": "x",
+          "riverTransit": false,
+          "routeDistance": 324.6942558518803,
+          "routeLength": 324.6942558518803,
+          "bridgePassCount": 14,
+          "nextBridgeX": null,
+          "nextBridgeStopDistance": null,
+          "requestedBridges": [],
+          "sternClearOfBridge": false
+        }
+      ],
+      "activeVessels": [
+        {
+          "id": "cargo-1",
+          "name": "Container ship",
+          "type": "cargo",
+          "phase": "offshore",
+          "berth": false,
+          "progress": 1,
+          "slot": -6,
+          "x": 92,
+          "z": -6,
+          "length": 5.4,
+          "width": 1.35,
+          "heading": -2.8495556053670117,
+          "headingAxis": "x",
+          "riverTransit": false,
+          "routeDistance": 315.98577674212265,
+          "routeLength": 315.99642215471283,
+          "bridgePassCount": 14,
+          "nextBridgeX": null,
+          "nextBridgeStopDistance": null,
+          "requestedBridges": [],
+          "sternClearOfBridge": false
+        },
+        {
+          "id": "ferry-1",
+          "name": "Ro-Ro ferry",
+          "type": "ferry",
+          "phase": "depart",
+          "berth": false,
+          "progress": 0.0801750000007857,
+          "slot": -12,
+          "x": 68.54446250002003,
+          "z": -12,
+          "length": 4.6,
+          "width": 1.35,
+          "heading": -1.5707963267948966,
+          "headingAxis": "x",
+          "riverTransit": false,
+          "routeDistance": 324.6942558518803,
+          "routeLength": 324.6942558518803,
+          "bridgePassCount": 14,
+          "nextBridgeX": null,
+          "nextBridgeStopDistance": null,
+          "requestedBridges": [],
+          "sternClearOfBridge": false
+        }
+      ],
+      "berthCount": 0,
+      "containersMoved": 1,
+      "completedCargo": 1,
+      "completedFerries": 1,
+      "arrivals": 2,
+      "departures": 2,
+      "cargo": {
+        "arrivals": 1,
+        "departures": 1
+      },
+      "ferry": {
+        "arrivals": 1,
+        "departures": 1
+      },
+      "cranes": 4,
+      "terminal": "Illustrative local port simulation"
+    },
+    "dublinMetrics": {
+      "city": {
+        "houses": 637,
+        "houseParcels": 637,
+        "selectablePlaces": 93,
+        "parkPlans": 11,
+        "publicStructures": 73,
+        "uniqueStructureFingerprints": 73
+      },
+      "roads": {
+        "roadLanes": 36,
+        "curbs": 36,
+        "footways": 36,
+        "markings": 389,
+        "signalizedCrossings": 14,
+        "streetLights": 16,
+        "busStops": 4,
+        "cycleTrackSegments": 68,
+        "railSegments": 322,
+        "airportConnectorLength": 8.899999999999999,
+        "airportBusLaneSegments": 9,
+        "clearanceRadius": 0.45
+      },
+      "airport": {
+        "campusWidth": 72,
+        "campusDepth": 29,
+        "localScale": 2,
+        "terminals": 2,
+        "runways": 3,
+        "stands": 4,
+        "scheduledGates": 2,
+        "boardingBridgeComponents": 12,
+        "parkedAirliners": 3,
+        "parkedHelicopters": 1,
+        "boxDetailInstances": 488,
+        "cylinderDetailInstances": 139,
+        "instancedDetailBatches": 2,
+        "customMeshCount": 5
+      },
+      "metro": {
+        "timeSeconds": 313.7208999999337,
+        "system": "Illustrative Dublin elevated metro",
+        "trackTop": 7.58,
+        "deckTop": 7.34,
+        "minimumBridgeClearance": 7.58,
+        "trainCount": 2,
+        "cycleSeconds": 63.03997185411754,
+        "routeLength": 244.60785364141122,
+        "trackSpacing": 2.6,
+        "stations": [
+          {
+            "id": "heuston",
+            "name": "Heuston Metro",
+            "area": "Heuston",
+            "x": -44.953618264252285,
+            "z": -10,
+            "entryX": -52.453618264252285,
+            "entryZ": -7.5,
+            "distance": 36.69117804621168,
+            "bank": -1,
+            "yaw": 0,
+            "platformTop": 7.5
+          },
+          {
+            "id": "smithfield",
+            "name": "Smithfield Metro",
+            "area": "Smithfield",
+            "x": -17.02750918704302,
+            "z": -10,
+            "entryX": -9.52750918704302,
+            "entryZ": -7.5,
+            "distance": 64.61724133693946,
+            "bank": -1,
+            "yaw": 0,
+            "platformTop": 7.5
+          },
+          {
+            "id": "jervis",
+            "name": "Jervis Metro",
+            "area": "City Centre",
+            "x": -2.9625637214309233,
+            "z": -10,
+            "entryX": 4.537436278569077,
+            "entryZ": -10,
+            "distance": 78.6821929213206,
+            "bank": -1,
+            "yaw": 0,
+            "platformTop": 7.5
+          },
+          {
+            "id": "tara-street",
+            "name": "Tara Street Metro",
+            "area": "City Centre",
+            "x": 8.04473686347512,
+            "z": 10,
+            "entryX": 17.04473686347512,
+            "entryZ": 7.5,
+            "distance": 154.9183073062271,
+            "bank": 1,
+            "yaw": -3.141592653589793,
+            "platformTop": 7.5
+          },
+          {
+            "id": "docklands",
+            "name": "Docklands Metro",
+            "area": "Docklands",
+            "x": 27.845819285964186,
+            "z": 9.417907608213174,
+            "entryX": 38.396551898938434,
+            "entryZ": 6.306309734206691,
+            "distance": 135.04391919786246,
+            "bank": 1,
+            "yaw": -2.854805010145643,
+            "platformTop": 7.5
+          }
+        ],
+        "trains": [
+          {
+            "id": "metro-1",
+            "direction": "eastbound",
+            "track": "north-east/south-west",
+            "station": null,
+            "position": {
+              "x": -72.25387219085933,
+              "y": 7.58,
+              "z": 6.012370984689403
+            },
+            "heading": 2.3618834093981373,
+            "routeDistance": 236.9172654340104,
+            "carriages": [
+              {
+                "index": 0,
+                "x": -72.25387219085931,
+                "y": 7.58,
+                "z": 6.01237098468942,
+                "heading": 2.3618834093981373,
+                "routeDistance": 236.9172654340104
+              },
+              {
+                "index": 1,
+                "x": -68.07063300883918,
+                "y": 7.58,
+                "z": 8.27896470270681,
+                "heading": 2.886690675993904,
+                "routeDistance": 231.4172654340104
+              },
+              {
+                "index": 2,
+                "x": -62.946045528617866,
+                "y": 7.58,
+                "z": 8.88089922666775,
+                "heading": 3.137173755081118,
+                "routeDistance": 225.9172654340104
+              }
+            ],
+            "frontCarriage": 0
+          },
+          {
+            "id": "metro-2",
+            "direction": "westbound",
+            "track": "south-west/north-east",
+            "station": null,
+            "position": {
+              "x": 36.274192157132354,
+              "y": 7.58,
+              "z": -0.7200449866441688
+            },
+            "heading": 1.6409908091329555,
+            "routeDistance": 122.9333386133048,
+            "carriages": [
+              {
+                "index": 0,
+                "x": 36.27419215713236,
+                "y": 7.58,
+                "z": -0.720044986644156,
+                "heading": 1.6409908091329555,
+                "routeDistance": 122.93333861330478
+              },
+              {
+                "index": 1,
+                "x": 35.019638588708396,
+                "y": 7.58,
+                "z": 5.279819385450281,
+                "heading": 1.1018502075091188,
+                "routeDistance": 117.43333861330478
+              },
+              {
+                "index": 2,
+                "x": 30.65038471676194,
+                "y": 7.58,
+                "z": 9.674389866206473,
+                "heading": 0.49111643315812825,
+                "routeDistance": 111.93333861330478
+              }
+            ],
+            "frontCarriage": 0
+          }
+        ],
+        "supportCount": 23,
+        "riverPierCount": 0,
+        "portApronPierCount": 0,
+        "audit": {
+          "trackCenterlineCount": 2,
+          "railRibbonCount": 4,
+          "trackMeshes": [
+            "Metro rail westbound A",
+            "Metro rail westbound B",
+            "Metro track bed westbound",
+            "Metro outer safety parapet westbound",
+            "Metro rail eastbound A",
+            "Metro rail eastbound B",
+            "Metro track bed eastbound",
+            "Metro outer safety parapet eastbound",
+            "Continuous elevated metro viaduct slab"
+          ],
+          "supportPoints": [
+            {
+              "x": -77.18869729921194,
+              "z": -9.968256226869931,
+              "routeDistance": 7.199999999999989,
+              "groundClearance": 0,
+              "waterClearance": 5.468256226869931,
+              "stationClearance": 29.491178046211676,
+              "cantilever": 5
+            },
+            {
+              "x": -73.72852658229058,
+              "z": -20.965239433403987,
+              "routeDistance": 12,
+              "groundClearance": 0,
+              "waterClearance": 16.465239433403987,
+              "stationClearance": 24.691178046211668,
+              "cantilever": 12.5
+            },
+            {
+              "x": -62.288263277147735,
+              "z": -34.17978584068437,
+              "routeDistance": 19.19999999999999,
+              "groundClearance": 0,
+              "waterClearance": 29.679785840684367,
+              "stationClearance": 17.491178046211683,
+              "cantilever": 24
+            },
+            {
+              "x": -56.92512457649414,
+              "z": -34.03480385023095,
+              "routeDistance": 24,
+              "groundClearance": 0,
+              "waterClearance": 29.53480385023095,
+              "stationClearance": 12.691178046211673,
+              "cantilever": 24
+            },
+            {
+              "x": -26.444755735090745,
+              "z": -28,
+              "routeDistance": 55.19999999999999,
+              "groundClearance": 0,
+              "waterClearance": 23.5,
+              "stationClearance": 9.4172413369395,
+              "cantilever": 18
+            },
+            {
+              "x": -21.644771485984155,
+              "z": -34,
+              "routeDistance": 60,
+              "groundClearance": 0,
+              "waterClearance": 29.5,
+              "stationClearance": 4.617241336939436,
+              "cantilever": 24
+            },
+            {
+              "x": 9.555172701842096,
+              "z": -28,
+              "routeDistance": 91.19999999999999,
+              "groundClearance": 0,
+              "waterClearance": 23.5,
+              "stationClearance": 12.517807078679368,
+              "cantilever": 18
+            },
+            {
+              "x": 13.81223543702276,
+              "z": -28.076187018974736,
+              "routeDistance": 96,
+              "groundClearance": 0,
+              "waterClearance": 23.576187018974736,
+              "stationClearance": 17.317807078679376,
+              "cantilever": 18
+            },
+            {
+              "x": 28.694612689618992,
+              "z": -22.05561097942332,
+              "routeDistance": 108,
+              "groundClearance": 0,
+              "waterClearance": 17.55561097942332,
+              "stationClearance": 27.043919197862476,
+              "cantilever": 12.5
+            },
+            {
+              "x": 4.755216078798146,
+              "z": -10,
+              "routeDistance": 86.39999999999998,
+              "groundClearance": 0,
+              "waterClearance": 5.5,
+              "stationClearance": 7.717807078679359,
+              "cantilever": 0
+            },
+            {
+              "x": 38.433457957202236,
+              "z": -6.723480399853802,
+              "routeDistance": 117.59999999999997,
+              "groundClearance": 0,
+              "waterClearance": 2.223480399853802,
+              "stationClearance": 17.44391919786246,
+              "cantilever": 5
+            },
+            {
+              "x": 27.62916870671802,
+              "z": 6.861869024256057,
+              "routeDistance": 134.39999999999998,
+              "groundClearance": 0,
+              "waterClearance": 2.361869024256057,
+              "stationClearance": 0.643919197862456,
+              "cantilever": 2.5
+            },
+            {
+              "x": -2.636865254415251,
+              "z": -14,
+              "routeDistance": 165.60000000000002,
+              "groundClearance": 0,
+              "waterClearance": 9.5,
+              "stationClearance": 10.6816926937729,
+              "cantilever": 24
+            },
+            {
+              "x": -17.036895802086274,
+              "z": -8,
+              "routeDistance": 180.00000000000006,
+              "groundClearance": 0,
+              "waterClearance": 3.5,
+              "stationClearance": 25.081692693772982,
+              "cantilever": 18
+            },
+            {
+              "x": 4.5630717350418255,
+              "z": -8,
+              "routeDistance": 158.4000000000001,
+              "groundClearance": 0,
+              "waterClearance": 3.5,
+              "stationClearance": 3.4816926937730233,
+              "cantilever": 18
+            },
+            {
+              "x": -26.636911364094672,
+              "z": 7.5,
+              "routeDistance": 189.60000000000008,
+              "groundClearance": 0,
+              "waterClearance": 3,
+              "stationClearance": 34.681692693773,
+              "cantilever": 2.5
+            },
+            {
+              "x": -43.436927601670426,
+              "z": -11,
+              "routeDistance": 206.4000000000001,
+              "groundClearance": 0,
+              "waterClearance": 6.5,
+              "stationClearance": 51.481692693773,
+              "cantilever": 21
+            },
+            {
+              "x": -48.23694816907687,
+              "z": 10,
+              "routeDistance": 211.2000000000001,
+              "groundClearance": 0,
+              "waterClearance": 5.5,
+              "stationClearance": 56.28169269377301,
+              "cantilever": 0
+            },
+            {
+              "x": -53.03709194402582,
+              "z": 7.5,
+              "routeDistance": 216.0000000000001,
+              "groundClearance": 0,
+              "waterClearance": 3,
+              "stationClearance": 61.08169269377302,
+              "cantilever": 2.5
+            },
+            {
+              "x": -57.91410676529567,
+              "z": 7.552659031721793,
+              "routeDistance": 220.80000000000013,
+              "groundClearance": 0,
+              "waterClearance": 3.0526590317217934,
+              "stationClearance": 60.49903168762281,
+              "cantilever": 2.5
+            },
+            {
+              "x": -62.64099587974909,
+              "z": 7.681160346366909,
+              "routeDistance": 225.60000000000014,
+              "groundClearance": 0,
+              "waterClearance": 3.1811603463669087,
+              "stationClearance": 55.69903168762275,
+              "cantilever": 2.5
+            },
+            {
+              "x": -61.65790793049506,
+              "z": -6.806553414083535,
+              "routeDistance": 235.20000000000016,
+              "groundClearance": 0,
+              "waterClearance": 2.3065534140835346,
+              "stationClearance": 46.099031687622734,
+              "cantilever": 18
+            },
+            {
+              "x": -53.40155182650382,
+              "z": -6.082503659582563,
+              "routeDistance": 240.00000000000017,
+              "groundClearance": 0,
+              "waterClearance": 1.5825036595825628,
+              "stationClearance": 41.29903168762278,
+              "cantilever": 24
+            }
+          ],
+          "accessPoints": [
+            {
+              "stationId": "heuston",
+              "kind": "lift",
+              "x": -52.453618264252285,
+              "z": -7.5,
+              "groundY": 0.185,
+              "topY": 7.5
+            },
+            {
+              "stationId": "heuston",
+              "kind": "stairs",
+              "x": -52.453618264252285,
+              "z": -7.5,
+              "groundY": 0.185,
+              "topY": 7.5,
+              "steps": 21
+            },
+            {
+              "stationId": "smithfield",
+              "kind": "lift",
+              "x": -9.52750918704302,
+              "z": -7.5,
+              "groundY": 0.185,
+              "topY": 7.5
+            },
+            {
+              "stationId": "jervis",
+              "kind": "lift",
+              "x": 4.537436278569077,
+              "z": -10,
+              "groundY": 0.185,
+              "topY": 7.5
+            },
+            {
+              "stationId": "tara-street",
+              "kind": "lift",
+              "x": 17.04473686347512,
+              "z": 7.5,
+              "groundY": 0.185,
+              "topY": 7.5
+            },
+            {
+              "stationId": "docklands",
+              "kind": "lift",
+              "x": 38.396551898938434,
+              "z": 6.306309734206691,
+              "groundY": 0.185,
+              "topY": 7.5
+            }
+          ],
+          "maximumPierSpan": 31.19999999999999,
+          "clearanceLots": [
+            {
+              "id": "dubChipper",
+              "name": "National Museum of Ireland – Decorative Arts & History",
+              "maxY": 2.7399999999999998,
+              "trackClearance": 4.84
+            },
+            {
+              "id": "dubIFSC",
+              "name": "Four Courts",
+              "maxY": 2.7600000000000002,
+              "trackClearance": 4.82
+            },
+            {
+              "id": "dubMater",
+              "name": "Mater Hospital",
+              "maxY": 3.2399999999999998,
+              "trackClearance": 4.34
+            },
+            {
+              "id": "dubCityCinema",
+              "name": "Light House Cinema",
+              "maxY": 2.95,
+              "trackClearance": 4.63
+            },
+            {
+              "id": "dubNorthGym",
+              "name": "Dalymount Park",
+              "maxY": 2.5174999999999996,
+              "trackClearance": 5.0625
+            },
+            {
+              "id": "dubPenneys",
+              "name": "Penneys, Mary Street",
+              "maxY": 2.1919999999999997,
+              "trackClearance": 5.388
+            },
+            {
+              "id": "dubMoore",
+              "name": "Moore Street Market",
+              "maxY": 1.81,
+              "trackClearance": 5.77
+            },
+            {
+              "id": "dubGPO",
+              "name": "General Post Office",
+              "maxY": 2.7600000000000002,
+              "trackClearance": 4.82
+            },
+            {
+              "id": "dubAbbey",
+              "name": "Abbey Theatre",
+              "maxY": 2.7600000000000002,
+              "trackClearance": 4.82
+            },
+            {
+              "id": "dubSouthCafe",
+              "name": "14 Henrietta Street",
+              "maxY": 2.7399999999999998,
+              "trackClearance": 4.84
+            },
+            {
+              "id": "dubNorthHotel",
+              "name": "Rotunda Hospital",
+              "maxY": 3.0399999999999996,
+              "trackClearance": 4.540000000000001
+            },
+            {
+              "id": "dubCitizens",
+              "name": "Dublin City Centre Citizens Information Centre",
+              "maxY": 2.36,
+              "trackClearance": 5.220000000000001
+            },
+            {
+              "id": "dubCustom",
+              "name": "The Custom House",
+              "maxY": 3.8350000000000004,
+              "trackClearance": 3.7449999999999997
+            },
+            {
+              "id": "dubDockCafe",
+              "name": "Jeanie Johnston Famine Ship",
+              "maxY": 2.7399999999999998,
+              "trackClearance": 4.84
+            },
+            {
+              "id": "dubEPIC",
+              "name": "EPIC & CHQ",
+              "maxY": 2.26,
+              "trackClearance": 5.32
+            },
+            {
+              "id": "dubCentralBank",
+              "name": "Central Bank of Ireland",
+              "maxY": 4.74,
+              "trackClearance": 2.84
+            },
+            {
+              "id": "dubConvention",
+              "name": "Convention Centre Dublin",
+              "maxY": 4.34,
+              "trackClearance": 3.24
+            },
+            {
+              "id": "dubArena",
+              "name": "3Arena",
+              "maxY": 2.7600000000000002,
+              "trackClearance": 4.82
+            },
+            {
+              "id": "dubCanal",
+              "name": "Grand Canal Dock",
+              "maxY": 3.4450000000000003,
+              "trackClearance": 4.135
+            },
+            {
+              "id": "dubGallery",
+              "name": "National Gallery of Ireland",
+              "maxY": 2.9839999999999995,
+              "trackClearance": 4.596
+            },
+            {
+              "id": "dubLidl",
+              "name": "National Museum of Ireland – Archaeology",
+              "maxY": 2.7399999999999998,
+              "trackClearance": 4.84
+            },
+            {
+              "id": "dubHotelDock",
+              "name": "The Marker Hotel",
+              "maxY": 3.3399999999999994,
+              "trackClearance": 4.24
+            },
+            {
+              "id": "dubTrinity",
+              "name": "Trinity College Dublin",
+              "maxY": 3.9450000000000003,
+              "trackClearance": 3.635
+            },
+            {
+              "id": "dubNationalLibrary",
+              "name": "National Library of Ireland",
+              "maxY": 2.605,
+              "trackClearance": 4.975
+            },
+            {
+              "id": "dubGrafton",
+              "name": "Grafton Street",
+              "maxY": 2.6599999999999997,
+              "trackClearance": 4.92
+            },
+            {
+              "id": "dubPearseLibrary",
+              "name": "Pearse Street Library",
+              "maxY": 2.81,
+              "trackClearance": 4.77
+            },
+            {
+              "id": "dubTemple",
+              "name": "Temple Bar",
+              "maxY": 3.2100000000000004,
+              "trackClearance": 4.369999999999999
+            },
+            {
+              "id": "dubCastle",
+              "name": "Dublin Castle",
+              "maxY": 4.93,
+              "trackClearance": 2.6500000000000004
+            },
+            {
+              "id": "dubWoodQuay",
+              "name": "Dublin City Council Civic Offices",
+              "maxY": 3.0700000000000003,
+              "trackClearance": 4.51
+            },
+            {
+              "id": "dubChrist",
+              "name": "Christ Church Cathedral",
+              "maxY": 4.535,
+              "trackClearance": 3.045
+            },
+            {
+              "id": "dubAudoen",
+              "name": "St Audoen’s Church",
+              "maxY": 2.7600000000000002,
+              "trackClearance": 4.82
+            },
+            {
+              "id": "dubGuinness",
+              "name": "Guinness Storehouse",
+              "maxY": 4.16,
+              "trackClearance": 3.42
+            },
+            {
+              "id": "dubDublinia",
+              "name": "Dublinia",
+              "maxY": 2.22,
+              "trackClearance": 5.359999999999999
+            }
+          ],
+          "stationStructureCount": 5,
+          "pierClearanceValidated": true,
+          "drawbridgeCrossingY": 7.58
+        }
+      },
+      "bridges": {
+        "timeSeconds": 313.7208999999337,
+        "spans": [
+          {
+            "x": -28,
+            "state": "closed",
+            "progress": 68.21430000002468,
+            "open": false,
+            "roadClosed": false,
+            "requests": [],
+            "vehiclesOnDeck": [],
+            "shipsOnDeck": [],
+            "deckAngle": 0
+          },
+          {
+            "x": -18,
+            "state": "closed",
+            "progress": 64.08100000001494,
+            "open": false,
+            "roadClosed": false,
+            "requests": [],
+            "vehiclesOnDeck": [],
+            "shipsOnDeck": [],
+            "deckAngle": 0
+          },
+          {
+            "x": -5,
+            "state": "closed",
+            "progress": 59.4310000000157,
+            "open": false,
+            "roadClosed": false,
+            "requests": [],
+            "vehiclesOnDeck": [],
+            "shipsOnDeck": [],
+            "deckAngle": 0
+          },
+          {
+            "x": 2,
+            "state": "closed",
+            "progress": 55.34770000000282,
+            "open": false,
+            "roadClosed": false,
+            "requests": [],
+            "vehiclesOnDeck": [],
+            "shipsOnDeck": [],
+            "deckAngle": 0
+          },
+          {
+            "x": 18,
+            "state": "closed",
+            "progress": 49.614500000012185,
+            "open": false,
+            "roadClosed": false,
+            "requests": [],
+            "vehiclesOnDeck": [],
+            "shipsOnDeck": [],
+            "deckAngle": 0
+          },
+          {
+            "x": 30,
+            "state": "closed",
+            "progress": 45.34780000002223,
+            "open": false,
+            "roadClosed": false,
+            "requests": [],
+            "vehiclesOnDeck": [],
+            "shipsOnDeck": [],
+            "deckAngle": 0
+          },
+          {
+            "x": 42.4,
+            "state": "closed",
+            "progress": 40.581199999997125,
+            "open": false,
+            "roadClosed": false,
+            "requests": [],
+            "vehiclesOnDeck": [],
+            "shipsOnDeck": [],
+            "deckAngle": 0
+          }
+        ]
+      },
+      "port": {
+        "quays": 2,
+        "riverMouthWidth": 6,
+        "shipToShoreCranes": 4,
+        "containerStacks": 40,
+        "railSidings": 2,
+        "breakwaterArms": 2,
+        "accessRoads": 1,
+        "pilotAndTugVessels": 2,
+        "landBounds": {
+          "minX": 39,
+          "maxX": 62.5,
+          "minZ": -15,
+          "maxZ": 15,
+          "channelHalfWidth": 3,
+          "topY": 0.325,
+          "platforms": [
+            {
+              "minZ": -15,
+              "maxZ": -3
+            },
+            {
+              "minZ": 3,
+              "maxZ": 15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "errors": []
+}

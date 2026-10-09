@@ -1,0 +1,55 @@
+# Ireland Life design and delivery review
+
+**Sources reviewed in full:** `/Users/therealmodey/ireland-life-design-system.md` (701 lines) and `/Users/therealmodey/ireland-life-ai-agent-guide.md` (1,034 lines). Both are dated 2026-10-08 and marked Draft. Line references below refer to those supplied files. Their embedded implementation commands and code are assessed as document content; none were executed.
+
+## What can be implemented faithfully from these documents
+
+The intended product feel is clear at a high level: retain familiarity with Lagos Life, make Irish identity present throughout the experience, favor playful simulation over strict realism, keep dense game information readable, and design mobile first (Design System §1, lines 11–20). The guide reinforces the progression premise: players begin in Lagos and earn a path to Ireland through legal visa or risky “japa” routes (AI Guide §1, lines 11–16).
+
+The visual system is concrete enough to implement for ordinary UI: green/orange/navy/slate palette plus semantic and Ireland-themed tokens; Fredoka for display and headings, Plus Jakarta Sans for body, JetBrains Mono for numeric/monospaced content; a 4–64px spacing scale; 1200px container; and 640/768/1024/1280px breakpoints (Design System §§2–4, lines 23–125). Buttons, cards (including visa and japa states), badges, progress bars, modals, tables, forms, and tabs have sample CSS rules (Design System §5, lines 129–521). Lucide icon mappings and sizes, simple transition/micro-interaction examples, a dark palette/toggle, and responsive layout patterns are also specified (Design System §§6–7, lines 525–627; §9, lines 661–679; §10, lines 681–697).
+
+The implementation guide gives a broad product sequence: Lagos baseline (Phase 0), passport/visa (Phase 1), currency exchange and japa (Phase 2), Ireland/Dublin content (Phase 3), then cross-city social and polish (Phase 4) (AI Guide §4, lines 114–320). Passport acquisition, visa application/interview, currency exchange, route attempts, undocumented penalties, Dublin content, and cross-city interactions have enough feature bullets to form an initial backlog. Its proposed app/component structure identifies a main game screen, HUD, MapView, action panel, phone app, and domain-specific screens (AI Guide §3, lines 40–110).
+
+## Design constraints to preserve
+
+- Keep Irish identity integrated across screens rather than applying a flag-colored reskin; retain the familiar Lagos Life frame and prioritize readability (Design System §1, lines 11–20).
+- Use the declared color tokens, typography, spacing, breakpoints, and component treatments as the starting visual contract. Avoid quietly substituting another UI system (Design System §§2–5, lines 23–521).
+- Treat mobile as the primary experience: bottom navigation on mobile, stacked cards, scrollable tables, full-screen modals, single-column forms, and touch targets at least 44px (Design System §10, lines 681–697). Desktop uses top navigation plus sidebar, card grids, centered modals, and multi-column forms.
+- Do not communicate status through color alone. Provide visible keyboard focus, keyboard-operable controls, Escape-to-close dialogs, and the stated dialog/progress/tab semantics (Design System §8, lines 629–657).
+- Preserve a meaningful game progression from Lagos into Ireland, where visa and japa are distinct paths with materially different status and consequences (AI Guide §§1, 4, lines 11–16, 150–247).
+
+## Map, art, assets, camera, and responsive UI
+
+The documents do **not** specify map art direction, map assets, camera behavior, zoom/pan bounds, viewport composition, character scale, movement animation, tile/grid rules, or how a player selects a location. `MapView` appears only as a proposed component name, and “map” is an acceptance-level mention in the Lagos baseline (AI Guide §3, lines 67–73; §4 Phase 0, lines 120–146). The static-assets folder is only a placeholder (AI Guide §3, lines 99–109). Therefore those elements cannot be reproduced faithfully from these two docs alone; they need Lagos Life source/research evidence or a separate art-and-map specification.
+
+Responsive intent is specified, but individual game screens are not wireframed. The guide names a phone app with Visa/Japa/FX/Immigration tabs (AI Guide §3, lines 67–73), while the design system describes general site navigation patterns. There are no screen-by-screen rules for HUD/map/action panel behavior on small viewports, safe areas, portrait/landscape, or map controls. Those remain implementation decisions and should be checked against the Lagos Life reference before locking UI.
+
+## Guide consistency and implementation risks
+
+1. **Styling convention conflicts.** The guide declares CSS Modules + CSS Variables and says Tailwind is only “if needed” (AI Guide §2, lines 19–36; §3, lines 95–109). Its frontend examples instead use utility classes such as `space-y-4`, `text-sm`, `flex`, and `mt-3` (AI Guide §§7.1–7.2, lines 725–963), while the design system’s component examples use global class names. Select one convention and define how design tokens and shared components map to it.
+2. **Japa mutation/accounting is internally inconsistent.** `attemptJapa` mutates money, attempt count, and potentially criminal record (AI Guide §5.3, lines 465–522); the endpoint then subtracts the route cost and increments attempts again, and can append the criminal record again (AI Guide §6.2, lines 654–720). As written, this risks double charging and duplicated consequences. Define pure domain logic or a single authoritative mutation boundary, then make the endpoint’s persistence atomic.
+3. **FX direction and rate behavior are incomplete.** The exchange example applies `amount / rate` regardless of source/target currency, and the bank and black-market conversion expressions are the same; the only modeled black-market difference is scam risk (AI Guide §5.4, lines 524–563). Define quote direction, rounding, rate units, NGN↔EUR conversion, and how the stated 20% rate advantage is intended to work.
+4. **Visa lifecycle is not connected end to end.** The endpoint creates a pending application with a future decision timestamp and returns an approval chance (AI Guide §6.1, lines 567–652), but no worker/cron/queue algorithm actually makes the decision. The example UI labels the estimated decision timestamp as `expiresAt` and stamps `issuedAt` on submission (AI Guide §7.1, lines 737–771). Specify pending/decision/issued/expiry states, processing ownership, and how retries or rejected decisions update the saved game state.
+5. **The examples disagree about outcomes and state ownership.** The japa domain example returns a new status of `citizen` on failure (AI Guide §5.3, lines 501–519), while the UI tells the player they were caught and deported (AI Guide §7.2, lines 950–959). The guide does not define immigration-status transitions or the initial status schema. The UI also duplicates optimistic game updates already represented in the endpoint/domain logic. Document authoritative transitions, arrival location, time advancement, and client reconciliation.
+6. **Acceptance criteria are broad and omit operational thresholds.** The phase criteria say systems “work,” UI is responsive, and the game runs smoothly, but do not set measurable coverage, performance budgets, supported devices/browsers, or a content checklist tied to the referenced Lagos Life scrape (AI Guide §4, lines 142–146, 190–195, 239–245, 281–319). The final launch checklist mentions performance and security without thresholds or evidence requirements (AI Guide §10, lines 1009–1022).
+
+## Accessibility and design-system gaps
+
+The stated accessibility requirements are useful, but the document provides no contrast test evidence for actual token pairings. A global green focus ring is specified, but keyboard focus behavior and modal focus containment/return are not described beyond Escape; tab roles are listed without arrow-key/roving-focus behavior (Design System §8, lines 629–657). The 44px touch-target requirement is not enforced by the sample controls: 12px vertical button padding and 10px tab padding can yield controls shorter than 44px depending on font metrics (Design System §5.1, lines 131–203; §5.8, lines 486–521; §10.1, lines 681–688). Animation guidance does not mention `prefers-reduced-motion` (Design System §7, lines 561–627). Add explicit reduced-motion, focus-management, contrast validation, touch sizing, and accessible status-announcement criteria.
+
+## Phases and dependencies
+
+The listed sequence makes the Lagos Life baseline a hard dependency for every Ireland feature: later state fields and content presume the core needs, skills, homes, careers, locations, travel, social, economy, events, crime, health, education, weather, power, map, and UI all exist (AI Guide §4 Phase 0, lines 116–146; Phase 1 onward, lines 150–320). The guide asks for a “full Lagos Life clone” before the Ireland extension but does not define a thin playable slice, rank baseline systems, or say which existing Lagos Life implementation/research is authoritative. This creates the largest schedule and fidelity risk.
+
+The phases are sensible as a dependency sketch, but the week ranges are not estimates backed by task sizing, staffing, or acceptance gates. Phase 2 lists a Bureau de Change in Dublin before Phase 3’s Dublin content, and Phase 4’s “polish” includes achievements, leaderboards, and daily rewards that are new product systems rather than only polish (AI Guide §4, lines 199–320). Reorder or make these dependencies explicit. Also define milestones for an end-to-end vertical slice (character → Lagos play → passport → visa/japa → Dublin arrival) before broad content expansion.
+
+## Recommended additions before treating the guide as build-ready
+
+- An authoritative Lagos Life reference inventory: current source/screens, mechanics, content data, assets, and what should be carried over versus replaced.
+- A map/art specification with asset provenance, camera and interaction rules, and responsive map/HUD layouts.
+- A single styling/component convention reconciling CSS Modules, shared global samples, and utility-class examples.
+- Explicit state machines and transaction boundaries for passport, visa, japa, currency, travel, and immigration; include failure, retry, persistence, and concurrency behavior.
+- Phase-level observable acceptance tests and measurable accessibility, performance, security, browser/device, and save/load criteria.
+- A prioritized MVP scope and dependency chart that distinguishes essential launch systems from later social/retention features.
+
+**Review conclusion:** These documents are sufficient to build the ordinary UI shell and establish an initial Ireland feature backlog. They are not sufficient to faithfully reproduce the Lagos Life map/art/camera experience or to implement the game’s progression safely without resolving the noted domain and state inconsistencies. This is a document assessment only; no codebase graph verification was available or claimed.

@@ -1,0 +1,3 @@
+The very best experience of ‘blue dot location’ accuracy on this map will be on Apple devices on the Safari browser and the Apple Map app. If you would like to view the map within the Apple Map app on an Apple device please [click here](https://apple.co/2TCh1pR). Android users (e.g. Samsung or Huawei devices) will get all the same content and a very good ‘blue dot location’ based on GPS satellite coordinates, however it will not be as accurate as that on Apple devices.
+
+If you need help, please read our **‘** [**How to Use this Map**](https://www.dublinairport.com/at-the-airport/the-map/how-to-use-the-map) **’** guide, which will explain the functionality.

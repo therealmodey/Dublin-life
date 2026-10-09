@@ -1,0 +1,351 @@
+{
+  "base": "http://127.0.0.1:3101",
+  "at": "2026-10-09T15:09:55.929Z",
+  "production": true,
+  "errors": [],
+  "harbour": [
+    {
+      "before": {
+        "status": "Operating",
+        "timeSeconds": 0.13079999995231628,
+        "boats": [
+          {
+            "id": "howth-fishing-1",
+            "name": "Howth fishing boat",
+            "kind": "fishing",
+            "phase": "departing",
+            "x": 79.22479431176056,
+            "z": -55.4817364039414,
+            "heading": 0.006240029729371016,
+            "length": 3.65,
+            "width": 0.94,
+            "routeProgress": 0.008018638424423973,
+            "berth": false,
+            "waitSeconds": 9
+          },
+          {
+            "id": "howth-fishing-2",
+            "name": "Inshore fishing boat",
+            "kind": "fishing",
+            "phase": "fishing",
+            "x": 84.6250953146392,
+            "z": -47.74769938764026,
+            "heading": -0.3407206768318123,
+            "length": 3.3,
+            "width": 0.82,
+            "routeProgress": 0.20355009434383095,
+            "berth": false,
+            "waitSeconds": 11
+          },
+          {
+            "id": "howth-marina-yacht",
+            "name": "Howth marina yacht",
+            "kind": "yacht",
+            "phase": "returning",
+            "x": 81.64023361616468,
+            "z": -43.24888210321613,
+            "heading": -2.8119681907533196,
+            "length": 3.2,
+            "width": 0.72,
+            "routeProgress": 0.9035306256402601,
+            "berth": false,
+            "waitSeconds": 13
+          },
+          {
+            "id": "howth-passenger-launch",
+            "name": "Harbour passenger launch",
+            "kind": "launch",
+            "phase": "departing",
+            "x": 79.0145452226677,
+            "z": -35.990894557406946,
+            "heading": -0.25738216628207256,
+            "length": 3.45,
+            "width": 0.86,
+            "routeProgress": 0.0006643850421199105,
+            "berth": false,
+            "waitSeconds": 10
+          }
+        ],
+        "arrivals": 19,
+        "departures": 19,
+        "berths": 0,
+        "terminal": "Illustrative local harbour activity"
+      },
+      "moved": {
+        "status": "Operating",
+        "timeSeconds": 1.9470999999642333,
+        "boats": [
+          {
+            "id": "howth-fishing-1",
+            "name": "Howth fishing boat",
+            "kind": "fishing",
+            "phase": "fishing",
+            "x": 82.342398158031,
+            "z": -54.99621787424016,
+            "heading": -0.29747671174023455,
+            "length": 3.65,
+            "width": 0.94,
+            "routeProgress": 0.11936613823853943,
+            "berth": false,
+            "waitSeconds": 9
+          },
+          {
+            "id": "howth-fishing-2",
+            "name": "Inshore fishing boat",
+            "kind": "fishing",
+            "phase": "fishing",
+            "x": 87.97840237588127,
+            "z": -46.989591598995105,
+            "heading": -0.0930708825939243,
+            "length": 3.3,
+            "width": 0.82,
+            "routeProgress": 0.324441665570585,
+            "berth": false,
+            "waitSeconds": 11
+          },
+          {
+            "id": "howth-marina-yacht",
+            "name": "Howth marina yacht",
+            "kind": "yacht",
+            "phase": "boarding",
+            "x": 79,
+            "z": -42.5,
+            "heading": -1.468871449384248,
+            "length": 3.2,
+            "width": 0.72,
+            "routeProgress": 1,
+            "berth": true,
+            "waitSeconds": 13
+          },
+          {
+            "id": "howth-passenger-launch",
+            "name": "Harbour passenger launch",
+            "kind": "launch",
+            "phase": "cruising",
+            "x": 82.14155407821767,
+            "z": -35.55784876151603,
+            "heading": -0.2974596045641012,
+            "length": 3.45,
+            "width": 0.86,
+            "routeProgress": 0.11201188485623377,
+            "berth": false,
+            "waitSeconds": 10
+          }
+        ],
+        "arrivals": 19,
+        "departures": 19,
+        "berths": 1,
+        "terminal": "Illustrative local harbour activity"
+      },
+      "pausedAt": 1.9682999999523123,
+      "resumedAt": 2.6849999999403895,
+      "resetAt": 0
+    }
+  ],
+  "places": {
+    "houseParcels": 327,
+    "selectablePlaces": 134,
+    "addedVenues": 45,
+    "categories": {
+      "airport": 1,
+      "park": 9,
+      "stadium": 4,
+      "spire": 1,
+      "classical": 5,
+      "shop": 3,
+      "station": 4,
+      "custom": 1,
+      "warehouse": 1,
+      "convention": 1,
+      "archBridge": 1,
+      "harpBridge": 1,
+      "pub": 7,
+      "castle": 1,
+      "cathedral": 2,
+      "guinness": 1,
+      "college": 2,
+      "shoppingStreet": 1,
+      "green": 2,
+      "dock": 1,
+      "civic": 11,
+      "museum": 11,
+      "market": 3,
+      "hospital": 10,
+      "theatre": 8,
+      "memorial": 1,
+      "library": 6,
+      "hotel": 1,
+      "cinema": 1,
+      "landmark": 1,
+      "office": 5,
+      "shoppingCentre": 5,
+      "industry": 3,
+      "education": 4,
+      "garden": 1,
+      "sports": 2,
+      "musicVenue": 4,
+      "cafe": 4,
+      "retail": 1,
+      "attraction": 1,
+      "seaport": 2
+    },
+    "roadMetrics": {
+      "roadLanes": 60,
+      "junctions": 39,
+      "curbs": 60,
+      "footways": 60,
+      "markings": 458,
+      "signalizedCrossings": 14,
+      "streetLights": 16,
+      "busStops": 4,
+      "cycleTrackSegments": 68,
+      "railSegments": 0,
+      "airportConnectorLength": 15.486996343938555,
+      "airportBusLaneSegments": 0,
+      "clearanceRadius": 0.45,
+      "connectivity": {
+        "connected": true,
+        "connectedComponents": 1,
+        "routeCount": 30,
+        "routeIds": [
+          "quayside-loop",
+          "inner-city-loop",
+          "ballyfermot-estate-loop",
+          "kilmainham-inchicore-loop",
+          "dolphins-barn-grid-loop",
+          "rathmines-grid-loop",
+          "ballsbridge-grid-loop",
+          "sandymount-grid-loop",
+          "west-south-district-loop",
+          "airport-access-roundabout",
+          "northside-link",
+          "southside-link",
+          "ballyfermot-interior-street",
+          "ballyfermot-cross-street",
+          "kilmainham-interior-street",
+          "kilmainham-cross-street",
+          "dolphins-barn-local-street",
+          "rathmines-local-street",
+          "ballsbridge-local-street",
+          "sandymount-local-street",
+          "southern-grid-tie-in",
+          "ballyfermot-core-link",
+          "west-south-district-link",
+          "kilmainham-core-link",
+          "dolphins-barn-core-link",
+          "sandymount-core-link",
+          "airport-core-link",
+          "port-city-access",
+          "dublin-port-gate-approach",
+          "howth-coastal-approach"
+        ],
+        "components": [
+          [
+            "quayside-loop",
+            "inner-city-loop",
+            "ballyfermot-estate-loop",
+            "kilmainham-inchicore-loop",
+            "dolphins-barn-grid-loop",
+            "rathmines-grid-loop",
+            "ballsbridge-grid-loop",
+            "sandymount-grid-loop",
+            "west-south-district-loop",
+            "airport-access-roundabout",
+            "northside-link",
+            "southside-link",
+            "ballyfermot-interior-street",
+            "ballyfermot-cross-street",
+            "kilmainham-interior-street",
+            "kilmainham-cross-street",
+            "dolphins-barn-local-street",
+            "rathmines-local-street",
+            "ballsbridge-local-street",
+            "sandymount-local-street",
+            "southern-grid-tie-in",
+            "ballyfermot-core-link",
+            "west-south-district-link",
+            "kilmainham-core-link",
+            "dolphins-barn-core-link",
+            "sandymount-core-link",
+            "airport-core-link",
+            "port-city-access",
+            "dublin-port-gate-approach",
+            "howth-coastal-approach"
+          ]
+        ]
+      }
+    },
+    "selectedVenueFocus": [
+      {
+        "id": "dubVenuePoolbeg",
+        "name": "Poolbeg Energy Hub",
+        "kind": "industry",
+        "focused": true,
+        "screenshot": "docs/verification/round3/preview/focus/dubVenuePoolbeg.png"
+      },
+      {
+        "id": "dubVenueLiffeyValley",
+        "name": "Liffey Valley Shopping Centre",
+        "kind": "shoppingCentre",
+        "focused": true,
+        "screenshot": "docs/verification/round3/preview/focus/dubVenueLiffeyValley.png"
+      },
+      {
+        "id": "dubVenueInchicoreWorks",
+        "name": "Iarnród Éireann Inchicore Works",
+        "kind": "industry",
+        "focused": true,
+        "screenshot": "docs/verification/round3/preview/focus/dubVenueInchicoreWorks.png"
+      },
+      {
+        "id": "dubVenueGoogle",
+        "name": "Google Dublin — Gordon House",
+        "kind": "office",
+        "focused": true,
+        "screenshot": "docs/verification/round3/preview/focus/dubVenueGoogle.png"
+      },
+      {
+        "id": "dubVenueCobblestone",
+        "name": "The Cobblestone",
+        "kind": "pub",
+        "focused": true,
+        "screenshot": "docs/verification/round3/preview/focus/dubVenueCobblestone.png"
+      },
+      {
+        "id": "dubVenueNationalStadium",
+        "name": "National Stadium",
+        "kind": "sports",
+        "focused": true,
+        "screenshot": "docs/verification/round3/preview/focus/dubVenueNationalStadium.png"
+      },
+      {
+        "id": "dubVenueChiCrumlin",
+        "name": "Children’s Health Ireland at Crumlin",
+        "kind": "hospital",
+        "focused": true,
+        "screenshot": "docs/verification/round3/preview/focus/dubVenueChiCrumlin.png"
+      },
+      {
+        "id": "dubVenueBotanic",
+        "name": "National Botanic Gardens, Glasnevin",
+        "kind": "garden",
+        "focused": true,
+        "screenshot": "docs/verification/round3/preview/focus/dubVenueBotanic.png"
+      }
+    ]
+  },
+  "round2Regressions": [],
+  "stablePausedFrames": 6,
+  "reducedMotion": {
+    "frozenAt": 0.017100000023841856,
+    "resumedAt": 0.3169999999999991
+  },
+  "harbourWalk": {
+    "arrival": [
+      65.5,
+      0.28,
+      -45.8
+    ],
+    "exited": true
+  }
+}

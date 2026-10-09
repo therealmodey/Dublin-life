@@ -1,0 +1,79 @@
+{
+  "checked_utc": "2026-10-08T15:26:05.531562+00:00",
+  "chunks": [
+    {
+      "file": "2asxp3jcu780f.js",
+      "bytes": 155825,
+      "sha256": "07ed416ad6270b3af744d264ce995cc494db555351d38a1f69e056d4a30432d1",
+      "matches_saved": true
+    },
+    {
+      "file": "33hpcy7s2rwbe.js",
+      "bytes": 41557,
+      "sha256": "f641f759bcb838103ea0b509b942e2a5a1ef74177c8673936158200b1a3fb77a",
+      "matches_saved": true
+    },
+    {
+      "file": "0c4q12y7izpbh.js",
+      "bytes": 49248,
+      "sha256": "d62386af5c49b9b78664b1eca0d9deff4c08dae6c34382ea4ded5c63791f8845",
+      "matches_saved": true
+    },
+    {
+      "file": "2c3zakk_tyr-i.js",
+      "bytes": 35563,
+      "sha256": "0f14c676bf1218dc25530d8e4a871b3ae50f65602563bc4cdc88bbc1cae113eb",
+      "matches_saved": true
+    },
+    {
+      "file": "43isb8bjdiv7j.js",
+      "bytes": 6251,
+      "sha256": "b4c7b3cee64cdeac115435844c805cfe47371038426525ae61e50c56967b3619",
+      "matches_saved": true
+    },
+    {
+      "file": "0cz1d0mv5g_q7.js",
+      "bytes": 112594,
+      "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683"
+    },
+    {
+      "file": "0aebqb-r2y4mc.js",
+      "bytes": 282,
+      "sha256": "cab75686b94c6d24b908e09180a443f511bf5e868a677fa9e076383f28ee9a51",
+      "matches_saved": true
+    }
+  ],
+  "homepage_scripts": [
+    "/_next/static/chunks/36zlklinc6r4z.js",
+    "/_next/static/chunks/39x1lomggqxs3.js",
+    "/_next/static/chunks/turbopack-2aoyjmeyue-uk.js",
+    "/_next/static/chunks/10u9e6csxvam8.js",
+    "/_next/static/chunks/3dlqm4t3lwqe9.js",
+    "/_next/static/chunks/3s03ks_d9u2lb.js",
+    "/_next/static/chunks/43isb8bjdiv7j.js",
+    "/_next/static/chunks/3stzkc-scey3e.js",
+    "/_next/static/chunks/0u3h5phbnjv14.js",
+    "/_next/static/chunks/0dpiff8hwkaib.js",
+    "/_next/static/chunks/2wc0squhy5-5o.js",
+    "/_next/static/chunks/2-tap1vrh77yv.js",
+    "/_next/static/chunks/3ymz0ty5ymjub.js",
+    "/_next/static/chunks/03jnlhgoxwov8.js",
+    "/_next/static/chunks/34si9vkn3ilxt.js",
+    "/_next/static/chunks/24h5a18nhapbe.js",
+    "/_next/static/chunks/2kb9zmi6ppapp.js",
+    "/_next/static/chunks/3qi9c-v7ubuum.js",
+    "/_next/static/chunks/0gnc1j1m8vf-3.js",
+    "/_next/static/chunks/2lohtkr713v9v.js",
+    "/_next/static/chunks/2jnhaup8xl0ej.js",
+    "/_next/static/chunks/0jdui2ubgldm6.js",
+    "/_next/static/chunks/42xw_uqxgydce.js",
+    "/_next/static/chunks/3q3q4cx-hbm2l.js",
+    "/_next/static/chunks/12_5ivlpprvfi.js",
+    "/_next/static/chunks/3gzs-_ahf1pdb.js",
+    "/_next/static/chunks/3ledjq6ktxuoh.js",
+    "/_next/static/chunks/1ppw5x16e9hco.js",
+    "/_next/static/chunks/0cz1d0mv5g_q7.js",
+    "/_next/static/chunks/0ive9zeli_v2r.js"
+  ],
+  "loader_chain": "Live homepage ->43isb8bjdiv7j.js ->Abuja route86197 with33hp/2asxp/0c4; Lagos route80837 ->0aebqb-r2y4mc.js ->33hpcy7s2rwbe.js and2c3zakk_tyr-i.js."
+}

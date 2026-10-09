@@ -1,0 +1,5230 @@
+{
+  "capturedAt": "2026-10-09T00:11:29.566Z",
+  "base": "http://127.0.0.1:3100",
+  "errors": [],
+  "sheets": [
+    {
+      "id": "dubTrinity",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sheet": {
+        "x": 440,
+        "y": 603.015625,
+        "width": 560,
+        "height": 296.984375
+      },
+      "sharedUrl": "http://127.0.0.1:3100/?city=dublin&place=dubTrinity",
+      "escapeClosed": true
+    },
+    {
+      "id": "dubAirport",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sheet": {
+        "x": 440,
+        "y": 471.03125,
+        "width": 560,
+        "height": 428.96875
+      },
+      "sharedUrl": "http://127.0.0.1:3100/?city=dublin&place=dubAirport",
+      "escapeClosed": true
+    },
+    {
+      "id": "dubTrinity",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sheet": {
+        "x": 0,
+        "y": 549.015625,
+        "width": 390,
+        "height": 294.984375
+      },
+      "sharedUrl": "http://127.0.0.1:3100/?city=dublin&place=dubTrinity",
+      "escapeClosed": true
+    },
+    {
+      "id": "dubAirport",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sheet": {
+        "x": 0,
+        "y": 394.640625,
+        "width": 390,
+        "height": 449.359375
+      },
+      "sharedUrl": "http://127.0.0.1:3100/?city=dublin&place=dubAirport",
+      "escapeClosed": true
+    }
+  ],
+  "flightFrames": [
+    {
+      "seconds": 0,
+      "screenshot": "flight-0.png",
+      "state": {
+        "city": "dublin",
+        "ready": true,
+        "meshes": 2710,
+        "triangles": 328797,
+        "selectedId": null,
+        "camera": {
+          "position": [
+            -7.057028410955088,
+            70.97348860280842,
+            0.20160224662875947
+          ],
+          "target": [
+            -11,
+            0,
+            -55
+          ]
+        },
+        "state": {
+          "names": false,
+          "homes": true,
+          "boards": true,
+          "walking": false
+        },
+        "walker": null,
+        "referenceTrees": 168,
+        "dublinMotion": {
+          "timeSeconds": 0,
+          "timeMs": 0,
+          "roadVehicles": 8,
+          "runwayOccupiedBy": [],
+          "runwayExclusive": true,
+          "flights": [
+            {
+              "id": "flight-1",
+              "phase": "taxi-to-runway",
+              "phaseProgress": 0,
+              "visible": true,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T1-1",
+              "position": {
+                "x": -23,
+                "y": 0.8125,
+                "z": -56.8
+              }
+            },
+            {
+              "id": "flight-2",
+              "phase": "climb-out",
+              "phaseProgress": 0.25,
+              "visible": true,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T2-1",
+              "position": {
+                "x": -63.688657407407405,
+                "y": 9.1709693287037,
+                "z": -63.504629629629626
+              }
+            }
+          ],
+          "helicopter": {
+            "id": "dublin-helicopter-patrol",
+            "phase": "vertical-departure",
+            "visible": true,
+            "runwayOccupied": false,
+            "cycleDurationSeconds": 72,
+            "position": {
+              "x": -40.6,
+              "y": 0.734,
+              "z": -46.8
+            }
+          },
+          "actors": [
+            {
+              "kind": "car",
+              "id": "Dublin sedan 1.1",
+              "visible": true,
+              "position": {
+                "x": -28.21998536774837,
+                "y": 0.27,
+                "z": -30.402537316813707
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 1.2",
+              "visible": true,
+              "position": {
+                "x": 30.219985310857115,
+                "y": 0.27,
+                "z": 29.40253731495611
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 2.1",
+              "visible": true,
+              "position": {
+                "x": -27.78,
+                "y": 0.27,
+                "z": -30.051875
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin van 2.2",
+              "visible": true,
+              "position": {
+                "x": 29.78000002430808,
+                "y": 0.27,
+                "z": 29.05187500037233
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 3.1",
+              "visible": true,
+              "position": {
+                "x": -18.219985263902256,
+                "y": 0.27,
+                "z": -25.402546304352427
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 3.2",
+              "visible": true,
+              "position": {
+                "x": 18.21998523340677,
+                "y": 0.27,
+                "z": 26.40254630476134
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 4.1",
+              "visible": true,
+              "position": {
+                "x": -17.78,
+                "y": 0.27,
+                "z": -25.053787878787876
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 4.2",
+              "visible": true,
+              "position": {
+                "x": 17.78,
+                "y": 0.27,
+                "z": 26.05378787842705
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-1",
+              "visible": true,
+              "position": {
+                "x": -23,
+                "y": 0.8125,
+                "z": -56.8
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-2",
+              "visible": true,
+              "position": {
+                "x": -63.688657407407405,
+                "y": 9.1709693287037,
+                "z": -63.504629629629626
+              }
+            },
+            {
+              "kind": "helicopter",
+              "id": "dublin-helicopter-patrol",
+              "visible": true,
+              "position": {
+                "x": -40.6,
+                "y": 0.734,
+                "z": -46.8
+              }
+            }
+          ]
+        },
+        "port": {
+          "paused": false,
+          "status": "Operating",
+          "time": 1.304300000011919,
+          "vessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.08695333333412805,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "berth",
+              "berth": true,
+              "progress": 0.6640272727283564,
+              "slot": -12
+            }
+          ],
+          "activeVessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.08695333333412805,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "berth",
+              "berth": true,
+              "progress": 0.6640272727283564,
+              "slot": -12
+            }
+          ],
+          "berthCount": 1,
+          "containersMoved": 0,
+          "completedCargo": 0,
+          "completedFerries": 0,
+          "arrivals": 0,
+          "departures": 0,
+          "cargo": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "ferry": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "cranes": 4,
+          "terminal": "Illustrative local port simulation"
+        },
+        "dublinMetrics": {
+          "city": {
+            "houses": 310,
+            "houseParcels": 310,
+            "selectablePlaces": 77,
+            "parkPlans": 9,
+            "publicStructures": 64,
+            "uniqueStructureFingerprints": 64
+          },
+          "roads": {
+            "roadLanes": 8,
+            "curbs": 8,
+            "footways": 8,
+            "markings": 187,
+            "signalizedCrossings": 8,
+            "streetLights": 16,
+            "busStops": 4,
+            "cycleTrackSegments": 68,
+            "railSegments": 322,
+            "airportConnectorLength": 8.899999999999999,
+            "airportBusLaneSegments": 9,
+            "clearanceRadius": 0.45
+          },
+          "airport": {
+            "campusWidth": 72,
+            "campusDepth": 29,
+            "localScale": 2,
+            "terminals": 2,
+            "runways": 3,
+            "stands": 4,
+            "scheduledGates": 2,
+            "boardingBridgeComponents": 12,
+            "parkedAirliners": 3,
+            "parkedHelicopters": 1,
+            "boxDetailInstances": 488,
+            "cylinderDetailInstances": 139,
+            "instancedDetailBatches": 2,
+            "customMeshCount": 5
+          },
+          "port": {
+            "quays": 2,
+            "riverMouthWidth": 6,
+            "shipToShoreCranes": 4,
+            "containerStacks": 40,
+            "railSidings": 2,
+            "breakwaterArms": 2,
+            "accessRoads": 1,
+            "pilotAndTugVessels": 2,
+            "landBounds": {
+              "minX": 39,
+              "maxX": 62.5,
+              "minZ": -15,
+              "maxZ": 15,
+              "channelHalfWidth": 3,
+              "topY": 0.325,
+              "platforms": [
+                {
+                  "minZ": -15,
+                  "maxZ": -3
+                },
+                {
+                  "minZ": 3,
+                  "maxZ": 15
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "seconds": 8,
+      "screenshot": "flight-8.png",
+      "state": {
+        "city": "dublin",
+        "ready": true,
+        "meshes": 2710,
+        "triangles": 328797,
+        "selectedId": null,
+        "camera": {
+          "position": [
+            -7.057028410955088,
+            70.97348860280842,
+            0.20160224662875947
+          ],
+          "target": [
+            -11,
+            0,
+            -55
+          ]
+        },
+        "state": {
+          "names": false,
+          "homes": true,
+          "boards": true,
+          "walking": false
+        },
+        "walker": null,
+        "referenceTrees": 168,
+        "dublinMotion": {
+          "timeSeconds": 8,
+          "timeMs": 8000,
+          "roadVehicles": 8,
+          "runwayOccupiedBy": [
+            "flight-1"
+          ],
+          "runwayExclusive": true,
+          "flights": [
+            {
+              "id": "flight-1",
+              "phase": "runway-line-up",
+              "phaseProgress": 0.06666666666666665,
+              "visible": true,
+              "runwayOccupied": true,
+              "cycleDurationSeconds": 120,
+              "gateId": "T1-1",
+              "position": {
+                "x": -42.68888888888889,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "id": "flight-2",
+              "phase": "climb-out",
+              "phaseProgress": 0.31666666666666665,
+              "visible": true,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T2-1",
+              "position": {
+                "x": -97.87504286694102,
+                "y": 22.949636595507545,
+                "z": -65.9909122085048
+              }
+            }
+          ],
+          "helicopter": {
+            "id": "dublin-helicopter-patrol",
+            "phase": "city-patrol",
+            "visible": true,
+            "runwayOccupied": false,
+            "cycleDurationSeconds": 72,
+            "position": {
+              "x": -40.6,
+              "y": 10.5,
+              "z": -46.8
+            }
+          },
+          "actors": [
+            {
+              "kind": "car",
+              "id": "Dublin sedan 1.1",
+              "visible": true,
+              "position": {
+                "x": -8.53900208043418,
+                "y": 0.27,
+                "z": -32.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 1.2",
+              "visible": true,
+              "position": {
+                "x": 10.539002080433772,
+                "y": 0.27,
+                "z": 31.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 2.1",
+              "visible": true,
+              "position": {
+                "x": -27.78,
+                "y": 0.27,
+                "z": -4.85187500000001
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin van 2.2",
+              "visible": true,
+              "position": {
+                "x": 29.78,
+                "y": 0.296489052926056,
+                "z": 3.851875000372864
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 3.1",
+              "visible": true,
+              "position": {
+                "x": 3.4610069056252595,
+                "y": 0.27,
+                "z": -27.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 3.2",
+              "visible": true,
+              "position": {
+                "x": -3.4610069056247976,
+                "y": 0.27,
+                "z": 28.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 4.1",
+              "visible": true,
+              "position": {
+                "x": -17.78,
+                "y": 0.541,
+                "z": 1.746212121212138
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 4.2",
+              "visible": true,
+              "position": {
+                "x": 17.78,
+                "y": 0.541,
+                "z": -0.7462121215733069
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-1",
+              "visible": true,
+              "position": {
+                "x": -42.68888888888889,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-2",
+              "visible": true,
+              "position": {
+                "x": -97.87504286694102,
+                "y": 22.949636595507545,
+                "z": -65.9909122085048
+              }
+            },
+            {
+              "kind": "helicopter",
+              "id": "dublin-helicopter-patrol",
+              "visible": true,
+              "position": {
+                "x": -40.6,
+                "y": 10.5,
+                "z": -46.8
+              }
+            }
+          ]
+        },
+        "port": {
+          "paused": false,
+          "status": "Operating",
+          "time": 9.304300000011919,
+          "vessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.6202866666674614,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.23912777777844005,
+              "slot": -12
+            }
+          ],
+          "activeVessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.6202866666674614,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.23912777777844005,
+              "slot": -12
+            }
+          ],
+          "berthCount": 1,
+          "containersMoved": 0,
+          "completedCargo": 0,
+          "completedFerries": 0,
+          "arrivals": 0,
+          "departures": 0,
+          "cargo": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "ferry": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "cranes": 4,
+          "terminal": "Illustrative local port simulation"
+        },
+        "dublinMetrics": {
+          "city": {
+            "houses": 310,
+            "houseParcels": 310,
+            "selectablePlaces": 77,
+            "parkPlans": 9,
+            "publicStructures": 64,
+            "uniqueStructureFingerprints": 64
+          },
+          "roads": {
+            "roadLanes": 8,
+            "curbs": 8,
+            "footways": 8,
+            "markings": 187,
+            "signalizedCrossings": 8,
+            "streetLights": 16,
+            "busStops": 4,
+            "cycleTrackSegments": 68,
+            "railSegments": 322,
+            "airportConnectorLength": 8.899999999999999,
+            "airportBusLaneSegments": 9,
+            "clearanceRadius": 0.45
+          },
+          "airport": {
+            "campusWidth": 72,
+            "campusDepth": 29,
+            "localScale": 2,
+            "terminals": 2,
+            "runways": 3,
+            "stands": 4,
+            "scheduledGates": 2,
+            "boardingBridgeComponents": 12,
+            "parkedAirliners": 3,
+            "parkedHelicopters": 1,
+            "boxDetailInstances": 488,
+            "cylinderDetailInstances": 139,
+            "instancedDetailBatches": 2,
+            "customMeshCount": 5
+          },
+          "port": {
+            "quays": 2,
+            "riverMouthWidth": 6,
+            "shipToShoreCranes": 4,
+            "containerStacks": 40,
+            "railSidings": 2,
+            "breakwaterArms": 2,
+            "accessRoads": 1,
+            "pilotAndTugVessels": 2,
+            "landBounds": {
+              "minX": 39,
+              "maxX": 62.5,
+              "minZ": -15,
+              "maxZ": 15,
+              "channelHalfWidth": 3,
+              "topY": 0.325,
+              "platforms": [
+                {
+                  "minZ": -15,
+                  "maxZ": -3
+                },
+                {
+                  "minZ": 3,
+                  "maxZ": 15
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "seconds": 24,
+      "screenshot": "flight-24.png",
+      "state": {
+        "city": "dublin",
+        "ready": true,
+        "meshes": 2710,
+        "triangles": 328797,
+        "selectedId": null,
+        "camera": {
+          "position": [
+            -7.057028410955088,
+            70.97348860280842,
+            0.20160224662875947
+          ],
+          "target": [
+            -11,
+            0,
+            -55
+          ]
+        },
+        "state": {
+          "names": false,
+          "homes": true,
+          "boards": true,
+          "walking": false
+        },
+        "walker": null,
+        "referenceTrees": 168,
+        "dublinMotion": {
+          "timeSeconds": 24,
+          "timeMs": 24000,
+          "roadVehicles": 8,
+          "runwayOccupiedBy": [
+            "flight-1"
+          ],
+          "runwayExclusive": true,
+          "flights": [
+            {
+              "id": "flight-1",
+              "phase": "takeoff-roll",
+              "phaseProgress": 0.19999999999999996,
+              "visible": true,
+              "runwayOccupied": true,
+              "cycleDurationSeconds": 120,
+              "gateId": "T1-1",
+              "position": {
+                "x": 21,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "id": "flight-2",
+              "phase": "off-map-cruise",
+              "phaseProgress": 0.44999999999999996,
+              "visible": false,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T2-1",
+              "position": {
+                "x": -113,
+                "y": 23,
+                "z": -66
+              }
+            }
+          ],
+          "helicopter": {
+            "id": "dublin-helicopter-patrol",
+            "phase": "city-patrol",
+            "visible": true,
+            "runwayOccupied": false,
+            "cycleDurationSeconds": 72,
+            "position": {
+              "x": 16.41614083408618,
+              "y": 11.34780303031964,
+              "z": -7.867126101384691
+            }
+          },
+          "actors": [
+            {
+              "kind": "car",
+              "id": "Dublin sedan 1.1",
+              "visible": true,
+              "position": {
+                "x": 30.22,
+                "y": 0.27,
+                "z": -28.680541477987116
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 1.2",
+              "visible": true,
+              "position": {
+                "x": -28.22,
+                "y": 0.27,
+                "z": 27.680541477563043
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 2.1",
+              "visible": true,
+              "position": {
+                "x": -12.502572441110543,
+                "y": 0.27,
+                "z": 30.78
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin van 2.2",
+              "visible": true,
+              "position": {
+                "x": 14.502572441110724,
+                "y": 0.27,
+                "z": -31.78
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 3.1",
+              "visible": true,
+              "position": {
+                "x": 18.22,
+                "y": 0.27,
+                "z": 4.319467506586692
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 3.2",
+              "visible": true,
+              "position": {
+                "x": -18.22,
+                "y": 0.40110427385488256,
+                "z": -3.319467506175528
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 4.1",
+              "visible": true,
+              "position": {
+                "x": 10.295514682140002,
+                "y": 0.27,
+                "z": 27.78
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 4.2",
+              "visible": true,
+              "position": {
+                "x": -10.29551468214061,
+                "y": 0.27,
+                "z": -26.78
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-1",
+              "visible": true,
+              "position": {
+                "x": 21,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-2",
+              "visible": false,
+              "position": {
+                "x": -113,
+                "y": 23,
+                "z": -66
+              }
+            },
+            {
+              "kind": "helicopter",
+              "id": "dublin-helicopter-patrol",
+              "visible": true,
+              "position": {
+                "x": 16.41614083408618,
+                "y": 11.34780303031964,
+                "z": -7.867126101384691
+              }
+            }
+          ]
+        },
+        "port": {
+          "paused": false,
+          "status": "Operating",
+          "time": 25.30430000001192,
+          "vessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "berth",
+              "berth": true,
+              "progress": 0.9367545454556292,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "depart",
+              "berth": false,
+              "progress": 0.14401875000074504,
+              "slot": -12
+            }
+          ],
+          "activeVessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "berth",
+              "berth": true,
+              "progress": 0.9367545454556292,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "depart",
+              "berth": false,
+              "progress": 0.14401875000074504,
+              "slot": -12
+            }
+          ],
+          "berthCount": 1,
+          "containersMoved": 0,
+          "completedCargo": 0,
+          "completedFerries": 1,
+          "arrivals": 0,
+          "departures": 1,
+          "cargo": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "ferry": {
+            "arrivals": 0,
+            "departures": 1
+          },
+          "cranes": 4,
+          "terminal": "Illustrative local port simulation"
+        },
+        "dublinMetrics": {
+          "city": {
+            "houses": 310,
+            "houseParcels": 310,
+            "selectablePlaces": 77,
+            "parkPlans": 9,
+            "publicStructures": 64,
+            "uniqueStructureFingerprints": 64
+          },
+          "roads": {
+            "roadLanes": 8,
+            "curbs": 8,
+            "footways": 8,
+            "markings": 187,
+            "signalizedCrossings": 8,
+            "streetLights": 16,
+            "busStops": 4,
+            "cycleTrackSegments": 68,
+            "railSegments": 322,
+            "airportConnectorLength": 8.899999999999999,
+            "airportBusLaneSegments": 9,
+            "clearanceRadius": 0.45
+          },
+          "airport": {
+            "campusWidth": 72,
+            "campusDepth": 29,
+            "localScale": 2,
+            "terminals": 2,
+            "runways": 3,
+            "stands": 4,
+            "scheduledGates": 2,
+            "boardingBridgeComponents": 12,
+            "parkedAirliners": 3,
+            "parkedHelicopters": 1,
+            "boxDetailInstances": 488,
+            "cylinderDetailInstances": 139,
+            "instancedDetailBatches": 2,
+            "customMeshCount": 5
+          },
+          "port": {
+            "quays": 2,
+            "riverMouthWidth": 6,
+            "shipToShoreCranes": 4,
+            "containerStacks": 40,
+            "railSidings": 2,
+            "breakwaterArms": 2,
+            "accessRoads": 1,
+            "pilotAndTugVessels": 2,
+            "landBounds": {
+              "minX": 39,
+              "maxX": 62.5,
+              "minZ": -15,
+              "maxZ": 15,
+              "channelHalfWidth": 3,
+              "topY": 0.325,
+              "platforms": [
+                {
+                  "minZ": -15,
+                  "maxZ": -3
+                },
+                {
+                  "minZ": 3,
+                  "maxZ": 15
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "seconds": 42,
+      "screenshot": "flight-42.png",
+      "state": {
+        "city": "dublin",
+        "ready": true,
+        "meshes": 2710,
+        "triangles": 328797,
+        "selectedId": null,
+        "camera": {
+          "position": [
+            -7.057028410955088,
+            70.97348860280842,
+            0.20160224662875947
+          ],
+          "target": [
+            -11,
+            0,
+            -55
+          ]
+        },
+        "state": {
+          "names": false,
+          "homes": true,
+          "boards": true,
+          "walking": false
+        },
+        "walker": null,
+        "referenceTrees": 168,
+        "dublinMotion": {
+          "timeSeconds": 42,
+          "timeMs": 42000,
+          "roadVehicles": 8,
+          "runwayOccupiedBy": [],
+          "runwayExclusive": true,
+          "flights": [
+            {
+              "id": "flight-1",
+              "phase": "off-map-cruise",
+              "phaseProgress": 0.3500000000000001,
+              "visible": false,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T1-1",
+              "position": {
+                "x": 91,
+                "y": 23,
+                "z": -66
+              }
+            },
+            {
+              "id": "flight-2",
+              "phase": "opposite-side-approach",
+              "phaseProgress": 0.6000000000000001,
+              "visible": true,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T2-1",
+              "position": {
+                "x": 47.89999999999996,
+                "y": 11.916249999999986,
+                "z": -64
+              }
+            }
+          ],
+          "helicopter": {
+            "id": "dublin-helicopter-patrol",
+            "phase": "return-to-airport",
+            "visible": true,
+            "runwayOccupied": false,
+            "cycleDurationSeconds": 72,
+            "position": {
+              "x": 4.752847655689534,
+              "y": 11.99893749952306,
+              "z": -0.33422216682975525
+            }
+          },
+          "actors": [
+            {
+              "kind": "car",
+              "id": "Dublin sedan 1.1",
+              "visible": true,
+              "position": {
+                "x": 30.22,
+                "y": 0.27,
+                "z": 18.119458522013115
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 1.2",
+              "visible": true,
+              "position": {
+                "x": -28.22,
+                "y": 0.27,
+                "z": -19.11945852243678
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 2.1",
+              "visible": true,
+              "position": {
+                "x": 29.78,
+                "y": 0.27,
+                "z": 15.853269882220946
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin van 2.2",
+              "visible": true,
+              "position": {
+                "x": -27.78,
+                "y": 0.27,
+                "z": -16.853269881848153
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 3.1",
+              "visible": true,
+              "position": {
+                "x": -9.877928107137095,
+                "y": 0.27,
+                "z": 28.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 3.2",
+              "visible": true,
+              "position": {
+                "x": 9.877928107137528,
+                "y": 0.27,
+                "z": -27.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 4.1",
+              "visible": true,
+              "position": {
+                "x": 17.775330444511596,
+                "y": 0.27,
+                "z": -25.5447427734083
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 4.2",
+              "visible": true,
+              "position": {
+                "x": -17.775330434409092,
+                "y": 0.27,
+                "z": 26.544742773086764
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-1",
+              "visible": false,
+              "position": {
+                "x": 91,
+                "y": 23,
+                "z": -66
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-2",
+              "visible": true,
+              "position": {
+                "x": 47.89999999999996,
+                "y": 11.916249999999986,
+                "z": -64
+              }
+            },
+            {
+              "kind": "helicopter",
+              "id": "dublin-helicopter-patrol",
+              "visible": true,
+              "position": {
+                "x": 4.752847655689534,
+                "y": 11.99893749952306,
+                "z": -0.33422216682975525
+              }
+            }
+          ]
+        },
+        "port": {
+          "paused": false,
+          "status": "Operating",
+          "time": 43.30430000001192,
+          "vessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.9613500000006623,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "offshore",
+              "berth": false,
+              "progress": 0.331100000000917,
+              "slot": -12
+            }
+          ],
+          "activeVessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.9613500000006623,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "offshore",
+              "berth": false,
+              "progress": 0.331100000000917,
+              "slot": -12
+            }
+          ],
+          "berthCount": 1,
+          "containersMoved": 0,
+          "completedCargo": 0,
+          "completedFerries": 1,
+          "arrivals": 0,
+          "departures": 1,
+          "cargo": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "ferry": {
+            "arrivals": 0,
+            "departures": 1
+          },
+          "cranes": 4,
+          "terminal": "Illustrative local port simulation"
+        },
+        "dublinMetrics": {
+          "city": {
+            "houses": 310,
+            "houseParcels": 310,
+            "selectablePlaces": 77,
+            "parkPlans": 9,
+            "publicStructures": 64,
+            "uniqueStructureFingerprints": 64
+          },
+          "roads": {
+            "roadLanes": 8,
+            "curbs": 8,
+            "footways": 8,
+            "markings": 187,
+            "signalizedCrossings": 8,
+            "streetLights": 16,
+            "busStops": 4,
+            "cycleTrackSegments": 68,
+            "railSegments": 322,
+            "airportConnectorLength": 8.899999999999999,
+            "airportBusLaneSegments": 9,
+            "clearanceRadius": 0.45
+          },
+          "airport": {
+            "campusWidth": 72,
+            "campusDepth": 29,
+            "localScale": 2,
+            "terminals": 2,
+            "runways": 3,
+            "stands": 4,
+            "scheduledGates": 2,
+            "boardingBridgeComponents": 12,
+            "parkedAirliners": 3,
+            "parkedHelicopters": 1,
+            "boxDetailInstances": 488,
+            "cylinderDetailInstances": 139,
+            "instancedDetailBatches": 2,
+            "customMeshCount": 5
+          },
+          "port": {
+            "quays": 2,
+            "riverMouthWidth": 6,
+            "shipToShoreCranes": 4,
+            "containerStacks": 40,
+            "railSidings": 2,
+            "breakwaterArms": 2,
+            "accessRoads": 1,
+            "pilotAndTugVessels": 2,
+            "landBounds": {
+              "minX": 39,
+              "maxX": 62.5,
+              "minZ": -15,
+              "maxZ": 15,
+              "channelHalfWidth": 3,
+              "topY": 0.325,
+              "platforms": [
+                {
+                  "minZ": -15,
+                  "maxZ": -3
+                },
+                {
+                  "minZ": 3,
+                  "maxZ": 15
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "seconds": 69,
+      "screenshot": "flight-69.png",
+      "state": {
+        "city": "dublin",
+        "ready": true,
+        "meshes": 2710,
+        "triangles": 328797,
+        "selectedId": null,
+        "camera": {
+          "position": [
+            -7.057028410955088,
+            70.97348860280842,
+            0.20160224662875947
+          ],
+          "target": [
+            -11,
+            0,
+            -55
+          ]
+        },
+        "state": {
+          "names": false,
+          "homes": true,
+          "boards": true,
+          "walking": false
+        },
+        "walker": null,
+        "referenceTrees": 168,
+        "dublinMotion": {
+          "timeSeconds": 69,
+          "timeMs": 69000,
+          "roadVehicles": 8,
+          "runwayOccupiedBy": [],
+          "runwayExclusive": true,
+          "flights": [
+            {
+              "id": "flight-1",
+              "phase": "opposite-side-approach",
+              "phaseProgress": 0.575,
+              "visible": true,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T1-1",
+              "position": {
+                "x": -89.21875000000006,
+                "y": 19.536328125000022,
+                "z": -65.375
+              }
+            },
+            {
+              "id": "flight-2",
+              "phase": "taxi-to-gate",
+              "phaseProgress": 0.825,
+              "visible": true,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T2-1",
+              "position": {
+                "x": 1.8412275074100157,
+                "y": 0.812174130702455,
+                "z": -56.7152739826383
+              }
+            }
+          ],
+          "helicopter": {
+            "id": "dublin-helicopter-patrol",
+            "phase": "parked-at-helipad",
+            "visible": true,
+            "runwayOccupied": false,
+            "cycleDurationSeconds": 72,
+            "position": {
+              "x": -40.6,
+              "y": 0.734,
+              "z": -46.8
+            }
+          },
+          "actors": [
+            {
+              "kind": "car",
+              "id": "Dublin sedan 1.1",
+              "visible": true,
+              "position": {
+                "x": -27.526640744621638,
+                "y": 0.27,
+                "z": 30.937333415793393
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 1.2",
+              "visible": true,
+              "position": {
+                "x": 29.52664074462137,
+                "y": 0.27,
+                "z": -31.937333415793578
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 2.1",
+              "visible": true,
+              "position": {
+                "x": -8.14603267704122,
+                "y": 0.27,
+                "z": -31.78
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin van 2.2",
+              "visible": true,
+              "position": {
+                "x": 10.146032677041383,
+                "y": 0.27,
+                "z": 30.78
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 3.1",
+              "visible": true,
+              "position": {
+                "x": -3.6551506913501566,
+                "y": 0.27,
+                "z": -27.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 3.2",
+              "visible": true,
+              "position": {
+                "x": 3.6551506913506184,
+                "y": 0.27,
+                "z": 28.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 4.1",
+              "visible": true,
+              "position": {
+                "x": -17.140413433128057,
+                "y": 0.27,
+                "z": 27.6482793943371
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 4.2",
+              "visible": true,
+              "position": {
+                "x": 17.140413433127836,
+                "y": 0.27,
+                "z": -26.648279394337184
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-1",
+              "visible": true,
+              "position": {
+                "x": -89.21875000000006,
+                "y": 19.536328125000022,
+                "z": -65.375
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-2",
+              "visible": true,
+              "position": {
+                "x": 1.8412275074100157,
+                "y": 0.812174130702455,
+                "z": -56.7152739826383
+              }
+            },
+            {
+              "kind": "helicopter",
+              "id": "dublin-helicopter-patrol",
+              "visible": true,
+              "position": {
+                "x": -40.6,
+                "y": 0.734,
+                "z": -46.8
+              }
+            }
+          ]
+        },
+        "port": {
+          "paused": false,
+          "status": "Operating",
+          "time": 70.30430000001192,
+          "vessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "offshore",
+              "berth": false,
+              "progress": 0.7926384615393786,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "berth",
+              "berth": true,
+              "progress": 0.3003909090919928,
+              "slot": -12
+            }
+          ],
+          "activeVessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "offshore",
+              "berth": false,
+              "progress": 0.7926384615393786,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "berth",
+              "berth": true,
+              "progress": 0.3003909090919928,
+              "slot": -12
+            }
+          ],
+          "berthCount": 1,
+          "containersMoved": 0,
+          "completedCargo": 0,
+          "completedFerries": 1,
+          "arrivals": 0,
+          "departures": 1,
+          "cargo": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "ferry": {
+            "arrivals": 0,
+            "departures": 1
+          },
+          "cranes": 4,
+          "terminal": "Illustrative local port simulation"
+        },
+        "dublinMetrics": {
+          "city": {
+            "houses": 310,
+            "houseParcels": 310,
+            "selectablePlaces": 77,
+            "parkPlans": 9,
+            "publicStructures": 64,
+            "uniqueStructureFingerprints": 64
+          },
+          "roads": {
+            "roadLanes": 8,
+            "curbs": 8,
+            "footways": 8,
+            "markings": 187,
+            "signalizedCrossings": 8,
+            "streetLights": 16,
+            "busStops": 4,
+            "cycleTrackSegments": 68,
+            "railSegments": 322,
+            "airportConnectorLength": 8.899999999999999,
+            "airportBusLaneSegments": 9,
+            "clearanceRadius": 0.45
+          },
+          "airport": {
+            "campusWidth": 72,
+            "campusDepth": 29,
+            "localScale": 2,
+            "terminals": 2,
+            "runways": 3,
+            "stands": 4,
+            "scheduledGates": 2,
+            "boardingBridgeComponents": 12,
+            "parkedAirliners": 3,
+            "parkedHelicopters": 1,
+            "boxDetailInstances": 488,
+            "cylinderDetailInstances": 139,
+            "instancedDetailBatches": 2,
+            "customMeshCount": 5
+          },
+          "port": {
+            "quays": 2,
+            "riverMouthWidth": 6,
+            "shipToShoreCranes": 4,
+            "containerStacks": 40,
+            "railSidings": 2,
+            "breakwaterArms": 2,
+            "accessRoads": 1,
+            "pilotAndTugVessels": 2,
+            "landBounds": {
+              "minX": 39,
+              "maxX": 62.5,
+              "minZ": -15,
+              "maxZ": 15,
+              "channelHalfWidth": 3,
+              "topY": 0.325,
+              "platforms": [
+                {
+                  "minZ": -15,
+                  "maxZ": -3
+                },
+                {
+                  "minZ": 3,
+                  "maxZ": 15
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "seconds": 84,
+      "screenshot": "flight-84.png",
+      "state": {
+        "city": "dublin",
+        "ready": true,
+        "meshes": 2710,
+        "triangles": 328797,
+        "selectedId": null,
+        "camera": {
+          "position": [
+            -7.057028410955088,
+            70.97348860280842,
+            0.20160224662875947
+          ],
+          "target": [
+            -11,
+            0,
+            -55
+          ]
+        },
+        "state": {
+          "names": false,
+          "homes": true,
+          "boards": true,
+          "walking": false
+        },
+        "walker": null,
+        "referenceTrees": 168,
+        "dublinMotion": {
+          "timeSeconds": 84,
+          "timeMs": 84000,
+          "roadVehicles": 8,
+          "runwayOccupiedBy": [
+            "flight-1"
+          ],
+          "runwayExclusive": true,
+          "flights": [
+            {
+              "id": "flight-1",
+              "phase": "landing-roll",
+              "phaseProgress": 0.7,
+              "visible": true,
+              "runwayOccupied": true,
+              "cycleDurationSeconds": 120,
+              "gateId": "T1-1",
+              "position": {
+                "x": -34.40000000000001,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "id": "flight-2",
+              "phase": "parked-at-gate",
+              "phaseProgress": 0.95,
+              "visible": true,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T2-1",
+              "position": {
+                "x": 1,
+                "y": 0.8125,
+                "z": -56.8
+              }
+            }
+          ],
+          "helicopter": {
+            "id": "dublin-helicopter-patrol",
+            "phase": "city-patrol",
+            "visible": true,
+            "runwayOccupied": false,
+            "cycleDurationSeconds": 72,
+            "position": {
+              "x": -31.82367417948686,
+              "y": 10.894569962514945,
+              "z": -30.61210881293568
+            }
+          },
+          "actors": [
+            {
+              "kind": "car",
+              "id": "Dublin sedan 1.1",
+              "visible": true,
+              "position": {
+                "x": -28.22,
+                "y": 0.27,
+                "z": -7.836379727754013
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 1.2",
+              "visible": true,
+              "position": {
+                "x": 30.22,
+                "y": 0.27,
+                "z": 6.836379727330582
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 2.1",
+              "visible": true,
+              "position": {
+                "x": -27.78,
+                "y": 0.32955093723019024,
+                "z": -3.6546647636963066
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin van 2.2",
+              "visible": true,
+              "position": {
+                "x": 29.78,
+                "y": 0.5262613435572427,
+                "z": 2.654664764069196
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 3.1",
+              "visible": true,
+              "position": {
+                "x": 18.22,
+                "y": 0.27,
+                "z": -5.646690090388706
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 3.2",
+              "visible": true,
+              "position": {
+                "x": -18.22,
+                "y": 0.27,
+                "z": 6.646690090799915
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 4.1",
+              "visible": true,
+              "position": {
+                "x": 17.78,
+                "y": 0.27,
+                "z": 11.957972513942218
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 4.2",
+              "visible": true,
+              "position": {
+                "x": -17.78,
+                "y": 0.27,
+                "z": -10.957972514303197
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-1",
+              "visible": true,
+              "position": {
+                "x": -34.40000000000001,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-2",
+              "visible": true,
+              "position": {
+                "x": 1,
+                "y": 0.8125,
+                "z": -56.8
+              }
+            },
+            {
+              "kind": "helicopter",
+              "id": "dublin-helicopter-patrol",
+              "visible": true,
+              "position": {
+                "x": -31.82367417948686,
+                "y": 10.894569962514945,
+                "z": -30.61210881293568
+              }
+            }
+          ]
+        },
+        "port": {
+          "paused": false,
+          "status": "Operating",
+          "time": 85.30430000001192,
+          "vessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.8202866666674614,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.4057944444451067,
+              "slot": -12
+            }
+          ],
+          "activeVessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.8202866666674614,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.4057944444451067,
+              "slot": -12
+            }
+          ],
+          "berthCount": 1,
+          "containersMoved": 0,
+          "completedCargo": 0,
+          "completedFerries": 1,
+          "arrivals": 1,
+          "departures": 1,
+          "cargo": {
+            "arrivals": 1,
+            "departures": 0
+          },
+          "ferry": {
+            "arrivals": 0,
+            "departures": 1
+          },
+          "cranes": 4,
+          "terminal": "Illustrative local port simulation"
+        },
+        "dublinMetrics": {
+          "city": {
+            "houses": 310,
+            "houseParcels": 310,
+            "selectablePlaces": 77,
+            "parkPlans": 9,
+            "publicStructures": 64,
+            "uniqueStructureFingerprints": 64
+          },
+          "roads": {
+            "roadLanes": 8,
+            "curbs": 8,
+            "footways": 8,
+            "markings": 187,
+            "signalizedCrossings": 8,
+            "streetLights": 16,
+            "busStops": 4,
+            "cycleTrackSegments": 68,
+            "railSegments": 322,
+            "airportConnectorLength": 8.899999999999999,
+            "airportBusLaneSegments": 9,
+            "clearanceRadius": 0.45
+          },
+          "airport": {
+            "campusWidth": 72,
+            "campusDepth": 29,
+            "localScale": 2,
+            "terminals": 2,
+            "runways": 3,
+            "stands": 4,
+            "scheduledGates": 2,
+            "boardingBridgeComponents": 12,
+            "parkedAirliners": 3,
+            "parkedHelicopters": 1,
+            "boxDetailInstances": 488,
+            "cylinderDetailInstances": 139,
+            "instancedDetailBatches": 2,
+            "customMeshCount": 5
+          },
+          "port": {
+            "quays": 2,
+            "riverMouthWidth": 6,
+            "shipToShoreCranes": 4,
+            "containerStacks": 40,
+            "railSidings": 2,
+            "breakwaterArms": 2,
+            "accessRoads": 1,
+            "pilotAndTugVessels": 2,
+            "landBounds": {
+              "minX": 39,
+              "maxX": 62.5,
+              "minZ": -15,
+              "maxZ": 15,
+              "channelHalfWidth": 3,
+              "topY": 0.325,
+              "platforms": [
+                {
+                  "minZ": -15,
+                  "maxZ": -3
+                },
+                {
+                  "minZ": 3,
+                  "maxZ": 15
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "seconds": 96,
+      "screenshot": "flight-96.png",
+      "state": {
+        "city": "dublin",
+        "ready": true,
+        "meshes": 2710,
+        "triangles": 328797,
+        "selectedId": null,
+        "camera": {
+          "position": [
+            -7.057028410955088,
+            70.97348860280842,
+            0.20160224662875947
+          ],
+          "target": [
+            -11,
+            0,
+            -55
+          ]
+        },
+        "state": {
+          "names": false,
+          "homes": true,
+          "boards": true,
+          "walking": false
+        },
+        "walker": null,
+        "referenceTrees": 168,
+        "dublinMotion": {
+          "timeSeconds": 96,
+          "timeMs": 96000,
+          "roadVehicles": 8,
+          "runwayOccupiedBy": [],
+          "runwayExclusive": true,
+          "flights": [
+            {
+              "id": "flight-1",
+              "phase": "taxi-to-gate",
+              "phaseProgress": 0.8,
+              "visible": true,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T1-1",
+              "position": {
+                "x": -27.328285276393988,
+                "y": 0.8155581360569453,
+                "z": -57.595115374805765
+              }
+            },
+            {
+              "id": "flight-2",
+              "phase": "taxi-to-runway",
+              "phaseProgress": 0.050000000000000044,
+              "visible": true,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T2-1",
+              "position": {
+                "x": 16.733024643538165,
+                "y": 0.8074889615024737,
+                "z": -62.163592417199105
+              }
+            }
+          ],
+          "helicopter": {
+            "id": "dublin-helicopter-patrol",
+            "phase": "city-patrol",
+            "visible": true,
+            "runwayOccupied": false,
+            "cycleDurationSeconds": 72,
+            "position": {
+              "x": 16.41614083408618,
+              "y": 11.34780303031964,
+              "z": -7.867126101384691
+            }
+          },
+          "actors": [
+            {
+              "kind": "car",
+              "id": "Dublin sedan 1.1",
+              "visible": true,
+              "position": {
+                "x": -20.705159669798906,
+                "y": 0.27,
+                "z": -32.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 1.2",
+              "visible": true,
+              "position": {
+                "x": 22.70515966979857,
+                "y": 0.27,
+                "z": 31.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 2.1",
+              "visible": true,
+              "position": {
+                "x": -23.905362204806806,
+                "y": 0.27,
+                "z": 30.78
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin van 2.2",
+              "visible": true,
+              "position": {
+                "x": 25.905362204807123,
+                "y": 0.27,
+                "z": -31.78
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 3.1",
+              "visible": true,
+              "position": {
+                "x": 17.17656986599823,
+                "y": 0.27,
+                "z": 28.10597002959735
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 3.2",
+              "visible": true,
+              "position": {
+                "x": -17.17656986599787,
+                "y": 0.27,
+                "z": -27.10597002959749
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 4.1",
+              "visible": true,
+              "position": {
+                "x": 15.808669953375057,
+                "y": 0.27,
+                "z": -26.78
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 4.2",
+              "visible": true,
+              "position": {
+                "x": -15.808669953375256,
+                "y": 0.27,
+                "z": 27.78
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-1",
+              "visible": true,
+              "position": {
+                "x": -27.328285276393988,
+                "y": 0.8155581360569453,
+                "z": -57.595115374805765
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-2",
+              "visible": true,
+              "position": {
+                "x": 16.733024643538165,
+                "y": 0.8074889615024737,
+                "z": -62.163592417199105
+              }
+            },
+            {
+              "kind": "helicopter",
+              "id": "dublin-helicopter-patrol",
+              "visible": true,
+              "position": {
+                "x": 16.41614083408618,
+                "y": 11.34780303031964,
+                "z": -7.867126101384691
+              }
+            }
+          ]
+        },
+        "port": {
+          "paused": false,
+          "status": "Operating",
+          "time": 97.30430000001192,
+          "vessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "berth",
+              "berth": true,
+              "progress": 0.8458454545465383,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "depart",
+              "berth": false,
+              "progress": 0.08151875000074504,
+              "slot": -12
+            }
+          ],
+          "activeVessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "berth",
+              "berth": true,
+              "progress": 0.8458454545465383,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "depart",
+              "berth": false,
+              "progress": 0.08151875000074504,
+              "slot": -12
+            }
+          ],
+          "berthCount": 1,
+          "containersMoved": 0,
+          "completedCargo": 0,
+          "completedFerries": 2,
+          "arrivals": 1,
+          "departures": 2,
+          "cargo": {
+            "arrivals": 1,
+            "departures": 0
+          },
+          "ferry": {
+            "arrivals": 0,
+            "departures": 2
+          },
+          "cranes": 4,
+          "terminal": "Illustrative local port simulation"
+        },
+        "dublinMetrics": {
+          "city": {
+            "houses": 310,
+            "houseParcels": 310,
+            "selectablePlaces": 77,
+            "parkPlans": 9,
+            "publicStructures": 64,
+            "uniqueStructureFingerprints": 64
+          },
+          "roads": {
+            "roadLanes": 8,
+            "curbs": 8,
+            "footways": 8,
+            "markings": 187,
+            "signalizedCrossings": 8,
+            "streetLights": 16,
+            "busStops": 4,
+            "cycleTrackSegments": 68,
+            "railSegments": 322,
+            "airportConnectorLength": 8.899999999999999,
+            "airportBusLaneSegments": 9,
+            "clearanceRadius": 0.45
+          },
+          "airport": {
+            "campusWidth": 72,
+            "campusDepth": 29,
+            "localScale": 2,
+            "terminals": 2,
+            "runways": 3,
+            "stands": 4,
+            "scheduledGates": 2,
+            "boardingBridgeComponents": 12,
+            "parkedAirliners": 3,
+            "parkedHelicopters": 1,
+            "boxDetailInstances": 488,
+            "cylinderDetailInstances": 139,
+            "instancedDetailBatches": 2,
+            "customMeshCount": 5
+          },
+          "port": {
+            "quays": 2,
+            "riverMouthWidth": 6,
+            "shipToShoreCranes": 4,
+            "containerStacks": 40,
+            "railSidings": 2,
+            "breakwaterArms": 2,
+            "accessRoads": 1,
+            "pilotAndTugVessels": 2,
+            "landBounds": {
+              "minX": 39,
+              "maxX": 62.5,
+              "minZ": -15,
+              "maxZ": 15,
+              "channelHalfWidth": 3,
+              "topY": 0.325,
+              "platforms": [
+                {
+                  "minZ": -15,
+                  "maxZ": -3
+                },
+                {
+                  "minZ": 3,
+                  "maxZ": 15
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "seconds": 105,
+      "screenshot": "flight-105.png",
+      "state": {
+        "city": "dublin",
+        "ready": true,
+        "meshes": 2710,
+        "triangles": 328797,
+        "selectedId": null,
+        "camera": {
+          "position": [
+            -7.057028410955088,
+            70.97348860280842,
+            0.20160224662875947
+          ],
+          "target": [
+            -11,
+            0,
+            -55
+          ]
+        },
+        "state": {
+          "names": false,
+          "homes": true,
+          "boards": true,
+          "walking": false
+        },
+        "walker": null,
+        "referenceTrees": 168,
+        "dublinMotion": {
+          "timeSeconds": 105,
+          "timeMs": 105000,
+          "roadVehicles": 8,
+          "runwayOccupiedBy": [
+            "flight-2"
+          ],
+          "runwayExclusive": true,
+          "flights": [
+            {
+              "id": "flight-1",
+              "phase": "parked-at-gate",
+              "phaseProgress": 0.875,
+              "visible": true,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T1-1",
+              "position": {
+                "x": -23,
+                "y": 0.8125,
+                "z": -56.8
+              }
+            },
+            {
+              "id": "flight-2",
+              "phase": "takeoff-roll",
+              "phaseProgress": 0.125,
+              "visible": true,
+              "runwayOccupied": true,
+              "cycleDurationSeconds": 120,
+              "gateId": "T2-1",
+              "position": {
+                "x": -0.0703125,
+                "y": 0.8325,
+                "z": -62
+              }
+            }
+          ],
+          "helicopter": {
+            "id": "dublin-helicopter-patrol",
+            "phase": "city-patrol",
+            "visible": true,
+            "runwayOccupied": false,
+            "cycleDurationSeconds": 72,
+            "position": {
+              "x": 11.839002359617348,
+              "y": 11.000095210420191,
+              "z": 22.014980497819156
+            }
+          },
+          "actors": [
+            {
+              "kind": "car",
+              "id": "Dublin sedan 1.1",
+              "visible": true,
+              "position": {
+                "x": 2.6948403302010675,
+                "y": 0.27,
+                "z": -32.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 1.2",
+              "visible": true,
+              "position": {
+                "x": -0.6948403302014192,
+                "y": 0.27,
+                "z": 31.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 2.1",
+              "visible": true,
+              "position": {
+                "x": 4.44463779519322,
+                "y": 0.27,
+                "z": 30.78
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin van 2.2",
+              "visible": true,
+              "position": {
+                "x": -2.444637795193028,
+                "y": 0.27,
+                "z": -31.78
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 3.1",
+              "visible": true,
+              "position": {
+                "x": -8.461770510161651,
+                "y": 0.27,
+                "z": 28.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 3.2",
+              "visible": true,
+              "position": {
+                "x": 8.46177051016212,
+                "y": 0.27,
+                "z": -27.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 4.1",
+              "visible": true,
+              "position": {
+                "x": -14.341330046625327,
+                "y": 0.27,
+                "z": -26.78
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 4.2",
+              "visible": true,
+              "position": {
+                "x": 14.341330046624652,
+                "y": 0.27,
+                "z": 27.78
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-1",
+              "visible": true,
+              "position": {
+                "x": -23,
+                "y": 0.8125,
+                "z": -56.8
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-2",
+              "visible": true,
+              "position": {
+                "x": -0.0703125,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "kind": "helicopter",
+              "id": "dublin-helicopter-patrol",
+              "visible": true,
+              "position": {
+                "x": 11.839002359617348,
+                "y": 11.000095210420191,
+                "z": 22.014980497819156
+              }
+            }
+          ]
+        },
+        "port": {
+          "paused": false,
+          "status": "Operating",
+          "time": 106.30430000001192,
+          "vessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.4057944444451067,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "depart",
+              "berth": false,
+              "progress": 0.644018750000745,
+              "slot": -12
+            }
+          ],
+          "activeVessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.4057944444451067,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "depart",
+              "berth": false,
+              "progress": 0.644018750000745,
+              "slot": -12
+            }
+          ],
+          "berthCount": 1,
+          "containersMoved": 0,
+          "completedCargo": 0,
+          "completedFerries": 2,
+          "arrivals": 1,
+          "departures": 2,
+          "cargo": {
+            "arrivals": 1,
+            "departures": 0
+          },
+          "ferry": {
+            "arrivals": 0,
+            "departures": 2
+          },
+          "cranes": 4,
+          "terminal": "Illustrative local port simulation"
+        },
+        "dublinMetrics": {
+          "city": {
+            "houses": 310,
+            "houseParcels": 310,
+            "selectablePlaces": 77,
+            "parkPlans": 9,
+            "publicStructures": 64,
+            "uniqueStructureFingerprints": 64
+          },
+          "roads": {
+            "roadLanes": 8,
+            "curbs": 8,
+            "footways": 8,
+            "markings": 187,
+            "signalizedCrossings": 8,
+            "streetLights": 16,
+            "busStops": 4,
+            "cycleTrackSegments": 68,
+            "railSegments": 322,
+            "airportConnectorLength": 8.899999999999999,
+            "airportBusLaneSegments": 9,
+            "clearanceRadius": 0.45
+          },
+          "airport": {
+            "campusWidth": 72,
+            "campusDepth": 29,
+            "localScale": 2,
+            "terminals": 2,
+            "runways": 3,
+            "stands": 4,
+            "scheduledGates": 2,
+            "boardingBridgeComponents": 12,
+            "parkedAirliners": 3,
+            "parkedHelicopters": 1,
+            "boxDetailInstances": 488,
+            "cylinderDetailInstances": 139,
+            "instancedDetailBatches": 2,
+            "customMeshCount": 5
+          },
+          "port": {
+            "quays": 2,
+            "riverMouthWidth": 6,
+            "shipToShoreCranes": 4,
+            "containerStacks": 40,
+            "railSidings": 2,
+            "breakwaterArms": 2,
+            "accessRoads": 1,
+            "pilotAndTugVessels": 2,
+            "landBounds": {
+              "minX": 39,
+              "maxX": 62.5,
+              "minZ": -15,
+              "maxZ": 15,
+              "channelHalfWidth": 3,
+              "topY": 0.325,
+              "platforms": [
+                {
+                  "minZ": -15,
+                  "maxZ": -3
+                },
+                {
+                  "minZ": 3,
+                  "maxZ": 15
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "seconds": 120,
+      "screenshot": "flight-120.png",
+      "state": {
+        "city": "dublin",
+        "ready": true,
+        "meshes": 2710,
+        "triangles": 328797,
+        "selectedId": null,
+        "camera": {
+          "position": [
+            -7.057028410955088,
+            70.97348860280842,
+            0.20160224662875947
+          ],
+          "target": [
+            -11,
+            0,
+            -55
+          ]
+        },
+        "state": {
+          "names": false,
+          "homes": true,
+          "boards": true,
+          "walking": false
+        },
+        "walker": null,
+        "referenceTrees": 168,
+        "dublinMotion": {
+          "timeSeconds": 120,
+          "timeMs": 120000,
+          "roadVehicles": 8,
+          "runwayOccupiedBy": [],
+          "runwayExclusive": true,
+          "flights": [
+            {
+              "id": "flight-1",
+              "phase": "taxi-to-runway",
+              "phaseProgress": 0,
+              "visible": true,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T1-1",
+              "position": {
+                "x": -23,
+                "y": 0.8125,
+                "z": -56.8
+              }
+            },
+            {
+              "id": "flight-2",
+              "phase": "climb-out",
+              "phaseProgress": 0.25,
+              "visible": true,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T2-1",
+              "position": {
+                "x": -63.688657407407405,
+                "y": 9.1709693287037,
+                "z": -63.504629629629626
+              }
+            }
+          ],
+          "helicopter": {
+            "id": "dublin-helicopter-patrol",
+            "phase": "return-to-airport",
+            "visible": true,
+            "runwayOccupied": false,
+            "cycleDurationSeconds": 72,
+            "position": {
+              "x": -13.263753603742396,
+              "y": 10.893358616826475,
+              "z": -21.487186871064566
+            }
+          },
+          "actors": [
+            {
+              "kind": "car",
+              "id": "Dublin sedan 1.1",
+              "visible": true,
+              "position": {
+                "x": 30.22,
+                "y": 0.27,
+                "z": -20.04669906735186
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 1.2",
+              "visible": true,
+              "position": {
+                "x": -28.22,
+                "y": 0.27,
+                "z": 19.046699066927744
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 2.1",
+              "visible": true,
+              "position": {
+                "x": 29.78,
+                "y": 0.27,
+                "z": 8.356059645917178
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin van 2.2",
+              "visible": true,
+              "position": {
+                "x": -27.78,
+                "y": 0.27,
+                "z": -9.35605964554441
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 3.1",
+              "visible": true,
+              "position": {
+                "x": -18.22,
+                "y": 0.27,
+                "z": -5.470231110712417
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 3.2",
+              "visible": true,
+              "position": {
+                "x": 18.22,
+                "y": 0.27,
+                "z": 6.4702311111235655
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 4.1",
+              "visible": true,
+              "position": {
+                "x": -17.78,
+                "y": 0.27,
+                "z": 20.540632607191693
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 4.2",
+              "visible": true,
+              "position": {
+                "x": 17.78,
+                "y": 0.27,
+                "z": -19.540632607552787
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-1",
+              "visible": true,
+              "position": {
+                "x": -23,
+                "y": 0.8125,
+                "z": -56.8
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-2",
+              "visible": true,
+              "position": {
+                "x": -63.688657407407405,
+                "y": 9.1709693287037,
+                "z": -63.504629629629626
+              }
+            },
+            {
+              "kind": "helicopter",
+              "id": "dublin-helicopter-patrol",
+              "visible": true,
+              "position": {
+                "x": -13.263753603742396,
+                "y": 10.893358616826475,
+                "z": -21.487186871064566
+              }
+            }
+          ]
+        },
+        "port": {
+          "paused": false,
+          "status": "Operating",
+          "time": 121.30430000001192,
+          "vessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "depart",
+              "berth": false,
+              "progress": 0.26901875000074504,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "offshore",
+              "berth": false,
+              "progress": 0.7157153846163016,
+              "slot": -12
+            }
+          ],
+          "activeVessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "depart",
+              "berth": false,
+              "progress": 0.26901875000074504,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "offshore",
+              "berth": false,
+              "progress": 0.7157153846163016,
+              "slot": -12
+            }
+          ],
+          "berthCount": 0,
+          "containersMoved": 1,
+          "completedCargo": 1,
+          "completedFerries": 2,
+          "arrivals": 1,
+          "departures": 3,
+          "cargo": {
+            "arrivals": 1,
+            "departures": 1
+          },
+          "ferry": {
+            "arrivals": 0,
+            "departures": 2
+          },
+          "cranes": 4,
+          "terminal": "Illustrative local port simulation"
+        },
+        "dublinMetrics": {
+          "city": {
+            "houses": 310,
+            "houseParcels": 310,
+            "selectablePlaces": 77,
+            "parkPlans": 9,
+            "publicStructures": 64,
+            "uniqueStructureFingerprints": 64
+          },
+          "roads": {
+            "roadLanes": 8,
+            "curbs": 8,
+            "footways": 8,
+            "markings": 187,
+            "signalizedCrossings": 8,
+            "streetLights": 16,
+            "busStops": 4,
+            "cycleTrackSegments": 68,
+            "railSegments": 322,
+            "airportConnectorLength": 8.899999999999999,
+            "airportBusLaneSegments": 9,
+            "clearanceRadius": 0.45
+          },
+          "airport": {
+            "campusWidth": 72,
+            "campusDepth": 29,
+            "localScale": 2,
+            "terminals": 2,
+            "runways": 3,
+            "stands": 4,
+            "scheduledGates": 2,
+            "boardingBridgeComponents": 12,
+            "parkedAirliners": 3,
+            "parkedHelicopters": 1,
+            "boxDetailInstances": 488,
+            "cylinderDetailInstances": 139,
+            "instancedDetailBatches": 2,
+            "customMeshCount": 5
+          },
+          "port": {
+            "quays": 2,
+            "riverMouthWidth": 6,
+            "shipToShoreCranes": 4,
+            "containerStacks": 40,
+            "railSidings": 2,
+            "breakwaterArms": 2,
+            "accessRoads": 1,
+            "pilotAndTugVessels": 2,
+            "landBounds": {
+              "minX": 39,
+              "maxX": 62.5,
+              "minZ": -15,
+              "maxZ": 15,
+              "channelHalfWidth": 3,
+              "topY": 0.325,
+              "platforms": [
+                {
+                  "minZ": -15,
+                  "maxZ": -3
+                },
+                {
+                  "minZ": 3,
+                  "maxZ": 15
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "landmarkViews": [
+    {
+      "id": "dubTrinity",
+      "screenshot": "landmark-dubTrinity.png",
+      "snapshot": {
+        "city": "dublin",
+        "ready": true,
+        "meshes": 2710,
+        "triangles": 328797,
+        "selectedId": null,
+        "camera": {
+          "position": [
+            5.867453749589881,
+            16.489167492617852,
+            20.144352494258328
+          ],
+          "target": [
+            5,
+            0.875,
+            8
+          ]
+        },
+        "state": {
+          "names": false,
+          "homes": true,
+          "boards": true,
+          "walking": false
+        },
+        "walker": null,
+        "referenceTrees": 168,
+        "dublinMotion": {
+          "timeSeconds": 9.2,
+          "timeMs": 9200,
+          "roadVehicles": 8,
+          "runwayOccupiedBy": [
+            "flight-1"
+          ],
+          "runwayExclusive": true,
+          "flights": [
+            {
+              "id": "flight-1",
+              "phase": "runway-line-up",
+              "phaseProgress": 0.07666666666666666,
+              "visible": true,
+              "runwayOccupied": true,
+              "cycleDurationSeconds": 120,
+              "gateId": "T1-1",
+              "position": {
+                "x": -41.888888888888886,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "id": "flight-2",
+              "phase": "off-map-cruise",
+              "phaseProgress": 0.32666666666666666,
+              "visible": false,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T2-1",
+              "position": {
+                "x": -113,
+                "y": 23,
+                "z": -66
+              }
+            }
+          ],
+          "helicopter": {
+            "id": "dublin-helicopter-patrol",
+            "phase": "city-patrol",
+            "visible": true,
+            "runwayOccupied": false,
+            "cycleDurationSeconds": 72,
+            "position": {
+              "x": -37.85252633793029,
+              "y": 10.62342846085039,
+              "z": -42.0077257229362
+            }
+          },
+          "actors": [
+            {
+              "kind": "car",
+              "id": "Dublin sedan 1.1",
+              "visible": true,
+              "position": {
+                "x": -5.419002080434176,
+                "y": 0.27,
+                "z": -32.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 1.2",
+              "visible": true,
+              "position": {
+                "x": 7.419002080433781,
+                "y": 0.27,
+                "z": 31.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 2.1",
+              "visible": true,
+              "position": {
+                "x": -27.78,
+                "y": 0.541,
+                "z": -1.0718749999999808
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin van 2.2",
+              "visible": true,
+              "position": {
+                "x": 29.78,
+                "y": 0.541,
+                "z": 0.07187500037290562
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 3.1",
+              "visible": true,
+              "position": {
+                "x": 6.881006905625242,
+                "y": 0.27,
+                "z": -27.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 3.2",
+              "visible": true,
+              "position": {
+                "x": -6.881006905624801,
+                "y": 0.27,
+                "z": 28.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 4.1",
+              "visible": true,
+              "position": {
+                "x": -17.78,
+                "y": 0.27,
+                "z": 5.766212121212122
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 4.2",
+              "visible": true,
+              "position": {
+                "x": 17.78,
+                "y": 0.27,
+                "z": -4.766212121573283
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-1",
+              "visible": true,
+              "position": {
+                "x": -41.888888888888886,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-2",
+              "visible": false,
+              "position": {
+                "x": -113,
+                "y": 23,
+                "z": -66
+              }
+            },
+            {
+              "kind": "helicopter",
+              "id": "dublin-helicopter-patrol",
+              "visible": true,
+              "position": {
+                "x": -37.85252633793029,
+                "y": 10.62342846085039,
+                "z": -42.0077257229362
+              }
+            }
+          ]
+        },
+        "port": {
+          "paused": false,
+          "status": "Operating",
+          "time": 9.2,
+          "vessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.6133333333333335,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.2333333333333335,
+              "slot": -12
+            }
+          ],
+          "activeVessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.6133333333333335,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.2333333333333335,
+              "slot": -12
+            }
+          ],
+          "berthCount": 1,
+          "containersMoved": 0,
+          "completedCargo": 0,
+          "completedFerries": 0,
+          "arrivals": 0,
+          "departures": 0,
+          "cargo": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "ferry": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "cranes": 4,
+          "terminal": "Illustrative local port simulation"
+        },
+        "dublinMetrics": {
+          "city": {
+            "houses": 310,
+            "houseParcels": 310,
+            "selectablePlaces": 77,
+            "parkPlans": 9,
+            "publicStructures": 64,
+            "uniqueStructureFingerprints": 64
+          },
+          "roads": {
+            "roadLanes": 8,
+            "curbs": 8,
+            "footways": 8,
+            "markings": 187,
+            "signalizedCrossings": 8,
+            "streetLights": 16,
+            "busStops": 4,
+            "cycleTrackSegments": 68,
+            "railSegments": 322,
+            "airportConnectorLength": 8.899999999999999,
+            "airportBusLaneSegments": 9,
+            "clearanceRadius": 0.45
+          },
+          "airport": {
+            "campusWidth": 72,
+            "campusDepth": 29,
+            "localScale": 2,
+            "terminals": 2,
+            "runways": 3,
+            "stands": 4,
+            "scheduledGates": 2,
+            "boardingBridgeComponents": 12,
+            "parkedAirliners": 3,
+            "parkedHelicopters": 1,
+            "boxDetailInstances": 488,
+            "cylinderDetailInstances": 139,
+            "instancedDetailBatches": 2,
+            "customMeshCount": 5
+          },
+          "port": {
+            "quays": 2,
+            "riverMouthWidth": 6,
+            "shipToShoreCranes": 4,
+            "containerStacks": 40,
+            "railSidings": 2,
+            "breakwaterArms": 2,
+            "accessRoads": 1,
+            "pilotAndTugVessels": 2,
+            "landBounds": {
+              "minX": 39,
+              "maxX": 62.5,
+              "minZ": -15,
+              "maxZ": 15,
+              "channelHalfWidth": 3,
+              "topY": 0.325,
+              "platforms": [
+                {
+                  "minZ": -15,
+                  "maxZ": -3
+                },
+                {
+                  "minZ": 3,
+                  "maxZ": 15
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "dubGPO",
+      "screenshot": "landmark-dubGPO.png",
+      "snapshot": {
+        "city": "dublin",
+        "ready": true,
+        "meshes": 2710,
+        "triangles": 328797,
+        "selectedId": null,
+        "camera": {
+          "position": [
+            -6.386648863926347,
+            11.590320449325759,
+            -2.413084094968866
+          ],
+          "target": [
+            -7,
+            0.55,
+            -11
+          ]
+        },
+        "state": {
+          "names": false,
+          "homes": true,
+          "boards": true,
+          "walking": false
+        },
+        "walker": null,
+        "referenceTrees": 168,
+        "dublinMotion": {
+          "timeSeconds": 9.2,
+          "timeMs": 9200,
+          "roadVehicles": 8,
+          "runwayOccupiedBy": [
+            "flight-1"
+          ],
+          "runwayExclusive": true,
+          "flights": [
+            {
+              "id": "flight-1",
+              "phase": "runway-line-up",
+              "phaseProgress": 0.07666666666666666,
+              "visible": true,
+              "runwayOccupied": true,
+              "cycleDurationSeconds": 120,
+              "gateId": "T1-1",
+              "position": {
+                "x": -41.888888888888886,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "id": "flight-2",
+              "phase": "off-map-cruise",
+              "phaseProgress": 0.32666666666666666,
+              "visible": false,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T2-1",
+              "position": {
+                "x": -113,
+                "y": 23,
+                "z": -66
+              }
+            }
+          ],
+          "helicopter": {
+            "id": "dublin-helicopter-patrol",
+            "phase": "city-patrol",
+            "visible": true,
+            "runwayOccupied": false,
+            "cycleDurationSeconds": 72,
+            "position": {
+              "x": -37.85252633793029,
+              "y": 10.62342846085039,
+              "z": -42.0077257229362
+            }
+          },
+          "actors": [
+            {
+              "kind": "car",
+              "id": "Dublin sedan 1.1",
+              "visible": true,
+              "position": {
+                "x": -5.419002080434176,
+                "y": 0.27,
+                "z": -32.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 1.2",
+              "visible": true,
+              "position": {
+                "x": 7.419002080433781,
+                "y": 0.27,
+                "z": 31.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 2.1",
+              "visible": true,
+              "position": {
+                "x": -27.78,
+                "y": 0.541,
+                "z": -1.0718749999999808
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin van 2.2",
+              "visible": true,
+              "position": {
+                "x": 29.78,
+                "y": 0.541,
+                "z": 0.07187500037290562
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 3.1",
+              "visible": true,
+              "position": {
+                "x": 6.881006905625242,
+                "y": 0.27,
+                "z": -27.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 3.2",
+              "visible": true,
+              "position": {
+                "x": -6.881006905624801,
+                "y": 0.27,
+                "z": 28.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 4.1",
+              "visible": true,
+              "position": {
+                "x": -17.78,
+                "y": 0.27,
+                "z": 5.766212121212122
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 4.2",
+              "visible": true,
+              "position": {
+                "x": 17.78,
+                "y": 0.27,
+                "z": -4.766212121573283
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-1",
+              "visible": true,
+              "position": {
+                "x": -41.888888888888886,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-2",
+              "visible": false,
+              "position": {
+                "x": -113,
+                "y": 23,
+                "z": -66
+              }
+            },
+            {
+              "kind": "helicopter",
+              "id": "dublin-helicopter-patrol",
+              "visible": true,
+              "position": {
+                "x": -37.85252633793029,
+                "y": 10.62342846085039,
+                "z": -42.0077257229362
+              }
+            }
+          ]
+        },
+        "port": {
+          "paused": false,
+          "status": "Operating",
+          "time": 9.2,
+          "vessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.6133333333333335,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.2333333333333335,
+              "slot": -12
+            }
+          ],
+          "activeVessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.6133333333333335,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.2333333333333335,
+              "slot": -12
+            }
+          ],
+          "berthCount": 1,
+          "containersMoved": 0,
+          "completedCargo": 0,
+          "completedFerries": 0,
+          "arrivals": 0,
+          "departures": 0,
+          "cargo": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "ferry": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "cranes": 4,
+          "terminal": "Illustrative local port simulation"
+        },
+        "dublinMetrics": {
+          "city": {
+            "houses": 310,
+            "houseParcels": 310,
+            "selectablePlaces": 77,
+            "parkPlans": 9,
+            "publicStructures": 64,
+            "uniqueStructureFingerprints": 64
+          },
+          "roads": {
+            "roadLanes": 8,
+            "curbs": 8,
+            "footways": 8,
+            "markings": 187,
+            "signalizedCrossings": 8,
+            "streetLights": 16,
+            "busStops": 4,
+            "cycleTrackSegments": 68,
+            "railSegments": 322,
+            "airportConnectorLength": 8.899999999999999,
+            "airportBusLaneSegments": 9,
+            "clearanceRadius": 0.45
+          },
+          "airport": {
+            "campusWidth": 72,
+            "campusDepth": 29,
+            "localScale": 2,
+            "terminals": 2,
+            "runways": 3,
+            "stands": 4,
+            "scheduledGates": 2,
+            "boardingBridgeComponents": 12,
+            "parkedAirliners": 3,
+            "parkedHelicopters": 1,
+            "boxDetailInstances": 488,
+            "cylinderDetailInstances": 139,
+            "instancedDetailBatches": 2,
+            "customMeshCount": 5
+          },
+          "port": {
+            "quays": 2,
+            "riverMouthWidth": 6,
+            "shipToShoreCranes": 4,
+            "containerStacks": 40,
+            "railSidings": 2,
+            "breakwaterArms": 2,
+            "accessRoads": 1,
+            "pilotAndTugVessels": 2,
+            "landBounds": {
+              "minX": 39,
+              "maxX": 62.5,
+              "minZ": -15,
+              "maxZ": 15,
+              "channelHalfWidth": 3,
+              "topY": 0.325,
+              "platforms": [
+                {
+                  "minZ": -15,
+                  "maxZ": -3
+                },
+                {
+                  "minZ": 3,
+                  "maxZ": 15
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "dubCustom",
+      "screenshot": "landmark-dubCustom.png",
+      "snapshot": {
+        "city": "dublin",
+        "ready": true,
+        "meshes": 2710,
+        "triangles": 328797,
+        "selectedId": null,
+        "camera": {
+          "position": [
+            13.867453749589883,
+            16.514167492617844,
+            6.64435249425833
+          ],
+          "target": [
+            13.000000000000002,
+            0.9000000000000002,
+            -5.499999999999998
+          ]
+        },
+        "state": {
+          "names": false,
+          "homes": true,
+          "boards": true,
+          "walking": false
+        },
+        "walker": null,
+        "referenceTrees": 168,
+        "dublinMotion": {
+          "timeSeconds": 9.2,
+          "timeMs": 9200,
+          "roadVehicles": 8,
+          "runwayOccupiedBy": [
+            "flight-1"
+          ],
+          "runwayExclusive": true,
+          "flights": [
+            {
+              "id": "flight-1",
+              "phase": "runway-line-up",
+              "phaseProgress": 0.07666666666666666,
+              "visible": true,
+              "runwayOccupied": true,
+              "cycleDurationSeconds": 120,
+              "gateId": "T1-1",
+              "position": {
+                "x": -41.888888888888886,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "id": "flight-2",
+              "phase": "off-map-cruise",
+              "phaseProgress": 0.32666666666666666,
+              "visible": false,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T2-1",
+              "position": {
+                "x": -113,
+                "y": 23,
+                "z": -66
+              }
+            }
+          ],
+          "helicopter": {
+            "id": "dublin-helicopter-patrol",
+            "phase": "city-patrol",
+            "visible": true,
+            "runwayOccupied": false,
+            "cycleDurationSeconds": 72,
+            "position": {
+              "x": -37.85252633793029,
+              "y": 10.62342846085039,
+              "z": -42.0077257229362
+            }
+          },
+          "actors": [
+            {
+              "kind": "car",
+              "id": "Dublin sedan 1.1",
+              "visible": true,
+              "position": {
+                "x": -5.419002080434176,
+                "y": 0.27,
+                "z": -32.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 1.2",
+              "visible": true,
+              "position": {
+                "x": 7.419002080433781,
+                "y": 0.27,
+                "z": 31.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 2.1",
+              "visible": true,
+              "position": {
+                "x": -27.78,
+                "y": 0.541,
+                "z": -1.0718749999999808
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin van 2.2",
+              "visible": true,
+              "position": {
+                "x": 29.78,
+                "y": 0.541,
+                "z": 0.07187500037290562
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 3.1",
+              "visible": true,
+              "position": {
+                "x": 6.881006905625242,
+                "y": 0.27,
+                "z": -27.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 3.2",
+              "visible": true,
+              "position": {
+                "x": -6.881006905624801,
+                "y": 0.27,
+                "z": 28.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 4.1",
+              "visible": true,
+              "position": {
+                "x": -17.78,
+                "y": 0.27,
+                "z": 5.766212121212122
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 4.2",
+              "visible": true,
+              "position": {
+                "x": 17.78,
+                "y": 0.27,
+                "z": -4.766212121573283
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-1",
+              "visible": true,
+              "position": {
+                "x": -41.888888888888886,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-2",
+              "visible": false,
+              "position": {
+                "x": -113,
+                "y": 23,
+                "z": -66
+              }
+            },
+            {
+              "kind": "helicopter",
+              "id": "dublin-helicopter-patrol",
+              "visible": true,
+              "position": {
+                "x": -37.85252633793029,
+                "y": 10.62342846085039,
+                "z": -42.0077257229362
+              }
+            }
+          ]
+        },
+        "port": {
+          "paused": false,
+          "status": "Operating",
+          "time": 9.2,
+          "vessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.6133333333333335,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.2333333333333335,
+              "slot": -12
+            }
+          ],
+          "activeVessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.6133333333333335,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.2333333333333335,
+              "slot": -12
+            }
+          ],
+          "berthCount": 1,
+          "containersMoved": 0,
+          "completedCargo": 0,
+          "completedFerries": 0,
+          "arrivals": 0,
+          "departures": 0,
+          "cargo": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "ferry": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "cranes": 4,
+          "terminal": "Illustrative local port simulation"
+        },
+        "dublinMetrics": {
+          "city": {
+            "houses": 310,
+            "houseParcels": 310,
+            "selectablePlaces": 77,
+            "parkPlans": 9,
+            "publicStructures": 64,
+            "uniqueStructureFingerprints": 64
+          },
+          "roads": {
+            "roadLanes": 8,
+            "curbs": 8,
+            "footways": 8,
+            "markings": 187,
+            "signalizedCrossings": 8,
+            "streetLights": 16,
+            "busStops": 4,
+            "cycleTrackSegments": 68,
+            "railSegments": 322,
+            "airportConnectorLength": 8.899999999999999,
+            "airportBusLaneSegments": 9,
+            "clearanceRadius": 0.45
+          },
+          "airport": {
+            "campusWidth": 72,
+            "campusDepth": 29,
+            "localScale": 2,
+            "terminals": 2,
+            "runways": 3,
+            "stands": 4,
+            "scheduledGates": 2,
+            "boardingBridgeComponents": 12,
+            "parkedAirliners": 3,
+            "parkedHelicopters": 1,
+            "boxDetailInstances": 488,
+            "cylinderDetailInstances": 139,
+            "instancedDetailBatches": 2,
+            "customMeshCount": 5
+          },
+          "port": {
+            "quays": 2,
+            "riverMouthWidth": 6,
+            "shipToShoreCranes": 4,
+            "containerStacks": 40,
+            "railSidings": 2,
+            "breakwaterArms": 2,
+            "accessRoads": 1,
+            "pilotAndTugVessels": 2,
+            "landBounds": {
+              "minX": 39,
+              "maxX": 62.5,
+              "minZ": -15,
+              "maxZ": 15,
+              "channelHalfWidth": 3,
+              "topY": 0.325,
+              "platforms": [
+                {
+                  "minZ": -15,
+                  "maxZ": -3
+                },
+                {
+                  "minZ": 3,
+                  "maxZ": 15
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "dubCastle",
+      "screenshot": "landmark-dubCastle.png",
+      "snapshot": {
+        "city": "dublin",
+        "ready": true,
+        "meshes": 2710,
+        "triangles": 328797,
+        "selectedId": null,
+        "camera": {
+          "position": [
+            -12.342838068492515,
+            12.578914767134734,
+            19.200267041104794
+          ],
+          "target": [
+            -13,
+            0.75,
+            10
+          ]
+        },
+        "state": {
+          "names": false,
+          "homes": true,
+          "boards": true,
+          "walking": false
+        },
+        "walker": null,
+        "referenceTrees": 168,
+        "dublinMotion": {
+          "timeSeconds": 9.2,
+          "timeMs": 9200,
+          "roadVehicles": 8,
+          "runwayOccupiedBy": [
+            "flight-1"
+          ],
+          "runwayExclusive": true,
+          "flights": [
+            {
+              "id": "flight-1",
+              "phase": "runway-line-up",
+              "phaseProgress": 0.07666666666666666,
+              "visible": true,
+              "runwayOccupied": true,
+              "cycleDurationSeconds": 120,
+              "gateId": "T1-1",
+              "position": {
+                "x": -41.888888888888886,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "id": "flight-2",
+              "phase": "off-map-cruise",
+              "phaseProgress": 0.32666666666666666,
+              "visible": false,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T2-1",
+              "position": {
+                "x": -113,
+                "y": 23,
+                "z": -66
+              }
+            }
+          ],
+          "helicopter": {
+            "id": "dublin-helicopter-patrol",
+            "phase": "city-patrol",
+            "visible": true,
+            "runwayOccupied": false,
+            "cycleDurationSeconds": 72,
+            "position": {
+              "x": -37.85252633793029,
+              "y": 10.62342846085039,
+              "z": -42.0077257229362
+            }
+          },
+          "actors": [
+            {
+              "kind": "car",
+              "id": "Dublin sedan 1.1",
+              "visible": true,
+              "position": {
+                "x": -5.419002080434176,
+                "y": 0.27,
+                "z": -32.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 1.2",
+              "visible": true,
+              "position": {
+                "x": 7.419002080433781,
+                "y": 0.27,
+                "z": 31.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 2.1",
+              "visible": true,
+              "position": {
+                "x": -27.78,
+                "y": 0.541,
+                "z": -1.0718749999999808
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin van 2.2",
+              "visible": true,
+              "position": {
+                "x": 29.78,
+                "y": 0.541,
+                "z": 0.07187500037290562
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 3.1",
+              "visible": true,
+              "position": {
+                "x": 6.881006905625242,
+                "y": 0.27,
+                "z": -27.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 3.2",
+              "visible": true,
+              "position": {
+                "x": -6.881006905624801,
+                "y": 0.27,
+                "z": 28.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 4.1",
+              "visible": true,
+              "position": {
+                "x": -17.78,
+                "y": 0.27,
+                "z": 5.766212121212122
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 4.2",
+              "visible": true,
+              "position": {
+                "x": 17.78,
+                "y": 0.27,
+                "z": -4.766212121573283
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-1",
+              "visible": true,
+              "position": {
+                "x": -41.888888888888886,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-2",
+              "visible": false,
+              "position": {
+                "x": -113,
+                "y": 23,
+                "z": -66
+              }
+            },
+            {
+              "kind": "helicopter",
+              "id": "dublin-helicopter-patrol",
+              "visible": true,
+              "position": {
+                "x": -37.85252633793029,
+                "y": 10.62342846085039,
+                "z": -42.0077257229362
+              }
+            }
+          ]
+        },
+        "port": {
+          "paused": false,
+          "status": "Operating",
+          "time": 9.2,
+          "vessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.6133333333333335,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.2333333333333335,
+              "slot": -12
+            }
+          ],
+          "activeVessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.6133333333333335,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.2333333333333335,
+              "slot": -12
+            }
+          ],
+          "berthCount": 1,
+          "containersMoved": 0,
+          "completedCargo": 0,
+          "completedFerries": 0,
+          "arrivals": 0,
+          "departures": 0,
+          "cargo": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "ferry": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "cranes": 4,
+          "terminal": "Illustrative local port simulation"
+        },
+        "dublinMetrics": {
+          "city": {
+            "houses": 310,
+            "houseParcels": 310,
+            "selectablePlaces": 77,
+            "parkPlans": 9,
+            "publicStructures": 64,
+            "uniqueStructureFingerprints": 64
+          },
+          "roads": {
+            "roadLanes": 8,
+            "curbs": 8,
+            "footways": 8,
+            "markings": 187,
+            "signalizedCrossings": 8,
+            "streetLights": 16,
+            "busStops": 4,
+            "cycleTrackSegments": 68,
+            "railSegments": 322,
+            "airportConnectorLength": 8.899999999999999,
+            "airportBusLaneSegments": 9,
+            "clearanceRadius": 0.45
+          },
+          "airport": {
+            "campusWidth": 72,
+            "campusDepth": 29,
+            "localScale": 2,
+            "terminals": 2,
+            "runways": 3,
+            "stands": 4,
+            "scheduledGates": 2,
+            "boardingBridgeComponents": 12,
+            "parkedAirliners": 3,
+            "parkedHelicopters": 1,
+            "boxDetailInstances": 488,
+            "cylinderDetailInstances": 139,
+            "instancedDetailBatches": 2,
+            "customMeshCount": 5
+          },
+          "port": {
+            "quays": 2,
+            "riverMouthWidth": 6,
+            "shipToShoreCranes": 4,
+            "containerStacks": 40,
+            "railSidings": 2,
+            "breakwaterArms": 2,
+            "accessRoads": 1,
+            "pilotAndTugVessels": 2,
+            "landBounds": {
+              "minX": 39,
+              "maxX": 62.5,
+              "minZ": -15,
+              "maxZ": 15,
+              "channelHalfWidth": 3,
+              "topY": 0.325,
+              "platforms": [
+                {
+                  "minZ": -15,
+                  "maxZ": -3
+                },
+                {
+                  "minZ": 3,
+                  "maxZ": 15
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "dubCroke",
+      "screenshot": "landmark-dubCroke.png",
+      "snapshot": {
+        "city": "dublin",
+        "ready": true,
+        "meshes": 2710,
+        "triangles": 328797,
+        "selectedId": null,
+        "camera": {
+          "position": [
+            8.963837499544312,
+            17.974074991797607,
+            -4.506275006379637
+          ],
+          "target": [
+            8,
+            0.625,
+            -18
+          ]
+        },
+        "state": {
+          "names": false,
+          "homes": true,
+          "boards": true,
+          "walking": false
+        },
+        "walker": null,
+        "referenceTrees": 168,
+        "dublinMotion": {
+          "timeSeconds": 9.2,
+          "timeMs": 9200,
+          "roadVehicles": 8,
+          "runwayOccupiedBy": [
+            "flight-1"
+          ],
+          "runwayExclusive": true,
+          "flights": [
+            {
+              "id": "flight-1",
+              "phase": "runway-line-up",
+              "phaseProgress": 0.07666666666666666,
+              "visible": true,
+              "runwayOccupied": true,
+              "cycleDurationSeconds": 120,
+              "gateId": "T1-1",
+              "position": {
+                "x": -41.888888888888886,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "id": "flight-2",
+              "phase": "off-map-cruise",
+              "phaseProgress": 0.32666666666666666,
+              "visible": false,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T2-1",
+              "position": {
+                "x": -113,
+                "y": 23,
+                "z": -66
+              }
+            }
+          ],
+          "helicopter": {
+            "id": "dublin-helicopter-patrol",
+            "phase": "city-patrol",
+            "visible": true,
+            "runwayOccupied": false,
+            "cycleDurationSeconds": 72,
+            "position": {
+              "x": -37.85252633793029,
+              "y": 10.62342846085039,
+              "z": -42.0077257229362
+            }
+          },
+          "actors": [
+            {
+              "kind": "car",
+              "id": "Dublin sedan 1.1",
+              "visible": true,
+              "position": {
+                "x": -5.419002080434176,
+                "y": 0.27,
+                "z": -32.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 1.2",
+              "visible": true,
+              "position": {
+                "x": 7.419002080433781,
+                "y": 0.27,
+                "z": 31.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 2.1",
+              "visible": true,
+              "position": {
+                "x": -27.78,
+                "y": 0.541,
+                "z": -1.0718749999999808
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin van 2.2",
+              "visible": true,
+              "position": {
+                "x": 29.78,
+                "y": 0.541,
+                "z": 0.07187500037290562
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 3.1",
+              "visible": true,
+              "position": {
+                "x": 6.881006905625242,
+                "y": 0.27,
+                "z": -27.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 3.2",
+              "visible": true,
+              "position": {
+                "x": -6.881006905624801,
+                "y": 0.27,
+                "z": 28.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 4.1",
+              "visible": true,
+              "position": {
+                "x": -17.78,
+                "y": 0.27,
+                "z": 5.766212121212122
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 4.2",
+              "visible": true,
+              "position": {
+                "x": 17.78,
+                "y": 0.27,
+                "z": -4.766212121573283
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-1",
+              "visible": true,
+              "position": {
+                "x": -41.888888888888886,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-2",
+              "visible": false,
+              "position": {
+                "x": -113,
+                "y": 23,
+                "z": -66
+              }
+            },
+            {
+              "kind": "helicopter",
+              "id": "dublin-helicopter-patrol",
+              "visible": true,
+              "position": {
+                "x": -37.85252633793029,
+                "y": 10.62342846085039,
+                "z": -42.0077257229362
+              }
+            }
+          ]
+        },
+        "port": {
+          "paused": false,
+          "status": "Operating",
+          "time": 9.2,
+          "vessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.6133333333333335,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.2333333333333335,
+              "slot": -12
+            }
+          ],
+          "activeVessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.6133333333333335,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.2333333333333335,
+              "slot": -12
+            }
+          ],
+          "berthCount": 1,
+          "containersMoved": 0,
+          "completedCargo": 0,
+          "completedFerries": 0,
+          "arrivals": 0,
+          "departures": 0,
+          "cargo": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "ferry": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "cranes": 4,
+          "terminal": "Illustrative local port simulation"
+        },
+        "dublinMetrics": {
+          "city": {
+            "houses": 310,
+            "houseParcels": 310,
+            "selectablePlaces": 77,
+            "parkPlans": 9,
+            "publicStructures": 64,
+            "uniqueStructureFingerprints": 64
+          },
+          "roads": {
+            "roadLanes": 8,
+            "curbs": 8,
+            "footways": 8,
+            "markings": 187,
+            "signalizedCrossings": 8,
+            "streetLights": 16,
+            "busStops": 4,
+            "cycleTrackSegments": 68,
+            "railSegments": 322,
+            "airportConnectorLength": 8.899999999999999,
+            "airportBusLaneSegments": 9,
+            "clearanceRadius": 0.45
+          },
+          "airport": {
+            "campusWidth": 72,
+            "campusDepth": 29,
+            "localScale": 2,
+            "terminals": 2,
+            "runways": 3,
+            "stands": 4,
+            "scheduledGates": 2,
+            "boardingBridgeComponents": 12,
+            "parkedAirliners": 3,
+            "parkedHelicopters": 1,
+            "boxDetailInstances": 488,
+            "cylinderDetailInstances": 139,
+            "instancedDetailBatches": 2,
+            "customMeshCount": 5
+          },
+          "port": {
+            "quays": 2,
+            "riverMouthWidth": 6,
+            "shipToShoreCranes": 4,
+            "containerStacks": 40,
+            "railSidings": 2,
+            "breakwaterArms": 2,
+            "accessRoads": 1,
+            "pilotAndTugVessels": 2,
+            "landBounds": {
+              "minX": 39,
+              "maxX": 62.5,
+              "minZ": -15,
+              "maxZ": 15,
+              "channelHalfWidth": 3,
+              "topY": 0.325,
+              "platforms": [
+                {
+                  "minZ": -15,
+                  "maxZ": -3
+                },
+                {
+                  "minZ": 3,
+                  "maxZ": 15
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "dubAviva",
+      "screenshot": "landmark-dubAviva.png",
+      "snapshot": {
+        "city": "dublin",
+        "ready": true,
+        "meshes": 2710,
+        "triangles": 328797,
+        "selectedId": null,
+        "camera": {
+          "position": [
+            35.86745374958988,
+            16.41416749261785,
+            36.14435249425833
+          ],
+          "target": [
+            35,
+            0.8,
+            24.000000000000007
+          ]
+        },
+        "state": {
+          "names": false,
+          "homes": true,
+          "boards": true,
+          "walking": false
+        },
+        "walker": null,
+        "referenceTrees": 168,
+        "dublinMotion": {
+          "timeSeconds": 9.2,
+          "timeMs": 9200,
+          "roadVehicles": 8,
+          "runwayOccupiedBy": [
+            "flight-1"
+          ],
+          "runwayExclusive": true,
+          "flights": [
+            {
+              "id": "flight-1",
+              "phase": "runway-line-up",
+              "phaseProgress": 0.07666666666666666,
+              "visible": true,
+              "runwayOccupied": true,
+              "cycleDurationSeconds": 120,
+              "gateId": "T1-1",
+              "position": {
+                "x": -41.888888888888886,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "id": "flight-2",
+              "phase": "off-map-cruise",
+              "phaseProgress": 0.32666666666666666,
+              "visible": false,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T2-1",
+              "position": {
+                "x": -113,
+                "y": 23,
+                "z": -66
+              }
+            }
+          ],
+          "helicopter": {
+            "id": "dublin-helicopter-patrol",
+            "phase": "city-patrol",
+            "visible": true,
+            "runwayOccupied": false,
+            "cycleDurationSeconds": 72,
+            "position": {
+              "x": -37.85252633793029,
+              "y": 10.62342846085039,
+              "z": -42.0077257229362
+            }
+          },
+          "actors": [
+            {
+              "kind": "car",
+              "id": "Dublin sedan 1.1",
+              "visible": true,
+              "position": {
+                "x": -5.419002080434176,
+                "y": 0.27,
+                "z": -32.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 1.2",
+              "visible": true,
+              "position": {
+                "x": 7.419002080433781,
+                "y": 0.27,
+                "z": 31.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 2.1",
+              "visible": true,
+              "position": {
+                "x": -27.78,
+                "y": 0.541,
+                "z": -1.0718749999999808
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin van 2.2",
+              "visible": true,
+              "position": {
+                "x": 29.78,
+                "y": 0.541,
+                "z": 0.07187500037290562
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 3.1",
+              "visible": true,
+              "position": {
+                "x": 6.881006905625242,
+                "y": 0.27,
+                "z": -27.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 3.2",
+              "visible": true,
+              "position": {
+                "x": -6.881006905624801,
+                "y": 0.27,
+                "z": 28.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 4.1",
+              "visible": true,
+              "position": {
+                "x": -17.78,
+                "y": 0.27,
+                "z": 5.766212121212122
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 4.2",
+              "visible": true,
+              "position": {
+                "x": 17.78,
+                "y": 0.27,
+                "z": -4.766212121573283
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-1",
+              "visible": true,
+              "position": {
+                "x": -41.888888888888886,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-2",
+              "visible": false,
+              "position": {
+                "x": -113,
+                "y": 23,
+                "z": -66
+              }
+            },
+            {
+              "kind": "helicopter",
+              "id": "dublin-helicopter-patrol",
+              "visible": true,
+              "position": {
+                "x": -37.85252633793029,
+                "y": 10.62342846085039,
+                "z": -42.0077257229362
+              }
+            }
+          ]
+        },
+        "port": {
+          "paused": false,
+          "status": "Operating",
+          "time": 9.2,
+          "vessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.6133333333333335,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.2333333333333335,
+              "slot": -12
+            }
+          ],
+          "activeVessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.6133333333333335,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.2333333333333335,
+              "slot": -12
+            }
+          ],
+          "berthCount": 1,
+          "containersMoved": 0,
+          "completedCargo": 0,
+          "completedFerries": 0,
+          "arrivals": 0,
+          "departures": 0,
+          "cargo": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "ferry": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "cranes": 4,
+          "terminal": "Illustrative local port simulation"
+        },
+        "dublinMetrics": {
+          "city": {
+            "houses": 310,
+            "houseParcels": 310,
+            "selectablePlaces": 77,
+            "parkPlans": 9,
+            "publicStructures": 64,
+            "uniqueStructureFingerprints": 64
+          },
+          "roads": {
+            "roadLanes": 8,
+            "curbs": 8,
+            "footways": 8,
+            "markings": 187,
+            "signalizedCrossings": 8,
+            "streetLights": 16,
+            "busStops": 4,
+            "cycleTrackSegments": 68,
+            "railSegments": 322,
+            "airportConnectorLength": 8.899999999999999,
+            "airportBusLaneSegments": 9,
+            "clearanceRadius": 0.45
+          },
+          "airport": {
+            "campusWidth": 72,
+            "campusDepth": 29,
+            "localScale": 2,
+            "terminals": 2,
+            "runways": 3,
+            "stands": 4,
+            "scheduledGates": 2,
+            "boardingBridgeComponents": 12,
+            "parkedAirliners": 3,
+            "parkedHelicopters": 1,
+            "boxDetailInstances": 488,
+            "cylinderDetailInstances": 139,
+            "instancedDetailBatches": 2,
+            "customMeshCount": 5
+          },
+          "port": {
+            "quays": 2,
+            "riverMouthWidth": 6,
+            "shipToShoreCranes": 4,
+            "containerStacks": 40,
+            "railSidings": 2,
+            "breakwaterArms": 2,
+            "accessRoads": 1,
+            "pilotAndTugVessels": 2,
+            "landBounds": {
+              "minX": 39,
+              "maxX": 62.5,
+              "minZ": -15,
+              "maxZ": 15,
+              "channelHalfWidth": 3,
+              "topY": 0.325,
+              "platforms": [
+                {
+                  "minZ": -15,
+                  "maxZ": -3
+                },
+                {
+                  "minZ": 3,
+                  "maxZ": 15
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "dubBeckett",
+      "screenshot": "landmark-dubBeckett.png",
+      "snapshot": {
+        "city": "dublin",
+        "ready": true,
+        "meshes": 2710,
+        "triangles": 328797,
+        "selectedId": null,
+        "camera": {
+          "position": [
+            30.876215908676652,
+            16.77188635617965,
+            12.267022721473055
+          ],
+          "target": [
+            30.000000000000004,
+            1,
+            0
+          ]
+        },
+        "state": {
+          "names": false,
+          "homes": true,
+          "boards": true,
+          "walking": false
+        },
+        "walker": null,
+        "referenceTrees": 168,
+        "dublinMotion": {
+          "timeSeconds": 9.2,
+          "timeMs": 9200,
+          "roadVehicles": 8,
+          "runwayOccupiedBy": [
+            "flight-1"
+          ],
+          "runwayExclusive": true,
+          "flights": [
+            {
+              "id": "flight-1",
+              "phase": "runway-line-up",
+              "phaseProgress": 0.07666666666666666,
+              "visible": true,
+              "runwayOccupied": true,
+              "cycleDurationSeconds": 120,
+              "gateId": "T1-1",
+              "position": {
+                "x": -41.888888888888886,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "id": "flight-2",
+              "phase": "off-map-cruise",
+              "phaseProgress": 0.32666666666666666,
+              "visible": false,
+              "runwayOccupied": false,
+              "cycleDurationSeconds": 120,
+              "gateId": "T2-1",
+              "position": {
+                "x": -113,
+                "y": 23,
+                "z": -66
+              }
+            }
+          ],
+          "helicopter": {
+            "id": "dublin-helicopter-patrol",
+            "phase": "city-patrol",
+            "visible": true,
+            "runwayOccupied": false,
+            "cycleDurationSeconds": 72,
+            "position": {
+              "x": -37.85252633793029,
+              "y": 10.62342846085039,
+              "z": -42.0077257229362
+            }
+          },
+          "actors": [
+            {
+              "kind": "car",
+              "id": "Dublin sedan 1.1",
+              "visible": true,
+              "position": {
+                "x": -5.419002080434176,
+                "y": 0.27,
+                "z": -32.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 1.2",
+              "visible": true,
+              "position": {
+                "x": 7.419002080433781,
+                "y": 0.27,
+                "z": 31.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 2.1",
+              "visible": true,
+              "position": {
+                "x": -27.78,
+                "y": 0.541,
+                "z": -1.0718749999999808
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin van 2.2",
+              "visible": true,
+              "position": {
+                "x": 29.78,
+                "y": 0.541,
+                "z": 0.07187500037290562
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 3.1",
+              "visible": true,
+              "position": {
+                "x": 6.881006905625242,
+                "y": 0.27,
+                "z": -27.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin taxi 3.2",
+              "visible": true,
+              "position": {
+                "x": -6.881006905624801,
+                "y": 0.27,
+                "z": 28.22
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin suv 4.1",
+              "visible": true,
+              "position": {
+                "x": -17.78,
+                "y": 0.27,
+                "z": 5.766212121212122
+              }
+            },
+            {
+              "kind": "car",
+              "id": "Dublin sedan 4.2",
+              "visible": true,
+              "position": {
+                "x": 17.78,
+                "y": 0.27,
+                "z": -4.766212121573283
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-1",
+              "visible": true,
+              "position": {
+                "x": -41.888888888888886,
+                "y": 0.8325,
+                "z": -62
+              }
+            },
+            {
+              "kind": "airliner",
+              "id": "flight-2",
+              "visible": false,
+              "position": {
+                "x": -113,
+                "y": 23,
+                "z": -66
+              }
+            },
+            {
+              "kind": "helicopter",
+              "id": "dublin-helicopter-patrol",
+              "visible": true,
+              "position": {
+                "x": -37.85252633793029,
+                "y": 10.62342846085039,
+                "z": -42.0077257229362
+              }
+            }
+          ]
+        },
+        "port": {
+          "paused": false,
+          "status": "Operating",
+          "time": 9.2,
+          "vessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.6133333333333335,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.2333333333333335,
+              "slot": -12
+            }
+          ],
+          "activeVessels": [
+            {
+              "id": "cargo-1",
+              "name": "Container ship",
+              "type": "cargo",
+              "phase": "approach",
+              "berth": false,
+              "progress": 0.6133333333333335,
+              "slot": -6
+            },
+            {
+              "id": "ferry-1",
+              "name": "Ro-Ro ferry",
+              "type": "ferry",
+              "phase": "transfer",
+              "berth": true,
+              "progress": 0.2333333333333335,
+              "slot": -12
+            }
+          ],
+          "berthCount": 1,
+          "containersMoved": 0,
+          "completedCargo": 0,
+          "completedFerries": 0,
+          "arrivals": 0,
+          "departures": 0,
+          "cargo": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "ferry": {
+            "arrivals": 0,
+            "departures": 0
+          },
+          "cranes": 4,
+          "terminal": "Illustrative local port simulation"
+        },
+        "dublinMetrics": {
+          "city": {
+            "houses": 310,
+            "houseParcels": 310,
+            "selectablePlaces": 77,
+            "parkPlans": 9,
+            "publicStructures": 64,
+            "uniqueStructureFingerprints": 64
+          },
+          "roads": {
+            "roadLanes": 8,
+            "curbs": 8,
+            "footways": 8,
+            "markings": 187,
+            "signalizedCrossings": 8,
+            "streetLights": 16,
+            "busStops": 4,
+            "cycleTrackSegments": 68,
+            "railSegments": 322,
+            "airportConnectorLength": 8.899999999999999,
+            "airportBusLaneSegments": 9,
+            "clearanceRadius": 0.45
+          },
+          "airport": {
+            "campusWidth": 72,
+            "campusDepth": 29,
+            "localScale": 2,
+            "terminals": 2,
+            "runways": 3,
+            "stands": 4,
+            "scheduledGates": 2,
+            "boardingBridgeComponents": 12,
+            "parkedAirliners": 3,
+            "parkedHelicopters": 1,
+            "boxDetailInstances": 488,
+            "cylinderDetailInstances": 139,
+            "instancedDetailBatches": 2,
+            "customMeshCount": 5
+          },
+          "port": {
+            "quays": 2,
+            "riverMouthWidth": 6,
+            "shipToShoreCranes": 4,
+            "containerStacks": 40,
+            "railSidings": 2,
+            "breakwaterArms": 2,
+            "accessRoads": 1,
+            "pilotAndTugVessels": 2,
+            "landBounds": {
+              "minX": 39,
+              "maxX": 62.5,
+              "minZ": -15,
+              "maxZ": 15,
+              "channelHalfWidth": 3,
+              "topY": 0.325,
+              "platforms": [
+                {
+                  "minZ": -15,
+                  "maxZ": -3
+                },
+                {
+                  "minZ": 3,
+                  "maxZ": 15
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "reducedMotionPaused": true
+}

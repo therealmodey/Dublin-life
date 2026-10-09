@@ -1,0 +1,194 @@
+{
+  "project": "ireland-life",
+  "signal": "best_effort",
+  "indexed_at": "2026-10-08T23:03:45Z",
+  "metadata": {
+    "generation": "2026-10-08T23:03:45Z",
+    "index_mode": "fast",
+    "recorded_at": "2026-10-08T23:03:45Z",
+    "recording_status": "complete",
+    "ignored_files_stored": 16,
+    "ignored_files_total": 16,
+    "hash_records_complete": true,
+    "coverage_version": 3,
+    "generation_matches": true
+  },
+  "paths": [
+    {
+      "requested_path": "src/map-runtime.js",
+      "path": "src/map-runtime.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/map-store.js",
+      "path": "src/map-store.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/components/MapCanvas.jsx",
+      "path": "src/components/MapCanvas.jsx",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/components/PlaceSheet.jsx",
+      "path": "src/components/PlaceSheet.jsx",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/reference-props.js",
+      "path": "src/reference-props.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin.js",
+      "path": "src/dublin.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin-locations.js",
+      "path": "src/dublin-locations.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin-road-network.js",
+      "path": "src/dublin-road-network.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin-motion.js",
+      "path": "src/dublin-motion.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin-airport.js",
+      "path": "src/dublin-airport.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin-vehicles.js",
+      "path": "src/dublin-vehicles.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "app/globals.css",
+      "path": "app/globals.css",
+      "status": "partial",
+      "freshness": "metadata_match",
+      "recommended_action": "read_ranges_and_verify_scope",
+      "coverage": [
+        {
+          "path": "app/globals.css",
+          "kind": "parse_partial",
+          "detail": "1-1,2-2",
+          "match": "exact",
+          "ranges": [
+            {
+              "start": 1,
+              "end": 1
+            },
+            {
+              "start": 2,
+              "end": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requested_path": "tests/dublin-map.test.mjs",
+      "path": "tests/dublin-map.test.mjs",
+      "status": "excluded",
+      "freshness": "not_tracked",
+      "recommended_action": "read_source_and_reindex",
+      "coverage": [
+        {
+          "path": "tests/dublin-map.test.mjs",
+          "kind": "not_indexed_file",
+          "detail": "fast-pattern",
+          "match": "exact"
+        }
+      ]
+    },
+    {
+      "requested_path": "tests/dublin-motion.test.mjs",
+      "path": "tests/dublin-motion.test.mjs",
+      "status": "excluded",
+      "freshness": "not_tracked",
+      "recommended_action": "read_source_and_reindex",
+      "coverage": [
+        {
+          "path": "tests/dublin-motion.test.mjs",
+          "kind": "not_indexed_file",
+          "detail": "fast-pattern",
+          "match": "exact"
+        }
+      ]
+    },
+    {
+      "requested_path": "tests/aircraft.test.mjs",
+      "path": "tests/aircraft.test.mjs",
+      "status": "excluded",
+      "freshness": "not_tracked",
+      "recommended_action": "read_source_and_reindex",
+      "coverage": [
+        {
+          "path": "tests/aircraft.test.mjs",
+          "kind": "not_indexed_file",
+          "detail": "fast-pattern",
+          "match": "exact"
+        }
+      ]
+    },
+    {
+      "requested_path": "tests/browser-dublin.mjs",
+      "path": "tests/browser-dublin.mjs",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "tests/browser-migration.mjs",
+      "path": "tests/browser-migration.mjs",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    }
+  ],
+  "scopes": [],
+  "caveat": "Best-effort signal only. No recorded issue does not prove graph or source completeness; read flagged source and qualify claims when metadata is changed or unavailable."
+}

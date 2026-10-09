@@ -1,0 +1,50 @@
+[
+  {
+    "path": "car/sedan",
+    "url": "https://lagoslife.eliysites.com/models/world/car/sedan.glb",
+    "bytes": 172216,
+    "localSha256": "b532ea7d2c59f7f6b22b138cf1955218a2c1898f1cea932af4d3fd563c3959b7",
+    "referenceSha256": "b532ea7d2c59f7f6b22b138cf1955218a2c1898f1cea932af4d3fd563c3959b7",
+    "identical": true
+  },
+  {
+    "path": "car/suv",
+    "url": "https://lagoslife.eliysites.com/models/world/car/suv.glb",
+    "bytes": 207572,
+    "localSha256": "9df31f6e89e927a8176fc792aa125f0b19dc1ba29d2025bfef7c4f4d6ab1778a",
+    "referenceSha256": "9df31f6e89e927a8176fc792aa125f0b19dc1ba29d2025bfef7c4f4d6ab1778a",
+    "identical": true
+  },
+  {
+    "path": "car/taxi",
+    "url": "https://lagoslife.eliysites.com/models/world/car/taxi.glb",
+    "bytes": 175608,
+    "localSha256": "3803539718ffd3b84b515dbce8ed6b489f1ff5be58edb1903d2c5db5c584bdc7",
+    "referenceSha256": "3803539718ffd3b84b515dbce8ed6b489f1ff5be58edb1903d2c5db5c584bdc7",
+    "identical": true
+  },
+  {
+    "path": "car/van",
+    "url": "https://lagoslife.eliysites.com/models/world/car/van.glb",
+    "bytes": 175664,
+    "localSha256": "ed4ed56e8e5ed98db050af09ed2062b3b6bb7b93eab1e563cb6774b387b233a1",
+    "referenceSha256": "ed4ed56e8e5ed98db050af09ed2062b3b6bb7b93eab1e563cb6774b387b233a1",
+    "identical": true
+  },
+  {
+    "path": "suburban/tree-large",
+    "url": "https://lagoslife.eliysites.com/models/world/suburban/tree-large.glb",
+    "bytes": 5812,
+    "localSha256": "16d1f95c149bc727a953a473cf20bf21de9bf1a88747c4f9d2eeb4ac7d43e291",
+    "referenceSha256": "16d1f95c149bc727a953a473cf20bf21de9bf1a88747c4f9d2eeb4ac7d43e291",
+    "identical": true
+  },
+  {
+    "path": "suburban/tree-small",
+    "url": "https://lagoslife.eliysites.com/models/world/suburban/tree-small.glb",
+    "bytes": 5812,
+    "localSha256": "5f63359e5f392609d7617cc98070855ca1ffd4f4b4bc3978a5ff56ece88a58d6",
+    "referenceSha256": "5f63359e5f392609d7617cc98070855ca1ffd4f4b4bc3978a5ff56ece88a58d6",
+    "identical": true
+  }
+]

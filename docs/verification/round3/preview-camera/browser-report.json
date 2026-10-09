@@ -1,0 +1,145 @@
+{
+  "base": "http://127.0.0.1:3101",
+  "at": "2026-10-09T15:00:01.454Z",
+  "phase": "all",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "cities": [
+    {
+      "city": "lagos",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "initialDistance": 119.65794665495548,
+      "screenshot": "lagos-overview-1440.png",
+      "maxDistance": 167.52112531693766,
+      "maxScreenshot": "lagos-maximum-zoom-1440.png",
+      "zoomedOut": 167.52112531693766,
+      "wheelMinimum": 81.6958612903476,
+      "minimum": 7,
+      "resetTarget": [
+        0,
+        5.999999999999999,
+        -3.499999999999999
+      ],
+      "interactionMode": "pointer and wheel UI"
+    },
+    {
+      "city": "abuja",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "initialDistance": 262.6960171995394,
+      "screenshot": "abuja-overview-1440.png",
+      "maxDistance": 367.77442407935524,
+      "maxScreenshot": "abuja-maximum-zoom-1440.png",
+      "zoomedOut": 367.77442407935524,
+      "wheelMinimum": 179.35438458212548,
+      "minimum": 12,
+      "resetTarget": [
+        -2,
+        10.000000000000002,
+        1
+      ],
+      "interactionMode": "pointer and wheel UI"
+    },
+    {
+      "city": "dublin",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "initialDistance": 319.10995511648963,
+      "screenshot": "dublin-overview-1440.png",
+      "maxDistance": 446.75393716308554,
+      "maxScreenshot": "dublin-maximum-zoom-1440.png",
+      "zoomedOut": 446.75393716308554,
+      "wheelMinimum": 217.87071697578833,
+      "minimum": 11.999999999999998,
+      "resetTarget": [
+        0,
+        10,
+        -10
+      ],
+      "interactionMode": "pointer and wheel UI"
+    },
+    {
+      "city": "lagos",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "initialDistance": 231.97401309741448,
+      "screenshot": "lagos-overview-390.png",
+      "maxDistance": 324.7636183363804,
+      "maxScreenshot": "lagos-maximum-zoom-390.png",
+      "zoomedOut": 324.7636183363804,
+      "wheelMinimum": 158.3790907896781,
+      "minimum": 7,
+      "resetTarget": [
+        0,
+        5.999999999999999,
+        -3.499999999999999
+      ],
+      "interactionMode": "pointer and wheel UI"
+    },
+    {
+      "city": "abuja",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "initialDistance": 563.3654603794353,
+      "screenshot": "abuja-overview-390.png",
+      "maxDistance": 788.7116445312093,
+      "maxScreenshot": "abuja-maximum-zoom-390.png",
+      "zoomedOut": 788.7116445312093,
+      "wheelMinimum": 384.63493477493245,
+      "minimum": 12.000000000000004,
+      "resetTarget": [
+        -2,
+        10.000000000000002,
+        1
+      ],
+      "interactionMode": "pointer and wheel UI"
+    },
+    {
+      "city": "dublin",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "initialDistance": 795.3394734768499,
+      "screenshot": "dublin-overview-390.png",
+      "maxDistance": 1113.4752628675897,
+      "maxScreenshot": "dublin-maximum-zoom-390.png",
+      "zoomedOut": 1113.4752628675897,
+      "wheelMinimum": 543.0140255646105,
+      "minimum": 15.284486019935846,
+      "resetTarget": [
+        0,
+        10,
+        -10
+      ],
+      "interactionMode": "pointer and wheel UI"
+    }
+  ],
+  "bridges": [],
+  "errors": [],
+  "productionCameraChecks": {
+    "devSeekExposed": false,
+    "devStressExposed": false,
+    "viewports": 2,
+    "cities": 6
+  }
+}

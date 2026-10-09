@@ -1,0 +1,990 @@
+{
+  "base": "http://127.0.0.1:3100",
+  "at": "2026-10-09T09:20:11.829Z",
+  "phase": "bridges",
+  "viewports": [],
+  "cities": [],
+  "bridges": [
+    {
+      "name": "closed",
+      "screenshot": "river-bridge-closed.png",
+      "timeSeconds": 0,
+      "spans": [
+        {
+          "x": -28,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -5,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 2,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 30,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 42.4,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        }
+      ],
+      "vessels": [
+        {
+          "id": "cargo-1",
+          "phase": "approach",
+          "x": 92,
+          "z": -6,
+          "routeDistance": 0,
+          "requestedBridges": []
+        },
+        {
+          "id": "ferry-1",
+          "phase": "offshore",
+          "x": 92,
+          "z": -12,
+          "routeDistance": 0,
+          "requestedBridges": []
+        }
+      ]
+    },
+    {
+      "name": "gate",
+      "screenshot": "river-bridge-gate.png",
+      "timeSeconds": 13.5,
+      "spans": [
+        {
+          "x": -28,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -5,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 2,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 30,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 42.4,
+          "state": "gate",
+          "open": false,
+          "roadClosed": true,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        }
+      ],
+      "vessels": [
+        {
+          "id": "cargo-1",
+          "phase": "approach",
+          "x": 55.135391469358886,
+          "z": 0.07590338320737833,
+          "routeDistance": 37.79999999999985,
+          "requestedBridges": [
+            42.4
+          ]
+        },
+        {
+          "id": "ferry-1",
+          "phase": "offshore",
+          "x": 92,
+          "z": -12,
+          "routeDistance": 0,
+          "requestedBridges": []
+        }
+      ]
+    },
+    {
+      "name": "open",
+      "screenshot": "river-bridge-open.png",
+      "timeSeconds": 16.5,
+      "spans": [
+        {
+          "x": -28,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -5,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 2,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 30,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 42.4,
+          "state": "open",
+          "open": true,
+          "roadClosed": true,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        }
+      ],
+      "vessels": [
+        {
+          "id": "cargo-1",
+          "phase": "approach",
+          "x": 46.7368045606542,
+          "z": 0,
+          "routeDistance": 46.199999999999754,
+          "requestedBridges": [
+            42.4
+          ]
+        },
+        {
+          "id": "ferry-1",
+          "phase": "offshore",
+          "x": 92,
+          "z": -12,
+          "routeDistance": 0,
+          "requestedBridges": []
+        }
+      ]
+    },
+    {
+      "name": "ship-passing",
+      "screenshot": "river-bridge-ship-passing.png",
+      "timeSeconds": 17,
+      "spans": [
+        {
+          "x": -28,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -5,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 2,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 30,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 42.4,
+          "state": "open",
+          "open": true,
+          "roadClosed": true,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": [
+            "cargo-1"
+          ]
+        }
+      ],
+      "vessels": [
+        {
+          "id": "cargo-1",
+          "phase": "approach",
+          "x": 45.33683376334796,
+          "z": 0,
+          "routeDistance": 47.59999999999974,
+          "requestedBridges": [
+            42.4
+          ]
+        },
+        {
+          "id": "ferry-1",
+          "phase": "offshore",
+          "x": 92,
+          "z": -12,
+          "routeDistance": 0,
+          "requestedBridges": []
+        }
+      ]
+    },
+    {
+      "name": "closing",
+      "screenshot": "river-bridge-closing.png",
+      "timeSeconds": 20,
+      "spans": [
+        {
+          "x": -28,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -5,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 2,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 30,
+          "state": "raising",
+          "open": false,
+          "roadClosed": true,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 42.4,
+          "state": "lowering",
+          "open": false,
+          "roadClosed": true,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        }
+      ],
+      "vessels": [
+        {
+          "id": "cargo-1",
+          "phase": "approach",
+          "x": 36.93689244366638,
+          "z": 0,
+          "routeDistance": 55.999999999999645,
+          "requestedBridges": [
+            30
+          ]
+        },
+        {
+          "id": "ferry-1",
+          "phase": "offshore",
+          "x": 92,
+          "z": -12,
+          "routeDistance": 0,
+          "requestedBridges": []
+        }
+      ]
+    },
+    {
+      "name": "car-stopped",
+      "screenshot": "river-bridge-car-stopped.png",
+      "timeSeconds": 23.5,
+      "spans": [
+        {
+          "x": -28,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [
+            "Dublin taxi 3.2"
+          ],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -5,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 2,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 18,
+          "state": "gate",
+          "open": false,
+          "roadClosed": true,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 30,
+          "state": "open",
+          "open": true,
+          "roadClosed": true,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": [
+            "cargo-1"
+          ]
+        },
+        {
+          "x": 42.4,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        }
+      ],
+      "vessels": [
+        {
+          "id": "cargo-1",
+          "phase": "approach",
+          "x": 27.13675426512031,
+          "z": 0,
+          "routeDistance": 65.79999999999954,
+          "requestedBridges": [
+            18
+          ]
+        },
+        {
+          "id": "ferry-1",
+          "phase": "offshore",
+          "x": 92,
+          "z": -12,
+          "routeDistance": 0,
+          "requestedBridges": []
+        }
+      ]
+    },
+    {
+      "name": "stopped",
+      "screenshot": "river-bridge-stopped.png",
+      "timeSeconds": 34.5,
+      "spans": [
+        {
+          "x": -28,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [
+            "Dublin taxi 1.2"
+          ],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [
+            "Dublin sedan 4.2"
+          ],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -5,
+          "state": "raising",
+          "open": false,
+          "roadClosed": true,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 2,
+          "state": "lowering",
+          "open": false,
+          "roadClosed": true,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [
+            "Dublin suv 4.1"
+          ],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 30,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [
+            "Dublin sedan 1.1"
+          ],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 42.4,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        }
+      ],
+      "vessels": [
+        {
+          "id": "cargo-1",
+          "phase": "approach",
+          "x": -1.4996939793666657,
+          "z": 0,
+          "routeDistance": 94.4364748040117,
+          "requestedBridges": [
+            -5
+          ]
+        },
+        {
+          "id": "ferry-1",
+          "phase": "offshore",
+          "x": 92,
+          "z": -12,
+          "routeDistance": 0,
+          "requestedBridges": []
+        }
+      ]
+    },
+    {
+      "name": "clearing-with-car",
+      "screenshot": "river-bridge-clearing-with-car.png",
+      "timeSeconds": 94,
+      "spans": [
+        {
+          "x": -28,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -5,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 2,
+          "state": "lowering",
+          "open": false,
+          "roadClosed": true,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 18,
+          "state": "clearing",
+          "open": false,
+          "roadClosed": true,
+          "vehiclesOnDeck": [
+            "Dublin sedan 3.1"
+          ],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 30,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 42.4,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        }
+      ],
+      "vessels": [
+        {
+          "id": "cargo-1",
+          "phase": "approach",
+          "x": 7.884237995104035,
+          "z": 0,
+          "routeDistance": 248.02348643208302,
+          "requestedBridges": [
+            18
+          ]
+        },
+        {
+          "id": "ferry-1",
+          "phase": "offshore",
+          "x": 92,
+          "z": -12,
+          "routeDistance": 0,
+          "requestedBridges": []
+        }
+      ]
+    },
+    {
+      "name": "paused",
+      "screenshot": "river-bridge-paused.png",
+      "timeSeconds": 300,
+      "spans": [
+        {
+          "x": -28,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -5,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 2,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 30,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 42.4,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        }
+      ],
+      "vessels": [
+        {
+          "id": "cargo-1",
+          "phase": "offshore",
+          "x": 92,
+          "z": -6,
+          "routeDistance": 315.98661674198445,
+          "requestedBridges": []
+        },
+        {
+          "id": "ferry-1",
+          "phase": "transfer",
+          "x": 66.5,
+          "z": -12,
+          "routeDistance": 324.6942558518803,
+          "requestedBridges": []
+        }
+      ]
+    },
+    {
+      "name": "resumed",
+      "screenshot": "river-bridge-resumed.png",
+      "timeSeconds": 302,
+      "spans": [
+        {
+          "x": -28,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -5,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 2,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 30,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 42.4,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        }
+      ],
+      "vessels": [
+        {
+          "id": "cargo-1",
+          "phase": "offshore",
+          "x": 92,
+          "z": -6,
+          "routeDistance": 315.98661674198445,
+          "requestedBridges": []
+        },
+        {
+          "id": "ferry-1",
+          "phase": "transfer",
+          "x": 66.5,
+          "z": -12,
+          "routeDistance": 324.6942558518803,
+          "requestedBridges": []
+        }
+      ]
+    },
+    {
+      "name": "reset",
+      "screenshot": "river-bridge-reset.png",
+      "timeSeconds": 0,
+      "spans": [
+        {
+          "x": -28,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": -5,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 2,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 18,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 30,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        },
+        {
+          "x": 42.4,
+          "state": "closed",
+          "open": false,
+          "roadClosed": false,
+          "vehiclesOnDeck": [],
+          "shipsOnDeck": []
+        }
+      ],
+      "vessels": [
+        {
+          "id": "cargo-1",
+          "phase": "approach",
+          "x": 92,
+          "z": -6,
+          "routeDistance": 0,
+          "requestedBridges": []
+        },
+        {
+          "id": "ferry-1",
+          "phase": "offshore",
+          "x": 92,
+          "z": -12,
+          "routeDistance": 0,
+          "requestedBridges": []
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "bridgeSummary": {
+    "seen": [
+      "closed",
+      "gate",
+      "open",
+      "ship-passing",
+      "closing",
+      "car-stopped",
+      "stopped",
+      "clearing-with-car"
+    ],
+    "safeGatingEvidence": {
+      "timeSeconds": 13.5,
+      "vessel": "cargo-1",
+      "bridgeX": 42.4,
+      "spanState": "gate",
+      "x": 55.135391469358886,
+      "projectedHullFront": 57.83316399682034
+    },
+    "stoppedEvidence": {
+      "timeSeconds": 34.5,
+      "vessel": "cargo-1",
+      "bridgeX": -5,
+      "routeDistance": 94.4364748040117
+    },
+    "spanObservations": {
+      "2": {
+        "openAt": 31,
+        "shipPassingAt": 31.5
+      },
+      "18": {
+        "openAt": 26,
+        "shipPassingAt": 26
+      },
+      "30": {
+        "openAt": 21.5,
+        "shipPassingAt": 21.5
+      },
+      "-28": {
+        "openAt": 45,
+        "shipPassingAt": 45
+      },
+      "-18": {
+        "openAt": 40.5,
+        "shipPassingAt": 40.5
+      },
+      "-5": {
+        "openAt": 36,
+        "shipPassingAt": 36
+      },
+      "42.4": {
+        "openAt": 16.5,
+        "shipPassingAt": 17
+      }
+    },
+    "resumedAt": 302,
+    "resetAt": 0,
+    "dispatchReset": "Port simulation reset to its safe starting state."
+  }
+}

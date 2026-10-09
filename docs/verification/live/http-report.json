@@ -1,0 +1,57 @@
+[
+  {
+    "path": "/health",
+    "status": 200,
+    "type": "application/json"
+  },
+  {
+    "path": "/_next/static/missing.js",
+    "status": 404,
+    "type": "text/html"
+  },
+  {
+    "path": "/assets/car/sedan.glb",
+    "status": 200,
+    "type": "model/gltf-binary"
+  },
+  {
+    "path": "/assets/suburban/tree-large.glb",
+    "status": 200,
+    "type": "model/gltf-binary"
+  },
+  {
+    "path": "/_next/static/css/0f5a5c326cb590ec.css",
+    "status": 200,
+    "type": "text/css"
+  },
+  {
+    "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+    "status": 200,
+    "type": "text/javascript"
+  },
+  {
+    "path": "/_next/static/chunks/794-8679cf7171902c4e.js",
+    "status": 200,
+    "type": "text/javascript"
+  },
+  {
+    "path": "/_next/static/chunks/main-app-e70348af62d17d65.js",
+    "status": 200,
+    "type": "text/javascript"
+  },
+  {
+    "path": "/_next/static/chunks/app/page-005f51305e300bbf.js",
+    "status": 200,
+    "type": "text/javascript"
+  },
+  {
+    "path": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+    "status": 200,
+    "type": "text/javascript"
+  },
+  {
+    "path": "/_next/static/chunks/webpack-ba1b39576183be99.js",
+    "status": 200,
+    "type": "text/javascript"
+  }
+]

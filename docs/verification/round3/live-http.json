@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-10-09T15:14:59.179484+00:00",
+  "client": "system curl with TLS verification",
+  "requests": [
+    {
+      "path": "/?city=dublin",
+      "status": 200,
+      "contentType": "text/html",
+      "sha256": "fdfdafce8d41995301e04c69cd61389be7f2e0e1039b3565e593b28be566561c"
+    },
+    {
+      "path": "/?city=lagos",
+      "status": 200,
+      "contentType": "text/html",
+      "sha256": "fdfdafce8d41995301e04c69cd61389be7f2e0e1039b3565e593b28be566561c"
+    },
+    {
+      "path": "/?city=abuja",
+      "status": 200,
+      "contentType": "text/html",
+      "sha256": "fdfdafce8d41995301e04c69cd61389be7f2e0e1039b3565e593b28be566561c"
+    },
+    {
+      "path": "/health",
+      "status": 200,
+      "contentType": "application/json",
+      "sha256": "aeec245a36e5d4aee27b40eddbbd5d7eb1467f78e1cacb86736f7efab197416c"
+    },
+    {
+      "path": "/assets/car/sedan.glb",
+      "status": 200,
+      "contentType": "model/gltf-binary",
+      "sha256": "b532ea7d2c59f7f6b22b138cf1955218a2c1898f1cea932af4d3fd563c3959b7"
+    },
+    {
+      "path": "/assets/no-such-round3-file.glb",
+      "status": 404,
+      "contentType": "text/html",
+      "sha256": "ce52a8ceb9311a6526b9ebb57af4f9f7e44cc841f7a7294c8e84949beeb0c2b5"
+    }
+  ]
+}

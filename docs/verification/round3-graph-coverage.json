@@ -1,0 +1,563 @@
+{
+  "project": "ireland-life",
+  "signal": "best_effort",
+  "indexed_at": "2026-10-09T15:00:35Z",
+  "metadata": {
+    "generation": "2026-10-09T15:00:35Z",
+    "index_mode": "fast",
+    "recorded_at": "2026-10-09T15:11:01Z",
+    "recording_status": "complete",
+    "ignored_files_stored": 24,
+    "ignored_files_total": 24,
+    "hash_records_complete": true,
+    "coverage_version": 3,
+    "generation_matches": true
+  },
+  "paths": [
+    {
+      "requested_path": "worker/index.js",
+      "path": "worker/index.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "app/globals.css",
+      "path": "app/globals.css",
+      "status": "partial",
+      "freshness": "metadata_match",
+      "recommended_action": "read_ranges_and_verify_scope",
+      "coverage": [
+        {
+          "path": "app/globals.css",
+          "kind": "parse_partial",
+          "detail": "1-1,2-2",
+          "match": "exact",
+          "ranges": [
+            {
+              "start": 1,
+              "end": 1
+            },
+            {
+              "start": 2,
+              "end": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requested_path": "app/layout.jsx",
+      "path": "app/layout.jsx",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "app/map.css",
+      "path": "app/map.css",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "app/page.jsx",
+      "path": "app/page.jsx",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "tests/abuja-geometry.test.mjs",
+      "path": "tests/abuja-geometry.test.mjs",
+      "status": "excluded",
+      "freshness": "not_tracked",
+      "recommended_action": "read_source_and_reindex",
+      "coverage": [
+        {
+          "path": "tests/abuja-geometry.test.mjs",
+          "kind": "not_indexed_file",
+          "detail": "fast-pattern",
+          "match": "exact"
+        }
+      ]
+    },
+    {
+      "requested_path": "tests/dublin-motion.test.mjs",
+      "path": "tests/dublin-motion.test.mjs",
+      "status": "excluded",
+      "freshness": "not_tracked",
+      "recommended_action": "read_source_and_reindex",
+      "coverage": [
+        {
+          "path": "tests/dublin-motion.test.mjs",
+          "kind": "not_indexed_file",
+          "detail": "fast-pattern",
+          "match": "exact"
+        }
+      ]
+    },
+    {
+      "requested_path": "tests/browser-migration.mjs",
+      "path": "tests/browser-migration.mjs",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "tests/road-connectivity.test.mjs",
+      "path": "tests/road-connectivity.test.mjs",
+      "status": "excluded",
+      "freshness": "not_tracked",
+      "recommended_action": "read_source_and_reindex",
+      "coverage": [
+        {
+          "path": "tests/road-connectivity.test.mjs",
+          "kind": "not_indexed_file",
+          "detail": "fast-pattern",
+          "match": "exact"
+        }
+      ]
+    },
+    {
+      "requested_path": "tests/dublin-second-harbour.test.mjs",
+      "path": "tests/dublin-second-harbour.test.mjs",
+      "status": "excluded",
+      "freshness": "not_tracked",
+      "recommended_action": "read_source_and_reindex",
+      "coverage": [
+        {
+          "path": "tests/dublin-second-harbour.test.mjs",
+          "kind": "not_indexed_file",
+          "detail": "fast-pattern",
+          "match": "exact"
+        }
+      ]
+    },
+    {
+      "requested_path": "tests/browser-round2.mjs",
+      "path": "tests/browser-round2.mjs",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "tests/dublin-port.test.mjs",
+      "path": "tests/dublin-port.test.mjs",
+      "status": "excluded",
+      "freshness": "not_tracked",
+      "recommended_action": "read_source_and_reindex",
+      "coverage": [
+        {
+          "path": "tests/dublin-port.test.mjs",
+          "kind": "not_indexed_file",
+          "detail": "fast-pattern",
+          "match": "exact"
+        }
+      ]
+    },
+    {
+      "requested_path": "tests/browser-round3.mjs",
+      "path": "tests/browser-round3.mjs",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "tests/dublin-road-details.test.mjs",
+      "path": "tests/dublin-road-details.test.mjs",
+      "status": "excluded",
+      "freshness": "not_tracked",
+      "recommended_action": "read_source_and_reindex",
+      "coverage": [
+        {
+          "path": "tests/dublin-road-details.test.mjs",
+          "kind": "not_indexed_file",
+          "detail": "fast-pattern",
+          "match": "exact"
+        }
+      ]
+    },
+    {
+      "requested_path": "tests/aircraft.test.mjs",
+      "path": "tests/aircraft.test.mjs",
+      "status": "excluded",
+      "freshness": "not_tracked",
+      "recommended_action": "read_source_and_reindex",
+      "coverage": [
+        {
+          "path": "tests/aircraft.test.mjs",
+          "kind": "not_indexed_file",
+          "detail": "fast-pattern",
+          "match": "exact"
+        }
+      ]
+    },
+    {
+      "requested_path": "tests/dublin-bridges.test.mjs",
+      "path": "tests/dublin-bridges.test.mjs",
+      "status": "excluded",
+      "freshness": "not_tracked",
+      "recommended_action": "read_source_and_reindex",
+      "coverage": [
+        {
+          "path": "tests/dublin-bridges.test.mjs",
+          "kind": "not_indexed_file",
+          "detail": "fast-pattern",
+          "match": "exact"
+        }
+      ]
+    },
+    {
+      "requested_path": "tests/walk-boundaries.test.mjs",
+      "path": "tests/walk-boundaries.test.mjs",
+      "status": "excluded",
+      "freshness": "not_tracked",
+      "recommended_action": "read_source_and_reindex",
+      "coverage": [
+        {
+          "path": "tests/walk-boundaries.test.mjs",
+          "kind": "not_indexed_file",
+          "detail": "fast-pattern",
+          "match": "exact"
+        }
+      ]
+    },
+    {
+      "requested_path": "tests/browser-expansion.mjs",
+      "path": "tests/browser-expansion.mjs",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "tests/map-camera.test.mjs",
+      "path": "tests/map-camera.test.mjs",
+      "status": "excluded",
+      "freshness": "not_tracked",
+      "recommended_action": "read_source_and_reindex",
+      "coverage": [
+        {
+          "path": "tests/map-camera.test.mjs",
+          "kind": "not_indexed_file",
+          "detail": "fast-pattern",
+          "match": "exact"
+        }
+      ]
+    },
+    {
+      "requested_path": "tests/browser-dublin.mjs",
+      "path": "tests/browser-dublin.mjs",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "tests/browser-port-cycle.mjs",
+      "path": "tests/browser-port-cycle.mjs",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "tests/dublin-map.test.mjs",
+      "path": "tests/dublin-map.test.mjs",
+      "status": "excluded",
+      "freshness": "not_tracked",
+      "recommended_action": "read_source_and_reindex",
+      "coverage": [
+        {
+          "path": "tests/dublin-map.test.mjs",
+          "kind": "not_indexed_file",
+          "detail": "fast-pattern",
+          "match": "exact"
+        }
+      ]
+    },
+    {
+      "requested_path": "src/map-store.js",
+      "path": "src/map-store.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/abuja-primitives.js",
+      "path": "src/abuja-primitives.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin-road-details.js",
+      "path": "src/dublin-road-details.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin-vehicles.js",
+      "path": "src/dublin-vehicles.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/abuja-info.json",
+      "path": "src/abuja-info.json",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/map-runtime.js",
+      "path": "src/map-runtime.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin-road-network.js",
+      "path": "src/dublin-road-network.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin.js",
+      "path": "src/dublin.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/reference-props.js",
+      "path": "src/reference-props.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/abuja.js",
+      "path": "src/abuja.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin-district-expansion.js",
+      "path": "src/dublin-district-expansion.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/road-connectivity.js",
+      "path": "src/road-connectivity.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/components/PortDesk.jsx",
+      "path": "src/components/PortDesk.jsx",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/components/PlaceSheet.jsx",
+      "path": "src/components/PlaceSheet.jsx",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/components/MapCanvas.jsx",
+      "path": "src/components/MapCanvas.jsx",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/components/SecondHarbourDesk.jsx",
+      "path": "src/components/SecondHarbourDesk.jsx",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/main.js",
+      "path": "src/main.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin-locations.js",
+      "path": "src/dublin-locations.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin-round3-destinations.js",
+      "path": "src/dublin-round3-destinations.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin-airport.js",
+      "path": "src/dublin-airport.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/abuja-layout.js",
+      "path": "src/abuja-layout.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin-palette.js",
+      "path": "src/dublin-palette.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin-round3-venue-geometry.js",
+      "path": "src/dublin-round3-venue-geometry.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/map-camera.js",
+      "path": "src/map-camera.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin-motion.js",
+      "path": "src/dublin-motion.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin-port.js",
+      "path": "src/dublin-port.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin-second-harbour.js",
+      "path": "src/dublin-second-harbour.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/dublin-bridges.js",
+      "path": "src/dublin-bridges.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/walk-boundaries.js",
+      "path": "src/walk-boundaries.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    },
+    {
+      "requested_path": "src/abuja-landmarks.js",
+      "path": "src/abuja-landmarks.js",
+      "status": "no_recorded_issue",
+      "freshness": "metadata_match",
+      "recommended_action": "use_graph_with_best_effort_caveat",
+      "coverage": []
+    }
+  ],
+  "scopes": [
+    {
+      "requested_scope": "src",
+      "scope": "src",
+      "total": 0,
+      "has_more": false,
+      "entries": [],
+      "status": "no_recorded_issue"
+    },
+    {
+      "requested_scope": "app",
+      "scope": "app",
+      "total": 1,
+      "has_more": false,
+      "entries": [
+        {
+          "path": "app/globals.css",
+          "kind": "parse_partial",
+          "detail": "1-1,2-2",
+          "ranges": [
+            {
+              "start": 1,
+              "end": 1
+            },
+            {
+              "start": 2,
+              "end": 2
+            }
+          ]
+        }
+      ],
+      "status": "known_gaps"
+    }
+  ],
+  "caveat": "Best-effort signal only. No recorded issue does not prove graph or source completeness; read flagged source and qualify claims when metadata is changed or unavailable."
+}

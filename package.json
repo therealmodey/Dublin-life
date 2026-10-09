@@ -1,17 +1,38 @@
 {
-  "name": "lagos-map-explorer",
+  "name": "ireland-life-map-explorer",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "esbuild src/main.js --bundle --format=esm --minify --outfile=dist/map.js",
-    "check": "node --check src/main.js",
-    "test": "node tests/abuja-geometry.test.mjs && node tests/dublin-map.test.mjs && node tests/dublin-motion.test.mjs"
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build --webpack",
+    "start": "next start --hostname 127.0.0.1",
+    "check": "node --check src/map-runtime.js && node --check src/map-store.js",
+    "test": "node tests/abuja-geometry.test.mjs && node tests/dublin-map.test.mjs && node tests/dublin-motion.test.mjs && node tests/aircraft.test.mjs && node tests/dublin-road-details.test.mjs && node tests/dublin-bridges.test.mjs && node tests/dublin-port.test.mjs && node tests/dublin-second-harbour.test.mjs && node tests/road-connectivity.test.mjs && node tests/map-camera.test.mjs && node tests/walk-boundaries.test.mjs",
+    "test:browser": "node tests/browser-migration.mjs",
+    "build:worker": "CLOUDFLARE_EXPORT=1 next build --webpack",
+    "preview:worker": "wrangler dev --port 3101",
+    "deploy:worker": "npm run build:worker && wrangler deploy",
+    "test:expansion": "node tests/browser-expansion.mjs",
+    "test:round2": "node tests/browser-round2.mjs",
+    "test:round3": "node tests/browser-round3.mjs"
   },
   "dependencies": {
-    "three": "^0.180.0"
+    "@react-three/drei": "10.7.9",
+    "@react-three/fiber": "9.8.1",
+    "next": "16.4.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "suspend-react": "0.1.3",
+    "three": "0.186.0",
+    "three-stdlib": "2.36.1",
+    "zustand": "5.0.15"
   },
   "devDependencies": {
-    "esbuild": "^0.25.10"
+    "@tailwindcss/postcss": "4.3.3",
+    "esbuild": "^0.25.10",
+    "postcss": "^8.5.6",
+    "tailwindcss": "4.3.3",
+    "wrangler": "4.149.0"
   }
 }

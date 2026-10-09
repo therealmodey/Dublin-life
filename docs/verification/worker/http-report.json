@@ -1,0 +1,22 @@
+[
+  {
+    "path": "/health",
+    "status": 200,
+    "type": "application/json"
+  },
+  {
+    "path": "/_next/static/missing.js",
+    "status": 404,
+    "type": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/assets/car/sedan.glb",
+    "status": 200,
+    "type": "model/gltf-binary"
+  },
+  {
+    "path": "/assets/suburban/tree-large.glb",
+    "status": 200,
+    "type": "model/gltf-binary"
+  }
+]

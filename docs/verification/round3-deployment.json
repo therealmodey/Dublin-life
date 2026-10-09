@@ -1,0 +1,14 @@
+{
+  "id": "87feda64-9071-4e45-a8d4-617d58312b04",
+  "created_on": "2026-10-09T15:11:09.536777Z",
+  "source": "wrangler",
+  "versions": [
+    {
+      "version_id": "1d88e119-4882-4313-978a-7828311dea8c",
+      "percentage": 100
+    }
+  ],
+  "worker": "ireland-life",
+  "url": "https://ireland-life.ikosam12345.workers.dev",
+  "accountId": "df8024971421bd4772cd3b59210ced98"
+}
